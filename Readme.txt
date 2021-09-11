@@ -5,3 +5,5 @@
 	-Create the band name generator.
 	-Downloaded the IDE "Thonny" -> It is very useful for beginners.
 	-Set everything up for day 2 (which will actually be still in day 1 since I want to move forward).
+===============================================================================
+===============================================================================
