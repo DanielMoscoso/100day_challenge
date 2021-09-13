@@ -20,4 +20,6 @@
 		-Rollercoaster ride calculator.
 		-Pizza delivery program.
 		-Love calculator.
+	Day 3 code:
+		-Choose your own story.
 ===============================================================================
