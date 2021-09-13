@@ -78,3 +78,29 @@ else:
     print("It is not a leap year.")
 # %%
 # %%
+# Rollercoaster ride:
+# This excercise is really good because it forces you to do things the simplest and most efficient way.
+print("Welcome to the rollercoaster!")
+bill = 0
+
+height = int(input("What is your height in cm?: "))
+
+if height >= 120:
+    print("You can ride the rollercoaster!")
+    age = int(input("What is your age?: "))
+
+    if age < 12:
+        bill = 5
+    elif age <= 18:
+        bill = 7
+    else:
+        bill = 12
+
+    photo = input("Do you want a photo taken? (Y)es or (N)o?")
+    if photo == "Y":
+        bill += 3
+
+    print(f"Your bill is ${bill}.")
+else:
+    print("Sorry, you have to grow taller before you can ride.")
+# %%
