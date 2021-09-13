@@ -11,4 +11,6 @@
 	-2 digit addition.
 	-BMI Calculator.
 	-Age calculator (This is the simplest version: when you JUST turned that age, not even one day after).
+	Day 2 code:
+	-Tip calculator.
 ===============================================================================
