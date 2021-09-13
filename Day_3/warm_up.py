@@ -191,3 +191,34 @@ elif int_complete >= 40 and int_complete <= 50:
     print(f"Your score is {int_complete}%, you are alright together.")
 else:
     print(f"Your score is {int_complete}%.")
+# %%
+# Alternative:
+print("Welcome to the love calculator!")
+
+name1 = input("What is your name?: ")
+name2 = input("What is their name?: ")
+
+combined_names = name1.lower() + name2.lower()
+
+t = combined_names.count("t")
+r = combined_names.count("r")
+u = combined_names.count("u")
+e = combined_names.count("e")
+true = t + r + u + e
+
+l = combined_names.count("l")
+o = combined_names.count("o")
+v = combined_names.count("v")
+e = combined_names.count("e")
+love = l + o + v + e
+
+love_score = int(str(true) + str(love))  # This adds the 2 numbers to make the %, then turn the final output into an integer.
+
+if love_score < 10 or love_score > 90:
+    print(f"Your score is {love_score}%, you go together like coke and mentos.")
+elif love_score >= 40 and love_score <= 50:
+    print(f"Your score is {love_score}%, you are alright together.")
+else:
+    print(f"Your score is {love_score}%.")
+# %%
+# %%
