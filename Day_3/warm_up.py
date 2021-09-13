@@ -93,6 +93,9 @@ if height >= 120:
         bill = 5
     elif age <= 18:
         bill = 7
+    elif age >= 45 and age <= 55:
+        print("Everythin is going to be ok. Have a free ride on us!")
+        bill = 0
     else:
         bill = 12
 
@@ -162,3 +165,29 @@ print(f"Your final bill is: ${bill}.")
 
 # %%
 # %%
+# Love calculator:
+print("Welcome to the love calculator!")
+
+name1 = input("What is your name?: ")
+name2 = input("What is their name?: ")
+
+t = name1.lower().count("t") + name2.lower().count("t")
+r = name1.lower().count("r") + name2.lower().count("r")
+u = name1.lower().count("u") + name2.lower().count("u")
+e = name1.lower().count("e") + name2.lower().count("e")
+l = name1.lower().count("l") + name2.lower().count("l")
+o = name1.lower().count("o") + name2.lower().count("o")
+v = name1.lower().count("v") + name2.lower().count("v")
+
+first_half = t + r + u + e
+second_half = l + o + v + e
+
+str_complete = str(first_half) + str(second_half)  # This adds the 2 numbers to make the %.
+int_complete = int(str_complete)  # This will turn the final output into an integer.
+
+if int_complete < 10 or int_complete > 90:
+    print(f"Your score is {int_complete}%, you go together like coke and mentos.")
+elif int_complete >= 40 and int_complete <= 50:
+    print(f"Your score is {int_complete}%, you are alright together.")
+else:
+    print(f"Your score is {int_complete}%.")
