@@ -13,3 +13,22 @@ if answer % 2 == 0:
     print("This is an even number.")  # This is a little counter intuitive at first. But if you get an asnwer of 1, then remember that booleans are binary; 1=True and 0=False.
 else:
     print("This is an odd number.")
+# %%
+# %%
+# BMI Calculator 2.0:
+weight = float(input("What is your weight in Kilograms?: "))
+height = float(input("What is your height in Meters?: "))
+
+bmi = round(weight / height**2)
+
+# Great for practice and understanding "if" and "comparisons":
+if bmi < 18.5:
+    print(f"Your BMI is: {bmi}, are underweight.")
+elif bmi >= 18.5 and bmi < 25:
+    print(f"Your BMI is: {bmi}, are normal weight.")
+elif bmi >= 25 and bmi < 30:
+    print(f"Your BMI is: {bmi}, are overweight.")
+elif bmi >= 30 and bmi < 35:
+    print(f"Your BMI is: {bmi}, are obese.")
+else:
+    print(f"Your BMI is: {bmi}, are clinically obese.")
