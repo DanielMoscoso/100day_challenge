@@ -104,6 +104,7 @@ if height >= 120:
 else:
     print("Sorry, you have to grow taller before you can ride.")
 # %%
+# %%
 # Pizza order program:
 print("Welcome to the Python Pizza Deliveries!")
 
@@ -130,3 +131,34 @@ if extra_cheese == "Y":
     bill += 1
 
 print(f"Your final bill is: ${bill}.")
+# %%
+# Nested if statements:
+print("Welcome to the Python Pizza Deliveries!")
+
+size = input("What size do you want? (S)mall, (M)edium or (L)arge?:")
+pepperoni = input("Do you want to add pepperoni? (Y)es or (N)o?: ")
+extra_cheese = input("Do you want extra cheese? (Y)es or (N)o?: ")
+bill = 0
+
+if size == "S":
+    bill += 15
+elif size == "M":
+    bill += 20
+elif size == "L":
+    bill += 25
+else:
+    pass
+
+if pepperoni == "Y":
+    if size == "S":
+        bill += 2
+    else:
+        bill += 3
+
+if extra_cheese == "Y":
+    bill += 1
+
+print(f"Your final bill is: ${bill}.")
+
+# %%
+# %%
