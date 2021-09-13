@@ -7,3 +7,4 @@
 	-Set everything up for day 2 (which will actually be still in day 1 since I want to move forward).
 ===============================================================================
 ===============================================================================
+3.-Third day of the 100day challenge:
