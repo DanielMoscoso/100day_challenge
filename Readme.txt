@@ -7,5 +7,7 @@
 	-Set everything up for day 2 (which will actually be still in day 1 since I want to move forward).
 ===============================================================================
 2.-Second day of the 100day challenge:
-	-2 digit addition
+	Warm up:
+	-2 digit addition.
+	-BMI Calculator.
 ===============================================================================
