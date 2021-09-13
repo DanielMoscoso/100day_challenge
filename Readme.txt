@@ -7,12 +7,20 @@
 	-Set everything up for day 2 (which will actually be still in day 1 since I want to move forward).
 2.-Second day of the 100day challenge:
 	Warm up:
-	-2 digit addition.
-	-BMI Calculator.
-	-Age calculator (This is the simplest version: when you JUST turned that age, not even one day after).
+		-2 digit addition.
+		-BMI Calculator.
+		-Age calculator (This is the simplest version: when you JUST turned that age, not even one day after).
 	Day 2 code:
-	-Tip calculator.
+		-Tip calculator.
 3.-Third day of the 100day challenge:
 ===============================================================================
+	Warm up:
+		-Even or Odd calculator.
+		-Leap year calculator.
+		-Rollercoaster ride calculator.
+		-Pizza delivery program.
+		-Love calculator.
+	Day 3 code:
+		-Choose your own story.
 ===============================================================================
 4.-Fourth day of the 100day challenge:
