@@ -37,3 +37,10 @@ if answer == "t":
         print("You got Heads")
     else:
         print("You got Tails")
+# %%
+# Random people-picker:
+names = input("Give me everybody's names, separated by a coma and a space. ")
+names_splitted = names.split(", ")  # The split method does not happen in place.
+
+picked_name = names_splitted[random.randint(0, (len(names_splitted) - 1))]
+print(f"{picked_name} is going to buy the meal today!")
