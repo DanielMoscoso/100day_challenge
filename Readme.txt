@@ -26,4 +26,5 @@
 	Warm up:
 		-Random number generator.
 		-Coin Toss.
+		-Treasure map.
 ===============================================================================

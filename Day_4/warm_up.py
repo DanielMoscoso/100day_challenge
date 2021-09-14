@@ -54,3 +54,22 @@ picked_name = random.choice(names_splitted)  # This will pick a random placehold
 print(f"{picked_name} is going to buy the meal today!")
 # %%
 # %%
+# Treasure map:
+print("Welcome to the tressure map game. You will have a 3x3 map,\nand your job is to mark your position with and 'x'\n")
+print("First you would give the row coordinate, then the column coordinate.")
+
+row1 = ["[]", "[]", "[]"]
+row2 = ["[]", "[]", "[]"]
+row3 = ["[]", "[]", "[]"]
+
+map = [row1, row2, row3]
+
+print(f"{row1}\n{row2}\n{row3}\n")
+
+answer = input("Where do you want to place your x. Remember, Row then Column: ")
+first = int(answer[0])
+second = int(answer[-1])
+
+map[first - 1][second - 1] = "x"
+
+print(f"{row1}\n{row2}\n{row3}")
