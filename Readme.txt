@@ -28,5 +28,5 @@
 		-Coin Toss.
 		-Treasure map.
 	Day 4 code:
-	-Rock, paper, scissors.
+		-Rock, paper, scissors.
 ===============================================================================
