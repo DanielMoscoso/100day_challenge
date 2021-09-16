@@ -35,4 +35,6 @@
 		-Highest exam score.
 		-Addition of all the even numbers in a range of numbers.
 		-FizzBuzz game.
+	Day 5 code:
+		-Password generator.
 ===============================================================================
