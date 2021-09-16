@@ -27,3 +27,17 @@ for student in student_heights:  # 156 178 165 171 187
 average_height = total_height / iterations
 
 print(f"The average height is : {round(average_height)}")
+# %%
+# %%
+# Now you are using the same code as before, but outputing the highest exam score from the list.
+# NOTE: Again, you have the function "max()" that does this, but try to figure out a way around it.
+student_scores = input("Input a list of student heights separated by a space.").split()
+max_score = 0
+
+for score in student_scores:  # 78 65 89 86 55 91 64 89
+    student_score = int(score)
+
+    if max_score < student_score:
+        max_score = student_score
+
+print(f"The highest score in the class is : {max_score}")
