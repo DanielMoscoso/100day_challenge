@@ -6,7 +6,7 @@ student_heights = input("Input a list of student heights separated by a space.")
 total_height = 0
 iterations = 0
 
-for n in range(0, len(student_heights)):  # Remember, range is exclusive, that is why you do not need the "-1"
+for n in range(0, len(student_heights)):  # Remember, range is starting at 0, that is why you do not need the "-1"
     student_heights[n] = int(student_heights[n])
     total_height += student_heights[n]
     iterations += 1
