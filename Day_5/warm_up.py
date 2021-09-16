@@ -41,3 +41,18 @@ for score in student_scores:  # 78 65 89 86 55 91 64 89
         max_score = student_score
 
 print(f"The highest score in the class is : {max_score}")
+# %%
+# %%
+# Sum all the EVEN numbers in a range of numbers.
+token = 0
+for number in range(1, 101):
+    if not number % 2:  # The "not" essentially makes the 0 from the remainder, and makes it 1, so it would be true for the statement.
+  # if number % 2 == 0:  # The normal way.
+        token += number
+print(token)
+# %%
+# OR
+token = 0
+for number in range(2, 101, 2):
+    token += number
+print(token)

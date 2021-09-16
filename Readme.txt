@@ -33,4 +33,5 @@
 	Warm up:
 		-Student heights average.
 		-Highest exam score.
+		-Addition of all the even numbers in a range of numbers.
 ===============================================================================
