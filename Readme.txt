@@ -39,6 +39,7 @@
 6.-Sixth day of the 100day challenge:
 ===============================================================================
 	Warm up:
-		-Hurdle 1 (Reeborg's world)
-		-Hurdle 2 (Reeborg's world)
+		-Hurdle 1 (Reeborg's World)
+		-Hurdle 2 (Reeborg's World)
+		-Hurdle 3 (Reeborg's World)
 ===============================================================================
