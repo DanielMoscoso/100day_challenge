@@ -37,7 +37,6 @@
 	Day 5 code:
 		-Password generator.
 6.-Sixth day of the 100day challenge:
-===============================================================================
 	Warm up:
 		-Hurdle 1 (Reeborg's World).
 		-Hurdle 2 (Reeborg's World).
@@ -45,5 +44,6 @@
 		-Hurdle 4 (Reeborg's World).
 	Day 6 code:
 		-Maze runner (Reeborg's World).
-===============================================================================
 7.-Seventh day of the 100day challenge:
+===============================================================================
+===============================================================================
