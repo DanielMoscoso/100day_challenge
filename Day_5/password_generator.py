@@ -60,4 +60,48 @@ for number in range(1, total_characters + 100):  # This would be better excecute
     else:
         pass
 
-print(f"Your password is: {pasword}\nPassword length: {len(pasword)}")
+print(f"Your password is: {pasword}\nPassword length: {len(pasword)}\n")
+# %%
+# Best way: Password generator:
+# Greetings and user questions:
+print("Welcome to the password generator!\n")
+letters_answer = int(input("How many letters would you like in your password?: \n"))
+symbols_answer = int(input("How many symbols would you like?: \n"))
+numbers_answer = int(input("How many numbers would you like?: \n"))
+
+# First initialization:
+letters = "A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z"
+capital_letters = letters.split(", ")
+lower_case_letters = letters.lower().split(", ")
+numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+special_characters = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
+
+# Create all the characters in the password:
+password = []
+token_lower_letter = 0
+token_capital_letter = 0
+for number in range(1, letters_answer + 1):
+    # This will make sure that at least one lower case letter, and one capital letter is used in case of 2 letter password.
+    if token_lower_letter == 0 or token_lower_letter > 0 and token_capital_letter > 0:
+        password.append(random.choice(capital_letters))
+        token_lower_letter += 1
+    elif token_capital_letter == 0 or token_lower_letter > 0 and token_capital_letter > 0:
+        password.append(random.choice(lower_case_letters))
+        token_capital_letter += 1
+    else:
+        pass
+
+for number in range(1, symbols_answer + 1):
+    password.append(random.choice(special_characters))
+
+for number in range(1, numbers_answer + 1):
+    password.append(random.choice(numbers))
+
+# Randomize it and then create a string from it:
+random.shuffle(password)
+password_string = ""
+for char in password:
+    password_string += char
+
+# Final output:
+print(f"Your password is: {password_string}\nPassword length: {len(password_string)}\n")
