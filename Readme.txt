@@ -30,5 +30,12 @@
 		-Rock, paper, scissors.
 5.-Fifth day of the 100day challenge:
 ===============================================================================
+	Warm up:
+		-Student heights average.
+		-Highest exam score.
+		-Addition of all the even numbers in a range of numbers.
+		-FizzBuzz game.
+	Day 5 code:
+		-Password generator.
 ===============================================================================
 6.-Sixth day of the 100day challenge:
