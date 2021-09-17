@@ -1,0 +1,4 @@
+This is a very handy coding game, where you have a little robot, and tell it what to do
+using python code. It has a built in capability, just like "Thonny" for you to see
+how your code is executing.
+https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=%2Fworlds%2Fmenus%2Fselect_collection_en.json&name=Alone&url=%2Fworlds%2Ftutorial_en%2Falone.json
