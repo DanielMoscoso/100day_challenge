@@ -46,5 +46,8 @@
 		-Maze runner (Reeborg's World).
 7.-Seventh day of the 100day challenge:
 ===============================================================================
+	Day 7 code:
+		-Hangman (My way)
+		-Hangman (Professor's way)
 ===============================================================================
 8.-Eigth day of the 100day challenge:
