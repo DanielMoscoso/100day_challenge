@@ -69,3 +69,31 @@ for key, value in student_scores.items():
 
 print(student_grades)
 # ------------------- Another way: -------------------
+# %%
+# Nesting lists and dictionaries:
+# Lists inside dictionaries, inside dictionaries.
+travel_log = {
+    "France": ["Paris", "Lille", "Dijon"],
+    "Germany": ["Berlin", "Hamburg", "Stuttgart"]
+}
+
+travel_log = {
+    "France": {"cities_visited": ["Paris", "Lille", "Dijon"],
+               "total_visits": 10},
+    "Germany": {"cities_visited": ["Berlin", "Hamburg", "Stuttgart"]}
+}
+
+# Dictionary inside a list:
+[{1: [1, 3, 2], "hola": {}}, {1: "one", 2: "two"}]
+
+travel_log = [
+    {
+        "country": "France",
+        "cities_visited": ["Paris", "Lille", "Dijon"],
+        "total_visits": 10
+    },
+    {
+        "country": "Germany",
+        "cities_visited": ["Berlin", "Hamburg", "Stuttgart"]
+    }
+]

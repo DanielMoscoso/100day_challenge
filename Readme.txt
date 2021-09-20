@@ -60,4 +60,5 @@
 	Warm up:
 		-How to use dictionaries.
 		-How to use one of the dictionary methods, plus dictionary unpacking.
+		-Nesting lists and dictionaries.
 ===============================================================================
