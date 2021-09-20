@@ -61,4 +61,5 @@
 		-How to use dictionaries.
 		-How to use one of the dictionary methods, plus dictionary unpacking.
 		-Nesting lists and dictionaries.
+		-Function that add new countries to the old list of dictionaries.
 ===============================================================================

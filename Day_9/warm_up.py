@@ -97,3 +97,34 @@ travel_log = [
         "cities_visited": ["Berlin", "Hamburg", "Stuttgart"]
     }
 ]
+# %%
+travel_log = [
+    {
+        "country": "France",
+        "total_visits": 12,
+        "cities_visited": ["Paris", "Lille", "Dijon"],
+    },
+    {
+        "country": "Germany",
+        "total_visits": 5,
+        "cities_visited": ["Berlin", "Hamburg", "Stuttgart"]
+    }
+]
+
+
+def add_new_country(new_country="", visits=0, cities=[]):
+    # new_dictionary = {"country": new_country, "total_visits": visits, "cities_visited": cities}  # This also works.
+    new_dictionary = {}
+    new_dictionary["country"] = new_country
+    new_dictionary["total_visits"] = visits
+    new_dictionary["cities_visited"] = cities
+    travel_log.append(new_dictionary)
+
+
+add_new_country("Russia", 2, ["Moscow", "Saint Petersburg"])
+print(travel_log)
+# This is very interesting: It shows the different types of variables within the dictionat.
+# print(travel_log[2])
+# type(travel_log[2])
+# type(travel_log[2]["cities_visited"])
+# type(travel_log[2]["cities_visited"][0])
