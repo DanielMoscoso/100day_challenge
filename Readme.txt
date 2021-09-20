@@ -56,7 +56,6 @@
 		-Caesar Cipher (2).
 		-Caesar Cipher (3).
 9.-Nineth day of the 100day challenge:
-===============================================================================
 	Warm up:
 		-How to use dictionaries.
 		-How to use one of the dictionary methods, plus dictionary unpacking.
@@ -77,5 +76,6 @@
 		values are all the bid prices; choice 2. Either is correct, it just depends
 		on what you need afterwards. At the end, both versions output the same
 		correct answer.
-===============================================================================
 10.-Tenth day of the 100day challenge:
+===============================================================================
+===============================================================================
