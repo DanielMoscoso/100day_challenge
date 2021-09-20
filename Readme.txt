@@ -67,4 +67,6 @@
 		 is another user. If there is, then the entire process starts again.
 		 After every iteration, the code updates a dictionary with "names" and "bid"
 		 prices values.
+	 -A little over complicated at the end, but it does the job correctly: outputs
+	  the auctions winner. (wins the highest price).
 ===============================================================================

@@ -38,4 +38,9 @@ while add_people:
 
 # Output:
 print(art.logo)
-print(auction)
+
+highest_value = max(auction["bid"])
+highest_value_index = auction["bid"].index(highest_value)
+winner = auction["name"][highest_value_index]
+
+print(f"The winner is {winner} with {highest_value}")
