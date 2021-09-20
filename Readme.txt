@@ -57,5 +57,25 @@
 		-Caesar Cipher (3).
 9.-Nineth day of the 100day challenge:
 ===============================================================================
+	Warm up:
+		-How to use dictionaries.
+		-How to use one of the dictionary methods, plus dictionary unpacking.
+		-Nesting lists and dictionaries.
+		-Function that add new countries to the old list of dictionaries.
+	Day 9 code:
+		-Blind auction: It asks the user for their name, their bid, and if there
+		 is another user. If there is, then the entire process starts again.
+		 After every iteration, the code updates a dictionary with "names" and "bid"
+		 prices values.
+	 -A little over complicated at the end, but it does the job correctly: outputs
+	  the auctions winner. (wins the highest price).
+	 -Teachers way of solving it: Even though the 2 versions of code are mostly
+    different, in core logic, none of them are wrong or incorrect. They just
+		tackle the problem differently. Maybe you want the keys and the values as
+		lists, to later refferencing and indexing a list; choice 1. Or maybe you
+		just needed a key value pair, where the keys are all the names and the
+		values are all the bid prices; choice 2. Either is correct, it just depends
+		on what you need afterwards. At the end, both versions output the same
+		correct answer.
 ===============================================================================
 10.-Tenth day of the 100day challenge:
