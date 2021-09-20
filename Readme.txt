@@ -50,4 +50,6 @@
 		-Hangman (Professor's way)
 8.-Eigth day of the 100day challenge:
 ===============================================================================
+	Warm up:
+		-Functions with arguments, and keyword arguments.
 ===============================================================================
