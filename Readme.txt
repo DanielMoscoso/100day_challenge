@@ -69,4 +69,12 @@
 		 prices values.
 	 -A little over complicated at the end, but it does the job correctly: outputs
 	  the auctions winner. (wins the highest price).
+	 -Teachers way of solving it: Even though the 2 versions of code are mostly
+    different, in core logic, none of them are wrong or incorrect. They just
+		tackle the problem differently. Maybe you want the keys and the values as
+		lists, to later refferencing and indexing a list; choice 1. Or maybe you
+		just needed a key value pair, where the keys are all the names and the
+		values are all the bid prices; choice 2. Either is correct, it just depends
+		on what you need afterwards. At the end, both versions output the same
+		correct answer.
 ===============================================================================
