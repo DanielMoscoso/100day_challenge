@@ -62,4 +62,9 @@
 		-How to use one of the dictionary methods, plus dictionary unpacking.
 		-Nesting lists and dictionaries.
 		-Function that add new countries to the old list of dictionaries.
+	Day 9 code:
+		-Blind auction: It asks the user for their name, their bid, and if there
+		 is another user. If there is, then the entire process starts again.
+		 After every iteration, the code updates a dictionary with "names" and "bid"
+		 prices values.
 ===============================================================================
