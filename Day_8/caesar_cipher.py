@@ -45,15 +45,23 @@ def caesar_cipher(direction="", text="", shift=0):
 
 
 print(art.logo, "\n")
-direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n").lower()
-text = input("Type your message:\n").lower()
-shift = int(input("Type the shift number:\n"))
-shift = shift % 26  # This will make sure that the actual shift stays in the 26  letter-index-range boundary. No matter how high the number is.
-# print(encrypt("hello", 5))  # This is for debugging purposes.
-# print(encrypt("civilization", 5))  # This is for debugging purposes.
-print(f"The final {direction}d text is: {caesar_cipher(direction, text, shift)}")
 
+keep_playing = True
+while keep_playing:
+    direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n").lower()
+    text = input("Type your message:\n").lower()
+    shift = int(input("Type the shift number:\n"))
+    shift = shift % 26  # This will make sure that the actual shift stays in the 26  letter-index-range boundary. No matter how high the number is.
+    # print(encrypt("hello", 5))  # This is for debugging purposes.
+    # print(encrypt("civilization", 5))  # This is for debugging purposes.
+    print(f"The final {direction}d text is: {caesar_cipher(direction, text, shift)}")
 
+    again = input('Type "Yes" if you want to go again. Otherwise, type "No". ').lower()
+    if again == "yes":
+        pass
+    else:
+        print("Good bye!")
+        keep_playing = False
 # %%
 # Alternative:
 # import logo  # Use this when running as as program/scrypt.
@@ -96,14 +104,24 @@ def caesar_cipher(direction="", text="", shift=0):
 
 
 print(art.logo, "\n")
-direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n").lower()
-text = input("Type your message:\n").lower()
-shift = int(input("Type the shift number:\n"))
-shift = shift % 26  # This will make sure that the actual shift stays in the 26  letter-index-range boundary. No matter how high the number is.
-# print(encrypt("hello", 5))  # This is for debugging purposes.
-# print(encrypt("civilization", 5))  # This is for debugging purposes.
 
-if direction == "encode" or direction == "decode":
-    print(f"The final {direction}d text is: {caesar_cipher(direction, text, shift)}")
-else:
-    print('I need to "Encrypt" or "Decrypt", try again.\n')
+keep_playing = True
+while keep_playing:
+    direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n").lower()
+    text = input("Type your message:\n").lower()
+    shift = int(input("Type the shift number:\n"))
+    shift = shift % 26  # This will make sure that the actual shift stays in the 26  letter-index-range boundary. No matter how high the number is.
+    # print(encrypt("hello", 5))  # This is for debugging purposes.
+    # print(encrypt("civilization", 5))  # This is for debugging purposes.
+
+    if direction == "encode" or direction == "decode":
+        print(f"The final {direction}d text is: {caesar_cipher(direction, text, shift)}")
+    else:
+        print('I need to "Encrypt" or "Decrypt", try again.\n')
+
+    again = input('Type "Yes" if you want to go again. Otherwise, type "No". ').lower()
+    if again == "yes":
+        pass
+    else:
+        print("Good bye!")
+        keep_playing = False
