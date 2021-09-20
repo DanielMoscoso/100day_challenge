@@ -49,12 +49,12 @@
 		-Hangman (My way)
 		-Hangman (Professor's way)
 8.-Eigth day of the 100day challenge:
-===============================================================================
 	Warm up:
 		-Functions with arguments, and keyword arguments.
 	Day 8 code:
 		-Caesar Cipher (1).
 		-Caesar Cipher (2).
 		-Caesar Cipher (3).
-===============================================================================
 9.-Nineth day of the 100day challenge:
+===============================================================================
+===============================================================================
