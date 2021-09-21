@@ -43,7 +43,7 @@ def calculator(first=0, second=0, type=""):
 
 # Output:
 # Greetings:
-# print(art.logo)
+print(art.logo)
 keep_result = "n"
 again = True
 while again:

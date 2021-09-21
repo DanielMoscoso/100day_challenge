@@ -98,4 +98,5 @@
 		 for referencing. Good to know for next time.
 		-Works better with a while loop.
 		-If the user inputs the wrong special character, then the calculator closes.
+		-Final code (My way).
 ===============================================================================
