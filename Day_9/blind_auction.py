@@ -1,5 +1,6 @@
 import getpass
-from Day_9 import art
+# import art  # Use this if running code outside IDE.
+from Day_9 import art  # Use this if running code inside IDE.
 import os
 
 # InitializationÑ
@@ -46,7 +47,8 @@ winner = auction["name"][highest_value_index]
 
 print(f"The winner is {winner} with a bid of $ {highest_value}.")
 # %%
-from Day_9 import art
+import art  # Use this if running code outside IDE.
+from Day_9 import art  # Use this if running code inside IDE.
 import os
 
 

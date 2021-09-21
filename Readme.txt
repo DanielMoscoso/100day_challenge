@@ -78,5 +78,37 @@
 		correct answer.
 10.-Tenth day of the 100day challenge:
 ===============================================================================
+	Warm up:
+		-How to write a function that returns a value (I already did that in many
+		 of my previous codes, but this is officially the first one).
+		-This is how you have multiple returns inside a function.
+		-This is the same 'leap year' program I coded earlier, but now it has multiple
+		 functions with multiple return statements.
+		 -How to make DocStrings.
+	Day 10 code:
+		-I am trying to get used to log every new working change in the code. So,
+		 right now the only thing that is coded are the functions and all the tests
+		 for debugging purposes.
+		-Problem solved: Now it does not ask for the input operator twice (I forgot
+		 to add it to the read me). The code loops twice the code with a 'for loop'
+		 and works as intended: Asks the user for 2 numbers, what operation to use
+		 and outputs the results. Then asks if the user wants to use the old result
+		 for a new operation and starts the loop again.
+		 Now I realize I should have also added how the code worked without a loop,
+		 for referencing. Good to know for next time.
+		-Works better with a while loop.
+		-If the user inputs the wrong special character, then the calculator closes.
+		-Final code (My way).
+		-I forgot to add the 'clear()' function.
+		-The professor gave us a way to calling functions inside dictionaries. I
+		 had never seen that before, and it is EXTREMELY clever.
+		-This is incredible... The calculator function now has a 'switch' inside
+		 that decides what operation to use. AND it is faster than if statements
+		 because it is a hash table.... Amazing...
+		-This is the professor's way of solving the challenge. (if the user types
+		 'n' then the entire program closes).
+		-New concept: Recursion.
+		-I just added an escape flag in order to exit the recursion. Otherwise, you
+		 would either have to close the IDE or the program in order to finish it.
 ===============================================================================
 11.-Eleventh day of the 100day challenge:
