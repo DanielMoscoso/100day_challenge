@@ -85,4 +85,8 @@
 		-This is the same 'leap year' program I coded earlier, but now it has multiple
 		 functions with multiple return statements.
 		 -How to make DocStrings.
+	Day 10 code:
+		-I am trying to get used to log every new working change in the code. So,
+		 right now the only thing that is coded are the functions and all the tests
+		 for debugging purposes.
 ===============================================================================
