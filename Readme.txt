@@ -102,4 +102,7 @@
 		-I forgot to add the 'clear()' function.
 		-The professor gave us a way to calling functions inside dictionaries. I
 		 had never seen that before, and it is EXTREMELY clever.
+		-This is incredible... The calculator function now has a 'switch' inside
+		 that decides what operation to use. AND it is faster than if statements
+		 because it is a hash table.... Amazing...
 ===============================================================================
