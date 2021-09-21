@@ -82,4 +82,6 @@
 		-How to write a function that returns a value (I already did that in many
 		 of my previous codes, but this is officially the first one).
 		-This is how you have multiple returns inside a function.
+		-This is the same 'leap year' program I coded earlier, but now it has multiple
+		 functions with multiple return statements.
 ===============================================================================
