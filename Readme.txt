@@ -84,4 +84,5 @@
 		-This is how you have multiple returns inside a function.
 		-This is the same 'leap year' program I coded earlier, but now it has multiple
 		 functions with multiple return statements.
+		 -How to make DocStrings.
 ===============================================================================

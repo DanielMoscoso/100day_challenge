@@ -1,5 +1,8 @@
 # Name formater:
 def format_name(f_name, l_name):
+    """
+    Take a first and last name and format it to return the title case version of the entire name.
+    """
     if f_name == "" or l_name == "":
         return "You did not provide a valid input. Please try again."
 
@@ -13,7 +16,7 @@ def format_name(f_name, l_name):
 
 full_name = format_name("hOl", "HAL")
 print(full_name)
-
+help(format_name)
 
 # %%
 
