@@ -38,7 +38,7 @@ def calculator(first=0, second=0, type=""):
         result = modulo(first, second)
         return result
     else:
-        return "Wrong input."
+        return "Wrong input"
 
 
 # Output:
@@ -61,6 +61,10 @@ while again:
         pass
 
     result = calculator(first_number, second_number, sign)
+    if result == "Wrong input":  # If the user inputs the wrong special character, then the calculator closes.
+        print(result)
+        break
+
     print(f"{first_number} {sign} {second_number} = {result}")
     keep_result = input(f"Type (Y)es to continue calculating with {result}. Type (N)o to start a new calculation, or (E)xit to end the program:  ").lower()
 
