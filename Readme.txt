@@ -108,4 +108,6 @@
 		-This is the professor's way of solving the challenge. (if the user types
 		 'n' then the entire program closes).
 		-New concept: Recursion.
+		-I just added an escape flag in order to exit the recursion. Otherwise, you
+		 would either have to close the IDE or the program in order to finish it.
 ===============================================================================

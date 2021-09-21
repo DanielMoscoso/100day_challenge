@@ -146,11 +146,18 @@ def calculator():
 
         print(f"{first_number} {symbol} {second_number} = {result}")
 
-        if input(f"Type (Y)es to continue calculating with {result}. Type (N)o to exit:  ").lower() == "y":
+        answer = input(f"Type (Y)es to continue calculating with {result}. Type (N)o to start a new calculation, or (E)xit to end the program:  ").lower()
+        if answer == "y":
             first_number = result
-        else:
+        elif answer == "n":
             should_continue = False
             calculator()  # This is also known as "Recursion"
+        elif answer == "e":
+            print("Bye!")
+            break
+        else:
+            print("Wrong input!")
+            break
 
 
 calculator()
