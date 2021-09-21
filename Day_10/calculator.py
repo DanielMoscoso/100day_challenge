@@ -45,7 +45,8 @@ def calculator(first=0, second=0, type=""):
 # Greetings:
 # print(art.logo)
 keep_result = "n"
-for number in range(2):
+again = True
+while again:
     if keep_result == "n":
         first_number = int(input("What is the first number?: "))
         second_number = int(input("What is the second number?: "))
@@ -61,4 +62,7 @@ for number in range(2):
 
     result = calculator(first_number, second_number, sign)
     print(f"{first_number} {sign} {second_number} = {result}")
-    keep_result = input(f"Type (Y)es to continue calculating with {result}. Or type (N)o to start a new calculation: ").lower()
+    keep_result = input(f"Type (Y)es to continue calculating with {result}. Type (N)o to start a new calculation, or (E)xit to end the program:  ").lower()
+
+    if keep_result == "e":
+        again = False

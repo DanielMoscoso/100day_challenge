@@ -96,4 +96,5 @@
 		 for a new operation and starts the loop again.
 		 Now I realize I should have also added how the code worked without a loop,
 		 for referencing. Good to know for next time.
+		-Works better with a while loop.
 ===============================================================================
