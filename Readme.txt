@@ -81,4 +81,5 @@
 	Warm up:
 		-How to write a function that returns a value (I already did that in many
 		 of my previous codes, but this is officially the first one).
+		-This is how you have multiple returns inside a function.
 ===============================================================================
