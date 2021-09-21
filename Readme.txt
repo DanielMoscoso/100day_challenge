@@ -99,4 +99,5 @@
 		-Works better with a while loop.
 		-If the user inputs the wrong special character, then the calculator closes.
 		-Final code (My way).
+		-I forgot to add the 'clear()' function.
 ===============================================================================

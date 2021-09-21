@@ -41,6 +41,17 @@ def calculator(first=0, second=0, type=""):
         return "Wrong input"
 
 
+# Define our clear function (for when we want to clear the screen after each try):
+def clear():
+    # For windows
+    if os.name == 'nt':
+        os.system('cls')
+
+    # For mac and linux(here, os.name is 'posix')
+    else:
+        os.system('clear')
+
+
 # Output:
 # Greetings:
 print(art.logo)
@@ -48,6 +59,7 @@ keep_result = "n"
 again = True
 while again:
     if keep_result == "n":
+        clear()
         first_number = int(input("What is the first number?: "))
         second_number = int(input("What is the second number?: "))
         print("+\n-\n*\n/\n%")
