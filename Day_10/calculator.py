@@ -120,33 +120,37 @@ def clear():
         os.system('clear')
 
 
-# Output:
-# Greetings:
-print(art.logo)
+def calculator():
+    clear()
+    # Greetings:
+    print(art.logo)
 
-clear()
-operation_dictionary = {"+": add,
-                        "-": substract,
-                        "*": multiply,
-                        "/": divide,
-                        "%": modulo}
+    operation_dictionary = {"+": add,
+                            "-": substract,
+                            "*": multiply,
+                            "/": divide,
+                            "%": modulo}
 
-first_number = int(input("What is the first number?: "))
+    first_number = float(input("What is the first number?: "))
 
-for key in operation_dictionary:
-    print(key)
+    for key in operation_dictionary:
+        print(key)
 
-should_continue = True
-while should_continue:
-    symbol = input("Pick an operation: ")
-    second_number = int(input("What is the second number?: "))
+    should_continue = True
+    while should_continue:
+        symbol = input("Pick an operation: ")
+        second_number = float(input("What is the second number?: "))
 
-    operation = operation_dictionary[symbol]
-    result = operation(first_number, second_number)
+        operation = operation_dictionary[symbol]
+        result = operation(first_number, second_number)
 
-    print(f"{first_number} {symbol} {second_number} = {result}")
+        print(f"{first_number} {symbol} {second_number} = {result}")
 
-    if input(f"Type (Y)es to continue calculating with {result}. Type (N)o to exit:  ").lower() == "y":
-        first_number = result
-    else:
-        should_continue = False
+        if input(f"Type (Y)es to continue calculating with {result}. Type (N)o to exit:  ").lower() == "y":
+            first_number = result
+        else:
+            should_continue = False
+            calculator()  # This is also known as "Recursion"
+
+
+calculator()
