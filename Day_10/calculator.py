@@ -41,9 +41,23 @@ def calculator(first=0, second=0, type=""):
         return "Wrong input."
 
 
-print(add(1, 1))
-print(calculator(1, 1, "+"))
-print(calculator(1, 1, "-"))
-print(calculator(1, 1, "*"))
-print(calculator(1, 1, "/"))
-print(calculator(1, 1, "%"))
+# Output:
+# Greetings:
+# print(art.logo)
+first_number = int(input("What is the first number?: "))
+second_number = int(input("What is the second number?: "))
+print("+\n-\n*\n/\n%")
+sign = input("Pick and operation: ")
+
+for number in range(1):
+    print("+\n-\n*\n/\n%")
+    sign = input("Pick and operation: ")
+
+    result = calculator(first_number, second_number, sign)
+    print(f"{first_number} {sign} {second_number} = {result}")
+    keep_number = input(f"Type (Y)es to continue calculating with {result}. Or type (N)o to start a new calculation: ").lower()
+    if keep_number == "y":
+        pass
+    elif keep_number == "n":
+        first_number = int(input("What is the first number?: "))
+        second_number = int(input("What is the second number?: "))
