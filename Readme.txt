@@ -77,7 +77,6 @@
 		on what you need afterwards. At the end, both versions output the same
 		correct answer.
 10.-Tenth day of the 100day challenge:
-===============================================================================
 	Warm up:
 		-How to write a function that returns a value (I already did that in many
 		 of my previous codes, but this is officially the first one).
@@ -110,5 +109,6 @@
 		-New concept: Recursion.
 		-I just added an escape flag in order to exit the recursion. Otherwise, you
 		 would either have to close the IDE or the program in order to finish it.
-===============================================================================
 11.-Eleventh day of the 100day challenge:
+===============================================================================
+===============================================================================
