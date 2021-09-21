@@ -82,3 +82,12 @@ while again:
 
     if keep_result == "e":
         again = False
+# %%
+operation_dictionary = {"+": add,
+                        "-": substract,
+                        "*": multiply,
+                        "/": divide,
+                        "%": modulo}
+
+operation = operation_dictionary["+"]  # Since this stored functions as values, then what we are storing in this new variable is a function itself.
+operation(1, 2)

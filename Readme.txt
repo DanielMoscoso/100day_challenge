@@ -100,4 +100,6 @@
 		-If the user inputs the wrong special character, then the calculator closes.
 		-Final code (My way).
 		-I forgot to add the 'clear()' function.
+		-The professor gave us a way to calling functions inside dictionaries. I
+		 had never seen that before, and it is EXTREMELY clever.
 ===============================================================================
