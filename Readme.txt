@@ -78,4 +78,7 @@
 		correct answer.
 10.-Tenth day of the 100day challenge:
 ===============================================================================
+	Warm up:
+		-How to write a function that returns a value (I already did that in many
+		 of my previous codes, but this is officially the first one).
 ===============================================================================
