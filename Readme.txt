@@ -105,4 +105,6 @@
 		-This is incredible... The calculator function now has a 'switch' inside
 		 that decides what operation to use. AND it is faster than if statements
 		 because it is a hash table.... Amazing...
+		-This is the professor's way of solving the challenge. (if the user types
+		 'n' then the entire program closes).
 ===============================================================================
