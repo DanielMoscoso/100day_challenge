@@ -44,20 +44,21 @@ def calculator(first=0, second=0, type=""):
 # Output:
 # Greetings:
 # print(art.logo)
-first_number = int(input("What is the first number?: "))
-second_number = int(input("What is the second number?: "))
-print("+\n-\n*\n/\n%")
-sign = input("Pick and operation: ")
-
-for number in range(1):
-    print("+\n-\n*\n/\n%")
-    sign = input("Pick and operation: ")
+keep_result = "n"
+for number in range(2):
+    if keep_result == "n":
+        first_number = int(input("What is the first number?: "))
+        second_number = int(input("What is the second number?: "))
+        print("+\n-\n*\n/\n%")
+        sign = input("Pick and operation: ")
+    elif keep_result == "y":
+        first_number = result
+        second_number = int(input("What is the second number?: "))
+        print("+\n-\n*\n/\n%")
+        sign = input("Pick and operation: ")
+    else:
+        pass
 
     result = calculator(first_number, second_number, sign)
     print(f"{first_number} {sign} {second_number} = {result}")
-    keep_number = input(f"Type (Y)es to continue calculating with {result}. Or type (N)o to start a new calculation: ").lower()
-    if keep_number == "y":
-        pass
-    elif keep_number == "n":
-        first_number = int(input("What is the first number?: "))
-        second_number = int(input("What is the second number?: "))
+    keep_result = input(f"Type (Y)es to continue calculating with {result}. Or type (N)o to start a new calculation: ").lower()

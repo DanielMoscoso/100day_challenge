@@ -89,4 +89,11 @@
 		-I am trying to get used to log every new working change in the code. So,
 		 right now the only thing that is coded are the functions and all the tests
 		 for debugging purposes.
+		-Problem solved: Now it does not ask for the input operator twice (I forgot
+		 to add it to the read me). The code loops twice the code with a 'for loop'
+		 and works as intended: Asks the user for 2 numbers, what operation to use
+		 and outputs the results. Then asks if the user wants to use the old result
+		 for a new operation and starts the loop again.
+		 Now I realize I should have also added how the code worked without a loop,
+		 for referencing. Good to know for next time.
 ===============================================================================
