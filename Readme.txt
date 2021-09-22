@@ -111,4 +111,8 @@
 		 would either have to close the IDE or the program in order to finish it.
 11.-Eleventh day of the 100day challenge:
 ===============================================================================
+	First Capstone Project:
+		-BlackJack Game:
+			-All the cards are created, the art module is added, and the different
+			 directories are in place. Everything is ready to go.
 ===============================================================================
