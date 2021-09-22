@@ -9,5 +9,3 @@ from Day_11.cards import deck
 # The cards in the list have equal probability of being drawn.
 # Cards are not removed from the deck as they are drawn.
 # The computer is the dealer.
-
-list_of_suits = ["Clubs", "Diamonds", "Hearts", "Spades"]

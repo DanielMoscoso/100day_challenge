@@ -115,4 +115,7 @@
 		-BlackJack Game:
 			-All the cards are created, the art module is added, and the different
 			 directories are in place. Everything is ready to go.
+			-The art module is taking more than I expected to complete. I forgot there
+			 are 53 cards, therefore 53 artworks.. I will finish it later. I am going
+			 to focus on the program first, then in the GUI.
 ===============================================================================
