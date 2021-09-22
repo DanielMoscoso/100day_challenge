@@ -1,7 +1,7 @@
 from Day_11.cards.art.art import dict_of_suits
 
 
-class number():
+class Number():
     def __init__(self, suit, number):
         self.name = str(number)
         self.value = number
@@ -10,7 +10,7 @@ class number():
 
 
 # # ---- For debugging: ----
-# card = number("clubs", 1)
+# card = Number("clubs", 1)
 # # print(card.art)  # Not working right now.
 # print(f"name: {card.name}, data type: {type(card.name)}")
 # print("suit:", card.suit)
