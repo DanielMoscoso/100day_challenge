@@ -118,4 +118,9 @@
 			-The art module is taking more than I expected to complete. I forgot there
 			 are 53 cards, therefore 53 artworks.. I will finish it later. I am going
 			 to focus on the program first, then in the GUI.
+			-Now I am forgetting to update the read my file... But in summary, The
+			 'Deck()', 'Ace()', 'Jack()', 'King()' and 'Queen()' classes are created,
+			 debugged and ready to go. The class 'Deck()' creates one card of each
+			 suit, for a total of 52 cards. Which are instances of their own
+			 different classes.
 ===============================================================================
