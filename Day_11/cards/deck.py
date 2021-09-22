@@ -5,7 +5,3 @@ from Day_11.cards import queen
 
 deck = []
 list_of_suits = ["Clubs", "Diamonds", "Hearts", "Spades"]
-
-for aces in range(list_of_suits):
-    ace.card(aces)
-    # deck.append()

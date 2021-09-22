@@ -12,7 +12,7 @@ logo = """
 names = ["clubs", "diamonds", "hearts", "spades"]
 
 
-list_of_suits = {
+dict_of_suits = {
     "ace": """
   _________           _________           _________           _________
  |A        |         |A        |         |A        |         |A        |
@@ -261,9 +261,32 @@ list_of_suits = {
                 |  \o`o/ +|
                 |  |\|/| X|
                  ~~~~~~~~~
+                 """,
+                "queen": """
+                 _________
+                |Q |~~~|  |
+                |+ /o,o\  |
+                |  \_-_/  |
+                | _-~+_-~ |
+                |  /~-~\  |
+                |  \o`o/ +|
+                |  |___| Q|
+                 ~~~~~~~~~
+                 """,
+                "jack": """
+                 _________
+                |J /~~|_  |
+                |+ | o`,  |
+                |  | -|   |
+                | =~)+(_= |
+                |   |- |  |
+                |  `.o | +|
+                |  ~|__/ P|
+                 ~~~~~~~~~
                  """}
 }
-
-print(list_of_suits["hearts"]["ace"])
-print(list_of_suits["numbers"])
-print(names)
+#
+# print(dict_of_suits["hearts"]["ace"])
+# print(dict_of_suits["clubs"]["jack"])
+# print(dict_of_suits["numbers"])
+# print(names)
