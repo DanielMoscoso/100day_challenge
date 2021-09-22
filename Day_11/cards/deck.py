@@ -11,7 +11,7 @@ class Deck():
         self.list_of_suits = ["Clubs", "Diamonds", "Hearts", "Spades"]
 
         # This is for all the Aces, Jacks, Kings, and Queens cards:
-        for suit in list_of_suits:
+        for suit in self.list_of_suits:
             self.deck.append(ace.Ace(suit))
             self.deck.append(jack.Jack(suit))
             self.deck.append(king.King(suit))
@@ -19,7 +19,7 @@ class Deck():
 
         # This is for all the numbers:
         # This will keep track of the suits:
-        for suit in list_of_suits:
+        for suit in self.list_of_suits:
             # This will keep track of the numbers:
             for number in range(2, 11):  # Remember, 'range()' is not inclusive. [2,11)
                 self.deck.append(numbers.Number(suit, number))
