@@ -53,19 +53,11 @@ computer_hand.append(deal())
 # =============================== Calculations: ===============================
 player_hand_total = 0
 for card in player_hand:
-    # If your hand is 12+ and you get an Ace, then its value would be 1, not 10.
-    if player_hand_total > 11 and card.name == "Ace":
-        player_hand_total += 1
-    else:
-        player_hand_total += card.value
+    player_hand_total += card.value
 
 computer_hand_total = 0
 for card in computer_hand:
-    # If your hand is 12+ and you get an Ace, then its value would be 1, not 10.
-    if computer_hand_total > 11 and card.name == "Ace":
-        computer_hand_total += 1
-    else:
-        computer_hand_total += card.value
+    computer_hand_total += card.value
 # =============================== Calculations: ===============================
 
 # --------------------------- Output: ---------------------------
@@ -143,9 +135,18 @@ while repeat:
 
     # End of game:
     if player_hand_total <= 21:
-        if player_hand_total > computer_hand_total and answer == "n":
+        # >>>>>>>>>>>>>>> BlackJack: <<<<<<<<<<<<<<<
+        if player_hand_total == 20:
+            for card in player_hand:
+                if card.name == "Ace":
+                    print("BLACKJACK!!! You win!")
+                    break
+        # >>>>>>>>>>>>>>> BlackJack: <<<<<<<<<<<<<<<
+        elif player_hand_total > computer_hand_total and answer == "n":
             print("You win, congrats!\n")
             break
+        else:
+            pass
     else:
         print("BUSTED! Computer wins! Sorry.\n")
         break

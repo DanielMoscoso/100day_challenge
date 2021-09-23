@@ -160,4 +160,9 @@
 			 that upside down card. (It is simply aesthetics for now. Just for GUI; the
 			 code still is the same. That blank card does not add or substracts anything
 			 more than graphics).
+			-Clean up for the first calculations: It is impossible to have more than 20
+			 in the first hand, then get an 'Ace' and not being BlackJack. So the code
+			 is simpler there. PLUS I added the main rule for BlackJack (I did not
+			 know it existed): if you get a 10 value card, plus an "Ace", in any order,
+			 then you have a BlackJack. Neat rule.
 ===============================================================================
