@@ -142,4 +142,5 @@
 			-Artwork for all the 10s.
 			-Artwork for all the 9s.
 			-Artwork for all the 8s.
+			-Artwork for all the 78s.
 ===============================================================================
