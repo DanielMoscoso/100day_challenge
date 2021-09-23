@@ -126,4 +126,8 @@
 			-Right now the game works as expected: The computer deals 2 cards to the
 			 player, and one card to itself. Prints the suits and values of all the
 			 cards, plus their addition.
+			-It deals two rounds. If the user wants a card, then he/she gets one, and
+			 and the computer also gets one. Then the total for both is printed. (Now
+			 for loops are implemented to print the cards and the totals, since they
+			 are stored in new 'list' variables).
 ===============================================================================
