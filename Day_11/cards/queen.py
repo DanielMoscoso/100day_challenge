@@ -1,4 +1,5 @@
-from Day_11.cards.art.art import dict_of_suits
+# from Day_11.cards.art.art import dict_of_suits  # IDE
+from cards.art.art import dict_of_suits  # Console
 
 
 class Queen():

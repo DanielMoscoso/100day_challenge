@@ -1,8 +1,13 @@
-from Day_11.cards import ace
-from Day_11.cards import jack
-from Day_11.cards import king
-from Day_11.cards import queen
-from Day_11.cards import numbers
+# from Day_11.cards import ace  # IDE
+# from Day_11.cards import jack  # IDE
+# from Day_11.cards import king  # IDE
+# from Day_11.cards import queen  # IDE
+# from Day_11.cards import numbers  # IDE
+from . import ace  # Console
+from . import jack  # Console
+from . import king  # Console
+from . import queen  # Console
+from . import numbers  # Console
 
 
 class Deck():

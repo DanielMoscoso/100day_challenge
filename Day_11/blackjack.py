@@ -1,5 +1,7 @@
-from Day_11.cards.art import art
-from Day_11.cards import deck
+# from Day_11.cards.art import art  # IDE
+# from Day_11.cards import deck  # IDE
+from cards.art import art  # Console
+from cards import deck  # Console
 import random
 # There are no jokers.
 # The Jack/Queen/King all count as 10.
@@ -52,16 +54,24 @@ for card in computer_hand:
     else:
         computer_hand_total += card.value
 
-# Output:
-print("Your hand is: ")
-for card in player_hand:
-    print(f"{card.name} of {card.suit}")
-print(f"Your current score is: {player_hand_total}.\n")
+# --------------------------- Output: ---------------------------
+# Player:
+    print("Your hand is: ")
+    # Artwork:
+    for card in player_hand:
+        print(f"{card.art}")
+    for card in player_hand:
+        print(f"{card.name} of {card.suit}")
+    print(f"Your current score is: {player_hand_total}.\n")
 
 print("Computer's hand is:")
+# Artwork:
+for card in computer_hand:
+    print(f"{card.art}")
 for card in computer_hand:
     print(f"{card.name} of {card.suit}")
 print(f"Computer's current score is: {computer_hand_total}.\n")
+# --------------------------- Output: ---------------------------
 
 print("-----------------------------------")
 # Repeating if player decides to:
@@ -94,16 +104,23 @@ while repeat:
         else:
             computer_hand_total += card.value
 
-    # Output:
+    # ----------------------- Output: -----------------------
     print("Your hand is: ")
+    # Artwork:
+    for card in player_hand:
+        print(f"{card.art}")
     for card in player_hand:
         print(f"{card.name} of {card.suit}")
     print(f"Your current score is: {player_hand_total}.\n")
 
     print("Computer's hand is:")
+    # Artwork:
+    for card in computer_hand:
+        print(f"{card.art}")
     for card in computer_hand:
         print(f"{card.name} of {card.suit}")
     print(f"Computer's current score is: {computer_hand_total}.\n")
+    # ----------------------- Output: -----------------------
 
     # End of game:
     if player_hand_total <= 21:

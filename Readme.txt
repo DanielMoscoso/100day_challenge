@@ -148,5 +148,8 @@
 			-Artwork for all the 4s.
 			-Artwork for all the 3s.
 			-Artwork for all the 2s.
-			-'numbers' module debugged and ready to use. 
+			-'numbers' module debugged and ready to use.
+			-Game fully developed. It can be ran in IDEs or Consoles; just change the
+			 paths at the beginning of each module. I know there might be a way to
+			 avoid this, but that is for future improvements.
 ===============================================================================
