@@ -102,12 +102,12 @@ def play():
         # --------------------------- Output: ---------------------------
 
         print("-----------------------------------")
-        # >>>>>>>>>>>>>>> BlackJack: <<<<<<<<<<<<<<<
+        # >>>>>>>>>>>>>>> User's BlackJack: <<<<<<<<<<<<<<<
         if player_hand_total == 20:
             for card in player_hand:
                 if card.name == "Ace":
                     blackjack = True
-        # >>>>>>>>>>>>>>> BlackJack: <<<<<<<<<<<<<<<
+        # >>>>>>>>>>>>>>> User's BlackJack: <<<<<<<<<<<<<<<
         # >>>>>>>>>>>>>>>>>>>>>>> Repeating if player decides to: >>>>>>>>>>>>>>>>>>>>>>>
         repeat = True
         while repeat:
@@ -161,11 +161,11 @@ def play():
 
             # End of game:
             if player_hand_total <= 21:
-                # >>>>>>>>>>>>>>> BlackJack: <<<<<<<<<<<<<<<
+                # >>>>>>>>>>>>>>> User's BlackJack: <<<<<<<<<<<<<<<
                 if blackjack:
                     print("BLACKJACK!!! You win!\n")
                     break
-                # >>>>>>>>>>>>>>> BlackJack: <<<<<<<<<<<<<<<
+                # >>>>>>>>>>>>>>> User's BlackJack: <<<<<<<<<<<<<<<
                 elif player_hand_total > computer_hand_total and answer == "n":
                     print("You win, congrats!\n")
                     break
@@ -176,7 +176,15 @@ def play():
                 break
 
             if computer_hand_total <= 21:
-                if computer_hand_total > player_hand_total and answer == "n":
+                # >>>>>>>>>> Computer's BlackJack: <<<<<<<<<<
+                if computer_hand_total == 20:
+                    for card in computer_hand:
+                        if card.name == "Ace":
+                            print("COMPUTER'S BLACKJACK!!! You lose, sorry!\n")
+                            break
+                # >>>>>>>>>> Computer's BlackJack: <<<<<<<<<<
+
+                elif computer_hand_total > player_hand_total and answer == "n":
                     print("Computer wins! Sorry.\n")
                     break
             else:
@@ -201,6 +209,9 @@ def play():
             print("\nGreat, see you next time!\n")
             play_again = False
         elif answer2 == "y":
+            # You need this in order to end the recursion when the user types "(N)o" in the final question.
+            # It ends the repetition, and starts a fresh game.
+            play_again = False
             play()
         else:
             print("\nThat is not a correct input. Bye!\n")

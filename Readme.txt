@@ -169,4 +169,9 @@
 			 win, and the computer does not flip its upside down card.
 			-Recursion implemented: Now the game can restart if the player decides to.
 			-DocStrings for the different functions.
+			-The computer can now have a BlackJack also. And there was a weird debug
+			 where if you typed "(N)o" to end the game after a few rounds of playing,
+			 the game would not stop (until you went through as many games as answers
+			 "(N)o" you gave. It is a recursive problem, where you don't end a game,
+			 and start another one.. I feel like I am in Inception)
 ===============================================================================
