@@ -174,4 +174,5 @@
 			 the game would not stop (until you went through as many games as answers
 			 "(N)o" you gave. It is a recursive problem, where you don't end a game,
 			 and start another one.. I feel like I am in Inception)
+			-Professor's way of solving the BlackJack way.
 ===============================================================================
