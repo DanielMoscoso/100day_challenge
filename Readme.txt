@@ -165,4 +165,6 @@
 			 is simpler there. PLUS I added the main rule for BlackJack (I did not
 			 know it existed): if you get a 10 value card, plus an "Ace", in any order,
 			 then you have a BlackJack. Neat rule.
+			-If you get BlackJack, and you decide to stop playing. You automatically
+			 win, and the computer does not flip its upside down card.
 ===============================================================================

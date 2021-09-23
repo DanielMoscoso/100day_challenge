@@ -44,6 +44,7 @@ shuffle(deck_of_cards.cards)
 
 player_hand = []
 computer_hand = []
+blackjack = False
 
 # First deal of hands:
 player_hand.append(deal())
@@ -82,6 +83,12 @@ print(f"Computer's current score is: {computer_hand_total}.\n")
 # --------------------------- Output: ---------------------------
 
 print("-----------------------------------")
+# >>>>>>>>>>>>>>> BlackJack: <<<<<<<<<<<<<<<
+if player_hand_total == 20:
+    for card in player_hand:
+        if card.name == "Ace":
+            blackjack = True
+# >>>>>>>>>>>>>>> BlackJack: <<<<<<<<<<<<<<<
 # >>>>>>>>>>>>>>>>>>>>>>> Repeating if player decides to: >>>>>>>>>>>>>>>>>>>>>>>
 repeat = True
 while repeat:
@@ -91,7 +98,7 @@ while repeat:
         player_hand.append(deal())
         if computer_hand_total < 17:
             computer_hand.append(deal())
-    elif answer == "n":  # First draw. Computer must take card.
+    elif answer == "n" and blackjack is False:  # First draw. Computer must take card.
         if computer_hand_total < 17:
             computer_hand.append(deal())
         repeat = False
@@ -136,11 +143,9 @@ while repeat:
     # End of game:
     if player_hand_total <= 21:
         # >>>>>>>>>>>>>>> BlackJack: <<<<<<<<<<<<<<<
-        if player_hand_total == 20:
-            for card in player_hand:
-                if card.name == "Ace":
-                    print("BLACKJACK!!! You win!")
-                    break
+        if blackjack:
+            print("BLACKJACK!!! You win!\n")
+            break
         # >>>>>>>>>>>>>>> BlackJack: <<<<<<<<<<<<<<<
         elif player_hand_total > computer_hand_total and answer == "n":
             print("You win, congrats!\n")
@@ -159,10 +164,9 @@ while repeat:
         print("COMPUTER BUSTED! You win, congrats!\n")
         break
 
-    if answer == "n" and computer_hand_total < 21 and player_hand_total < 21 and player_hand_total == computer_hand_total:
+    if answer == "n" and computer_hand_total < 21 and player_hand_total < 21 and player_hand_total == computer_hand_total and blackjack is False:
         print("DRAW!\n")
         break
-
     print("-----------------------------------")
 # ------ For debugging: ------
 # print(f"{player_first_card.name} of {player_first_card.suit} with a value of {player_first_card.value} has been removed.")
