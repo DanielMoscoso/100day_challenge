@@ -50,7 +50,7 @@ player_hand.append(deal())
 player_hand.append(deal())
 computer_hand.append(deal())
 
-#  Total value:
+# =============================== Calculations: ===============================
 player_hand_total = 0
 for card in player_hand:
     # If your hand is 12+ and you get an Ace, then its value would be 1, not 10.
@@ -66,6 +66,7 @@ for card in computer_hand:
         computer_hand_total += 1
     else:
         computer_hand_total += card.value
+# =============================== Calculations: ===============================
 
 # --------------------------- Output: ---------------------------
 # Player:
@@ -82,13 +83,14 @@ print("Computer's hand is:")
 # Artwork:
 for card in computer_hand:
     print(f"{card.art}")
+print(art.dict_of_suits["Blank"])  # This simulates the upside down card the dealer has.
 for card in computer_hand:
     print(f"{card.name} of {card.suit}")
 print(f"Computer's current score is: {computer_hand_total}.\n")
 # --------------------------- Output: ---------------------------
 
 print("-----------------------------------")
-# Repeating if player decides to:
+# >>>>>>>>>>>>>>>>>>>>>>> Repeating if player decides to: >>>>>>>>>>>>>>>>>>>>>>>
 repeat = True
 while repeat:
     answer = input(f"Type (Y)es to get another card, type (N)o to pass: ").lower()
@@ -102,7 +104,7 @@ while repeat:
             computer_hand.append(deal())
         repeat = False
 
-    #  Total value:
+    # ============================= Calculations: =============================
     player_hand_total = 0
     for card in player_hand:
         # If your hand is 12+ and you get an Ace, then its value would be 1, not 10.
@@ -118,6 +120,7 @@ while repeat:
             computer_hand_total += 1
         else:
             computer_hand_total += card.value
+    # ============================= Calculations: =============================
 
     # ----------------------- Output: -----------------------
     print("Your hand is: ")

@@ -155,4 +155,9 @@
 			-A little house keeping: King and Queen of Diamonds did not have the correct
 			 artwork. Plus, the 'clear()' function is implemented for console games.
 			 (Clear does not work with Hydrogen - Atom IDE).
+			-Final touch: The dealer (computer) has an upside down card at the beginning
+			 of the first round. That is how BlackJack is played, and I forgot to add
+			 that upside down card. (It is simply aesthetics for now. Just for GUI; the
+			 code still is the same. That blank card does not add or substracts anything
+			 more than graphics).
 ===============================================================================
