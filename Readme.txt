@@ -168,4 +168,5 @@
 			-If you get BlackJack, and you decide to stop playing. You automatically
 			 win, and the computer does not flip its upside down card.
 			-Recursion implemented: Now the game can restart if the player decides to.
+			-DocStrings for the different functions.
 ===============================================================================

@@ -12,6 +12,11 @@ import os
 
 
 def clear():
+    """
+    This function is used for clearing the entire screen.
+    If you IDE does not support it, then you might want to see it
+    in action when running on command line.
+    """
     # For windows
     if os.name == 'nt':
         os.system('cls')
@@ -22,12 +27,23 @@ def clear():
 
 
 def shuffle(deck):
+    """
+    This function shuffles the deck.
+    """
     random.shuffle(deck)  # This is inplace, so no new variable needs to be created.
 
 
 def play():
-
+    """
+    This function is where the fun begins. It starts the game.
+    All the logic is inside it.
+    """
     def deal():
+        """
+        This nested function deals a card to whoever calls it.
+        It is nested because it will not be able to access the parameters
+        inside the 'play()' function otherwise; They would be outside the scope.
+        """
         return deck_of_cards.cards.pop(0)
 
     # Game starts:
