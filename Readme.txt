@@ -140,4 +140,5 @@
 			 decide to draw a card, and get an 'Ace', then its value would be '1'
 			 instead of '10'.
 			-Artwork for all the 10s.
+			-Artwork for all the 9s.
 ===============================================================================
