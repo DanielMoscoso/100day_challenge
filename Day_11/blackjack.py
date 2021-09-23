@@ -15,7 +15,7 @@ def shuffle(deck):
 def deal():
     return deck_of_cards.cards.pop(0)
 
-
+# Game starts:
 print(art.logo)
 
 deck_of_cards = deck.Deck()
@@ -30,6 +30,7 @@ shuffle(deck_of_cards.cards)
 player_hand = []
 computer_hand = []
 
+# First deal of hands:
 player_hand.append(deal())
 player_hand.append(deal())
 computer_hand.append(deal())
@@ -37,11 +38,19 @@ computer_hand.append(deal())
 #  Total value:
 player_hand_total = 0
 for card in player_hand:
-    player_hand_total += card.value
+    # If your hand is 12+ and you get an Ace, then its value would be 1, not 10.
+    if player_hand_total > 11 and card.name == "Ace":
+        player_hand_total += 1
+    else:
+        player_hand_total += card.value
 
 computer_hand_total = 0
 for card in computer_hand:
-    computer_hand_total += card.value
+    # If your hand is 12+ and you get an Ace, then its value would be 1, not 10.
+    if computer_hand_total > 11 and card.name == "Ace":
+        computer_hand_total += 1
+    else:
+        computer_hand_total += card.value
 
 # Output:
 print("Your hand is: ")
@@ -55,6 +64,7 @@ for card in computer_hand:
 print(f"Computer's current score is: {computer_hand_total}.\n")
 
 print("-----------------------------------")
+# Repeating if player decides to:
 repeat = True
 while repeat:
     answer = input(f"Type (Y)es to get another card, type (N)o to pass: ").lower()
@@ -70,11 +80,19 @@ while repeat:
     #  Total value:
     player_hand_total = 0
     for card in player_hand:
-        player_hand_total += card.value
+        # If your hand is 12+ and you get an Ace, then its value would be 1, not 10.
+        if player_hand_total > 11 and card.name == "Ace":
+            player_hand_total += 1
+        else:
+            player_hand_total += card.value
 
     computer_hand_total = 0
     for card in computer_hand:
-        computer_hand_total += card.value
+        # If your hand is 12+ and you get an Ace, then its value would be 1, not 10.
+        if computer_hand_total > 11 and card.name == "Ace":
+            computer_hand_total += 1
+        else:
+            computer_hand_total += card.value
 
     # Output:
     print("Your hand is: ")
@@ -87,6 +105,7 @@ while repeat:
         print(f"{card.name} of {card.suit}")
     print(f"Computer's current score is: {computer_hand_total}.\n")
 
+    # End of game:
     if player_hand_total <= 21:
         if player_hand_total > computer_hand_total and answer == "n":
             print("You win, congrats!\n")

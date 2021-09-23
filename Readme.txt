@@ -136,4 +136,7 @@
 			 next.
 			-Better written code: 'while' and 'for' loops implemented. I will see if I
 			 can clean the code a little more before going to the GUI part of the game.
+			-I forgot to check: If the player's or the computer's hand is 12+,
+			 decide to draw a card, and get an 'Ace', then its value would be '1'
+			 instead of '10'.
 ===============================================================================
