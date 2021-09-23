@@ -123,4 +123,7 @@
 			 debugged and ready to go. The class 'Deck()' creates one card of each
 			 suit, for a total of 52 cards. Which are instances of their own
 			 different classes.
+			-Right now the game works as expected: The computer deals 2 cards to the
+			 player, and one card to itself. Prints the suits and values of all the
+			 cards, plus their addition.
 ===============================================================================
