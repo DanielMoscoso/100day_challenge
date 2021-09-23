@@ -134,4 +134,6 @@
 			 anything wrong in any way. But I still have to work on the code; it works
 			 but it is EXTREMELY badly written. I will implement while and for loops
 			 next.
+			-Better written code: 'while' and 'for' loops implemented. I will see if I
+			 can clean the code a little more before going to the GUI part of the game.
 ===============================================================================
