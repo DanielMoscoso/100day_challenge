@@ -130,4 +130,8 @@
 			 and the computer also gets one. Then the total for both is printed. (Now
 			 for loops are implemented to print the cards and the totals, since they
 			 are stored in new 'list' variables).
+			-Everything works as intended, and I am proud it is not crashing or ouputing
+			 anything wrong in any way. But I still have to work on the code; it works
+			 but it is EXTREMELY badly written. I will implement while and for loops
+			 next.
 ===============================================================================

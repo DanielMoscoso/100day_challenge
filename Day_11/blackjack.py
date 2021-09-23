@@ -49,10 +49,20 @@ print(f"Its current score is: {computer_hand[0].value}.\n")
 print("-----------------------------------")
 answer = input(f"Type (Y)es to get another card, type (N)o to pass: ").lower()
 
+
+# Total value:
+player_hand_total = 0
+for card in player_hand:
+    player_hand_total += card.value
+
+computer_hand_total = 0
+for card in computer_hand:
+    computer_hand_total += card.value
+
 if answer == "y":
     player_hand.append(deal())
     computer_hand.append(deal())
-elif answer == "n":
+elif answer == "n":  # First draw. Computer must take card.
     computer_hand.append(deal())
 
 # Total value:
@@ -75,9 +85,60 @@ for card in computer_hand:
     print(f"{card.name} of {card.suit}")
 print(f"Its current score is: {computer_hand_total}.\n")
 
+if player_hand_total > 21:
+    print("BUSTED!")
+
+if computer_hand_total > 21:
+    print("COMPUTER BUSTED!")
+
+print("-----------------------------------")
+answer = input(f"Type (Y)es to get another card, type (N)o to pass: ").lower()
+
+# If computer's hand is less than 17, then draw another card.
+if answer == "y" and computer_hand_total < 17:
+    player_hand.append(deal())
+    computer_hand.append(deal())
+elif answer == "n" and computer_hand_total < 17:
+    computer_hand.append(deal())
+
+# Total value:
+player_hand_total = 0
+for card in player_hand:
+    player_hand_total += card.value
+
+computer_hand_total = 0
+for card in computer_hand:
+    computer_hand_total += card.value
+
+# Output:
+print("Your cards are: ")
+for card in player_hand:
+    print(f"{card.name} of {card.suit}")
+print(f"Your current score is: {player_hand_total}.\n")
+
+print("Computer's hand is:")
+for card in computer_hand:
+    print(f"{card.name} of {card.suit}")
+print(f"Its current score is: {computer_hand_total}.\n")
+
+if player_hand_total > 21:
+    print("BUSTED! Computer wins! Sorry.")
+
+if computer_hand_total > 21:
+    print("COMPUTER BUSTED! You win, congrats!")
+
+if player_hand_total < 21 and player_hand_total > computer_hand_total:
+    print("You win, congrats!\n")
+elif computer_hand_total < 21 and computer_hand_total > player_hand_total:
+    print("Computer wins! Sorry.\n")
+elif player_hand_total == computer_hand_total:
+    print("DRAW!\n")
+else:
+    pass
+
 # ------ For debugging: ------
 # print(f"{player_first_card.name} of {player_first_card.suit} with a value of {player_first_card.value} has been removed.")
-print(f"There are {len(deck_of_cards.cards)} cards left in the deck \n")
+# print(f"There are {len(deck_of_cards.cards)} cards left in the deck \n")
 # #
 # print("Now, the new first card of the deck is: ")
 # print(deck_of_cards.cards[0].name)
