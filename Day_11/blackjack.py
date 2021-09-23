@@ -3,11 +3,22 @@
 from cards.art import art  # Console
 from cards import deck  # Console
 import random
+import os
 # There are no jokers.
 # The Jack/Queen/King all count as 10.
 # The the Ace can count as 11 or 1.
 # The cards in the deck have equal probabilities of being drawn.
 # The computer is the dealer.
+
+
+def clear():
+    # For windows
+    if os.name == 'nt':
+        os.system('cls')
+
+    # For mac and linux(here, os.name is 'posix')
+    else:
+        os.system('clear')
 
 
 def shuffle(deck):
@@ -17,7 +28,9 @@ def shuffle(deck):
 def deal():
     return deck_of_cards.cards.pop(0)
 
+
 # Game starts:
+clear()
 print(art.logo)
 
 deck_of_cards = deck.Deck()
@@ -64,6 +77,7 @@ for card in computer_hand:
         print(f"{card.name} of {card.suit}")
     print(f"Your current score is: {player_hand_total}.\n")
 
+print("-----------------------------------")
 print("Computer's hand is:")
 # Artwork:
 for card in computer_hand:
@@ -78,6 +92,7 @@ print("-----------------------------------")
 repeat = True
 while repeat:
     answer = input(f"Type (Y)es to get another card, type (N)o to pass: ").lower()
+    clear()
     if answer == "y":
         player_hand.append(deal())
         if computer_hand_total < 17:
@@ -113,6 +128,7 @@ while repeat:
         print(f"{card.name} of {card.suit}")
     print(f"Your current score is: {player_hand_total}.\n")
 
+    print("-----------------------------------")
     print("Computer's hand is:")
     # Artwork:
     for card in computer_hand:

@@ -152,4 +152,7 @@
 			-Game fully developed. It can be ran in IDEs or Consoles; just change the
 			 paths at the beginning of each module. I know there might be a way to
 			 avoid this, but that is for future improvements.
+			-A little house keeping: King and Queen of Diamonds did not have the correct
+			 artwork. Plus, the 'clear()' function is implemented for console games.
+			 (Clear does not work with Hydrogen - Atom IDE).
 ===============================================================================
