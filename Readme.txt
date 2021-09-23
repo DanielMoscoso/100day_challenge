@@ -146,4 +146,5 @@
 			-Artwork for all the 6s.
 			-Artwork for all the 5s.
 			-Artwork for all the 4s.
+			-Artwork for all the 3s.
 ===============================================================================
