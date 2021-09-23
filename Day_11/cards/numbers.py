@@ -6,12 +6,12 @@ class Number():
         self.name = str(number)
         self.value = number
         self.suit = suit
-        # self.art = dict_of_suits[self.suit][self.name]  # Not working right now.
+        self.art = dict_of_suits[self.suit][self.value]
 
 
 # # ---- For debugging: ----
-# card = Number("clubs", 1)
-# # print(card.art)  # Not working right now.
+# card = Number("Clubs", 2)
+# print(card.art)
 # print(f"name: {card.name}, data type: {type(card.name)}")
 # print("suit:", card.suit)
 # print("value:", card.value)

@@ -729,6 +729,7 @@ dict_of_suits = {
 # # ----------- For debugging: -----------
 # print(dict_of_suits["Hearts"]["Ace"])
 # print(dict_of_suits["Hearts"][10])
+# print(dict_of_suits["Clubs"][2])
 # print(dict_of_suits["Diamonds"]["King"])
 # print(dict_of_suits["Clubs"]["Jack"])
 # print(dict_of_suits["numbers"])

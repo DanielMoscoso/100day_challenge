@@ -148,4 +148,5 @@
 			-Artwork for all the 4s.
 			-Artwork for all the 3s.
 			-Artwork for all the 2s.
+			-'numbers' module debugged and ready to use. 
 ===============================================================================
