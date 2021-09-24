@@ -181,4 +181,9 @@
 			 the 'play()' function. If it was imported, then it would not run the play
 			 method. I also added the '__init__.py' to the main directory and the
 			 sub-directories so Python can know to treat everything as a package.
+			-I left out the magic/dunder methods, which I should not. So I went back
+			 and added them, while doing a little housekeeping in the imports: It is
+			 not about running the code in an IDE or Console... But about where you
+			 run the code. If you open the Day_11 directory as a project, then everything
+			 will run smoothly.
 ===============================================================================

@@ -1,18 +1,14 @@
-# from Day_11.cards import ace  # IDE
-# from Day_11.cards import jack  # IDE
-# from Day_11.cards import king  # IDE
-# from Day_11.cards import queen  # IDE
-# from Day_11.cards import numbers  # IDE
-from . import ace  # Console
-from . import jack  # Console
-from . import king  # Console
-from . import queen  # Console
-from . import numbers  # Console
+from cards import ace
+from cards import jack
+from cards import king
+from cards import queen
+from cards import numbers
 
 
 class Deck():
     def __init__(self):
         self.cards = []
+        self.card_names = []
         self.list_of_suits = ["Clubs", "Diamonds", "Hearts", "Spades"]
 
         # This is for all the Aces, Jacks, Kings, and Queens cards:
@@ -29,8 +25,16 @@ class Deck():
             for number in range(2, 11):  # Remember, 'range()' is not inclusive. [2,11)
                 self.cards.append(numbers.Number(suit, number))
 
+    # This is the string representation of the class itself:
+    def __str__(self):
+        self.card_names = []
+        for card in self.cards:
+            self.card_names.append(card.name)
+        return f"These are the cards in the deck: {self.card_names}."
+
 
 # # --------------------------- For debugging: ---------------------------
+# print(Deck())
 # first_deck = deck()
 # # Bulk:
 # for card in range(52):
