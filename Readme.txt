@@ -202,4 +202,6 @@
 		 or the user gets the correct number. If the user keeps giving the wrong
 		 answer and runs out of attempts, then it is game over. I also changed the
 		 structure of the if statement. It is easier to read.
+		-Recursion: If the player wants to play again, they can. Plus, the clear
+		 function is added.
 ===============================================================================
