@@ -1,10 +1,11 @@
 from art import logo
+import random
 
 ATTEMPTS = 10
 
 
 def check(number):
-    print(f"You have {number} attempts remaining to guess the number.")
+    print(f"You have {number} attempts remaining to guess the number.\n")
 
 
 def easy():
@@ -19,9 +20,10 @@ def hard():
     return remaining_attempts
 
 
+# print(logo)
 print("Welcome to the Number Guessing Game!")
-print("I am thinking of a number berween 1 and 100.")
 
+# Choose the game difficulty:
 incorrect_input = True
 while incorrect_input:
     difficulty = input("Choose a difficulty. type 'easy' or 'hard': ").lower()
@@ -34,5 +36,21 @@ while incorrect_input:
     else:
         print("That is not a correct input. Try again, please.")
 
+# First statement, and generation of random number:
+print("I am thinking of a number berween 1 and 100. (It is a whole number)\n")
+random_number = random.randint(0, 100)
 
-# print(logo)
+# Calculations and output:
+guess = int(input("Make a guess: "))
+if guess > random_number or guess < random_number:
+    if guess > random_number:
+        print("Too high.\n")
+    elif guess < random_number:
+        print("Too low.\n")
+    else:
+        pass
+
+    remaining -= 1
+    check(remaining)
+else:
+    print("Correct!")

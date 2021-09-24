@@ -193,5 +193,9 @@
 		 use it.
   Guessing game:
 		-All the functions are ready to be used and debugged. And a little bit of the
-		 logic is laid out. 
+		 logic is laid out.
+		-All the logic for the generation and storage of the random number is ready.
+		 The code checks if the answer from the user is equal to the random generated
+		 number, and outputs if the number from the user is 'correct', 'too high' or
+		 'too low' and substracts 1 remaining attempt from the total.
 ===============================================================================
