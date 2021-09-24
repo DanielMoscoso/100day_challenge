@@ -110,7 +110,6 @@
 		-I just added an escape flag in order to exit the recursion. Otherwise, you
 		 would either have to close the IDE or the program in order to finish it.
 11.-Eleventh day of the 100day challenge:
-===============================================================================
 	First Capstone Project:
 		-BlackJack Game:
 			-All the cards are created, the art module is added, and the different
@@ -186,5 +185,6 @@
 			 not about running the code in an IDE or Console... But about where you
 			 run the code. If you open the Day_11 directory as a project, then everything
 			 will run smoothly.
-===============================================================================
 12.Twelfth day of the 100day challenge:
+===============================================================================
+===============================================================================
