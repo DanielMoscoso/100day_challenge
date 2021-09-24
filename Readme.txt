@@ -175,4 +175,10 @@
 			 "(N)o" you gave. It is a recursive problem, where you don't end a game,
 			 and start another one.. I feel like I am in Inception)
 			-Professor's way of solving the BlackJack way.
+			-I believe these are the last changes: I added >> if __name__ == '__main__': <<
+			 This is very useful when creating a bunch of games in an arcade, for example.
+			 If you are running 'blackjack.py' as a stand alone program. it will run
+			 the 'play()' function. If it was imported, then it would not run the play
+			 method. I also added the '__init__.py' to the main directory and the
+			 sub-directories so Python can know to treat everything as a package.
 ===============================================================================

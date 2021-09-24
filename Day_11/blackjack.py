@@ -219,4 +219,5 @@ def play():
 
 
 # Rady player one:
-play()
+if __name__ == '__main__':
+    play()
