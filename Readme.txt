@@ -207,4 +207,9 @@
 		-DocStrings.
 		-The game might be a little more readable. I added a function for keeping
 		 track of the attempts lost.
+		-The professor's way is very interesting. It is highly suggested you take
+		 a look at it since she is writing it better. From watching her, I realized
+		 most of the times you have an 'if statement', it is good to enclose it in
+		 a function. Also, you can use the 'return' in your advantage. See line 48
+		 in the professor's file.
 ===============================================================================
