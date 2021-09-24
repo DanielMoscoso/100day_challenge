@@ -187,5 +187,30 @@
 			 will run smoothly.
 12.-Twelfth day of the 100day challenge:
 ===============================================================================
+	Warm Up:
+		-I got carried away and forgot to log the changes in readme. But the warm ups
+		 are codes that give examples about what variable scope is and how to correctly
+		 use it.
+  Guessing game:
+		-All the functions are ready to be used and debugged. And a little bit of the
+		 logic is laid out.
+		-All the logic for the generation and storage of the random number is ready.
+		 The code checks if the answer from the user is equal to the random generated
+		 number, and outputs if the number from the user is 'correct', 'too high' or
+		 'too low' and substracts 1 remaining attempt from the total.
+		-Use the remaining attempts to keep looping until there are no attempts left
+		 or the user gets the correct number. If the user keeps giving the wrong
+		 answer and runs out of attempts, then it is game over. I also changed the
+		 structure of the if statement. It is easier to read.
+		-Recursion: If the player wants to play again, they can. Plus, the clear
+		 function is added.
+		-DocStrings.
+		-The game might be a little more readable. I added a function for keeping
+		 track of the attempts lost.
+		-The professor's way is very interesting. It is highly suggested you take
+		 a look at it since she is writing it better. From watching her, I realized
+		 most of the times you have an 'if statement', it is good to enclose it in
+		 a function. Also, you can use the 'return' in your advantage. See line 48
+		 in the professor's file.
 ===============================================================================
 13.-Thirteenth day of the 100day challenge:
