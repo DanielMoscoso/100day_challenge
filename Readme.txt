@@ -204,4 +204,5 @@
 		 structure of the if statement. It is easier to read.
 		-Recursion: If the player wants to play again, they can. Plus, the clear
 		 function is added.
+		-DocStrings.
 ===============================================================================
