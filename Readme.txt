@@ -198,4 +198,8 @@
 		 The code checks if the answer from the user is equal to the random generated
 		 number, and outputs if the number from the user is 'correct', 'too high' or
 		 'too low' and substracts 1 remaining attempt from the total.
+		-Use the remaining attempts to keep looping until there are no attempts left
+		 or the user gets the correct number. If the user keeps giving the wrong
+		 answer and runs out of attempts, then it is game over. I also changed the
+		 structure of the if statement. It is easier to read.
 ===============================================================================
