@@ -111,5 +111,80 @@
 		 would either have to close the IDE or the program in order to finish it.
 11.-Eleventh day of the 100day challenge:
 ===============================================================================
+	First Capstone Project:
+		-BlackJack Game:
+			-All the cards are created, the art module is added, and the different
+			 directories are in place. Everything is ready to go.
+			-The art module is taking more than I expected to complete. I forgot there
+			 are 53 cards, therefore 53 artworks.. I will finish it later. I am going
+			 to focus on the program first, then in the GUI.
+			-Now I am forgetting to update the read my file... But in summary, The
+			 'Deck()', 'Ace()', 'Jack()', 'King()' and 'Queen()' classes are created,
+			 debugged and ready to go. The class 'Deck()' creates one card of each
+			 suit, for a total of 52 cards. Which are instances of their own
+			 different classes.
+			-Right now the game works as expected: The computer deals 2 cards to the
+			 player, and one card to itself. Prints the suits and values of all the
+			 cards, plus their addition.
+			-It deals two rounds. If the user wants a card, then he/she gets one, and
+			 and the computer also gets one. Then the total for both is printed. (Now
+			 for loops are implemented to print the cards and the totals, since they
+			 are stored in new 'list' variables).
+			-Everything works as intended, and I am proud it is not crashing or ouputing
+			 anything wrong in any way. But I still have to work on the code; it works
+			 but it is EXTREMELY badly written. I will implement while and for loops
+			 next.
+			-Better written code: 'while' and 'for' loops implemented. I will see if I
+			 can clean the code a little more before going to the GUI part of the game.
+			-I forgot to check: If the player's or the computer's hand is 12+,
+			 decide to draw a card, and get an 'Ace', then its value would be '1'
+			 instead of '10'.
+			-Artwork for all the 10s.
+			-Artwork for all the 9s.
+			-Artwork for all the 8s.
+			-Artwork for all the 7s.
+			-Artwork for all the 6s.
+			-Artwork for all the 5s.
+			-Artwork for all the 4s.
+			-Artwork for all the 3s.
+			-Artwork for all the 2s.
+			-'numbers' module debugged and ready to use.
+			-Game fully developed. It can be ran in IDEs or Consoles; just change the
+			 paths at the beginning of each module. I know there might be a way to
+			 avoid this, but that is for future improvements.
+			-A little house keeping: King and Queen of Diamonds did not have the correct
+			 artwork. Plus, the 'clear()' function is implemented for console games.
+			 (Clear does not work with Hydrogen - Atom IDE).
+			-Final touch: The dealer (computer) has an upside down card at the beginning
+			 of the first round. That is how BlackJack is played, and I forgot to add
+			 that upside down card. (It is simply aesthetics for now. Just for GUI; the
+			 code still is the same. That blank card does not add or substracts anything
+			 more than graphics).
+			-Clean up for the first calculations: It is impossible to have more than 20
+			 in the first hand, then get an 'Ace' and not being BlackJack. So the code
+			 is simpler there. PLUS I added the main rule for BlackJack (I did not
+			 know it existed): if you get a 10 value card, plus an "Ace", in any order,
+			 then you have a BlackJack. Neat rule.
+			-If you get BlackJack, and you decide to stop playing. You automatically
+			 win, and the computer does not flip its upside down card.
+			-Recursion implemented: Now the game can restart if the player decides to.
+			-DocStrings for the different functions.
+			-The computer can now have a BlackJack also. And there was a weird debug
+			 where if you typed "(N)o" to end the game after a few rounds of playing,
+			 the game would not stop (until you went through as many games as answers
+			 "(N)o" you gave. It is a recursive problem, where you don't end a game,
+			 and start another one.. I feel like I am in Inception)
+			-Professor's way of solving the BlackJack way.
+			-I believe these are the last changes: I added >> if __name__ == '__main__': <<
+			 This is very useful when creating a bunch of games in an arcade, for example.
+			 If you are running 'blackjack.py' as a stand alone program. it will run
+			 the 'play()' function. If it was imported, then it would not run the play
+			 method. I also added the '__init__.py' to the main directory and the
+			 sub-directories so Python can know to treat everything as a package.
+			-I left out the magic/dunder methods, which I should not. So I went back
+			 and added them, while doing a little housekeeping in the imports: It is
+			 not about running the code in an IDE or Console... But about where you
+			 run the code. If you open the Day_11 directory as a project, then everything
+			 will run smoothly.
 ===============================================================================
 12.Twelfth day of the 100day challenge:
