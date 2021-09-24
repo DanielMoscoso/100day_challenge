@@ -186,7 +186,7 @@
 			 run the code. If you open the Day_11 directory as a project, then everything
 			 will run smoothly.
 12.-Twelfth day of the 100day challenge:
-===============================================================================
+
 	Warm Up:
 		-I got carried away and forgot to log the changes in readme. But the warm ups
 		 are codes that give examples about what variable scope is and how to correctly
@@ -212,5 +212,6 @@
 		 most of the times you have an 'if statement', it is good to enclose it in
 		 a function. Also, you can use the 'return' in your advantage. See line 48
 		 in the professor's file.
-===============================================================================
 13.-Thirteenth day of the 100day challenge:
+===============================================================================
+===============================================================================
