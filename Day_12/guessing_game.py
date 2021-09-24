@@ -49,6 +49,24 @@ def hard():
     return remaining_attempts
 
 
+def lost_attempt(user_number=0, random_number=0, lives=0):
+    """
+    This function prints out if the attempt was too low or too high,
+    and substracts one from the total since it was a wrong answer.
+    """
+    remaining_attempts = lives
+    if user_number > random_number or user_number < random_number:
+        if user_number > random_number:
+            print("Too high. Try again.\n")
+        elif user_number < random_number:
+            print("Too low. Try again.\n")
+        else:
+            pass
+        remaining_attempts -= 1
+
+    return remaining_attempts
+
+
 def play():
     """
     This function is where all the fun begins. It has all game's logics.
@@ -78,19 +96,13 @@ def play():
     wrong_guess = True
     while wrong_guess and remaining > 0:
         guess = int(input("Make a guess: "))
-        if guess > random_number or guess < random_number:
-            if guess > random_number:
-                print("Too high. Try again.\n")
-            elif guess < random_number:
-                print("Too low. Try again.\n")
-            else:
-                pass
 
-            remaining -= 1
-            check(remaining)
-        else:
+        if guess == random_number:
             print("Correct!\n")
             wrong_guess = False
+
+        remaining = lost_attempt(guess, random_number, remaining)
+        check(remaining)
 
 
 if __name__ == '__main__':

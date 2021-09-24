@@ -205,4 +205,6 @@
 		-Recursion: If the player wants to play again, they can. Plus, the clear
 		 function is added.
 		-DocStrings.
+		-The game might be a little more readable. I added a function for keeping
+		 track of the attempts lost.
 ===============================================================================
