@@ -187,4 +187,11 @@
 			 will run smoothly.
 12.Twelfth day of the 100day challenge:
 ===============================================================================
+	Warm Up:
+		-I got carried away and forgot to log the changes in readme. But the warm ups
+		 are codes that give examples about what variable scope is and how to correctly
+		 use it.
+  Guessing game:
+		-All the functions are ready to be used and debugged. And a little bit of the
+		 logic is laid out. 
 ===============================================================================
