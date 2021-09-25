@@ -214,5 +214,13 @@
 		 in the professor's file.
 13.-Thirteenth day of the 100day challenge:
 ===============================================================================
+	Warm up + Debugging:
+		-I got carried away debugging that I forgot to add every step to the log...
+		 Well, I caught myself in the first debugging of the actual coding challenge:
+		 Where you should not assign the value "0", but compare it instead > "==".
+		-You should be turning the answer into an "int". Right now it is a "str".
+		- 1.-The final print is printing a number inside a list.
+		  2.-You should be using 'elif' to make one big condition, and not a bunch of small ones.
+		  3.-You should use "and" instead of "or".
 ===============================================================================
 14.-Fourteenth day of the 100day challenge:
