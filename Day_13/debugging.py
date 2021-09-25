@@ -22,3 +22,14 @@ else:
     print("Not leap year.")
 # ==================================== DONE ====================================
 # %%
+# 1.-The final print is printing a number inside a list.
+# 2.-You should be using 'elif' to make one big condition, and not a bunch of small ones.
+# 3.-You should use "and" instead of "or".
+    if number % 3 == 0 or number % 5 == 0:
+        print("FizzBuzz")
+    if number % 3 == 0:
+        print("Fizz")
+    if number % 5 == 0:
+        print("Buzz")
+    else:
+        print([number])
