@@ -214,4 +214,8 @@
 		 in the professor's file.
 13.-Thirteenth day of the 100day challenge:
 ===============================================================================
+	Warm up + Debugging:
+		-I got carried away debugging that I forgot to add every step to the log...
+		 Well, I caught myself in the first debugging of the actual coding challenge:
+		 Where you should not assign the value "0", but compare it instead > "==".
 ===============================================================================
