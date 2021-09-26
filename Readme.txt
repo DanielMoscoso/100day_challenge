@@ -225,4 +225,5 @@
 ===============================================================================
 	-Higer or lower game:
 		-All the modules are imported and ready to use.
+		-Game with only one iteration debugged and ready to go.
 ===============================================================================
