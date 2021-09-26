@@ -226,4 +226,8 @@
 	-Higer or lower game:
 		-All the modules are imported and ready to use.
 		-Game with only one iteration debugged and ready to go.
+		-First function "score()": This function takes 4 arguments: The first and
+		 second random choice the computer makes, the answer from the user, and the
+		 current score to calculate if the user was right or wrong. Then updates
+		 the score accordingly.
 ===============================================================================
