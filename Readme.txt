@@ -233,4 +233,6 @@
 		-I ended up using a way simpler function "right_choice()" -> This function
 		 takes 2 arguments: the first and the second choice, and returns which one
 		 has bigger follower counts, or in other words, the correct answer.
+		-Recursion: The player can now play again if he/she wants to. The only thing
+		 left is to clear the screen, and add the artwork.
 ===============================================================================
