@@ -230,4 +230,7 @@
 		 second random choice the computer makes, the answer from the user, and the
 		 current score to calculate if the user was right or wrong. Then updates
 		 the score accordingly.
+		-I ended up using a way simpler function "right_choice()" -> This function
+		 takes 2 arguments: the first and the second choice, and returns which one
+		 has bigger follower counts, or in other words, the correct answer.
 ===============================================================================
