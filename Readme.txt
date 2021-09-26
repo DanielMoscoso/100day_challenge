@@ -223,4 +223,6 @@
 		  3.-You should use "and" instead of "or".
 14.-Fourteenth day of the 100day challenge:
 ===============================================================================
+	-Higer or lower game:
+		-All the modules are imported and ready to use.
 ===============================================================================
