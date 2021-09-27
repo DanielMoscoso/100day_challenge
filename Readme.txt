@@ -236,4 +236,5 @@
 		-Recursion: The player can now play again if he/she wants to. The only thing
 		 left is to clear the screen, and add the artwork.
 		-The function to clear the screen is added, and the artwork is also added.
+		-Works exactly as the professor, but it is very messy.
 ===============================================================================
