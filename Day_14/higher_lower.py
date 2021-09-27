@@ -19,6 +19,13 @@ def clear():
         os.system('clear')
 
 
+def format_data(choice):
+    """
+    Format the account data into printable format.
+    """
+    return f"{choice['name']}, a {choice['description']}, from {choice['country']}"
+
+
 def right_choice(first_item, second_item):
     """
     This function takes 2 arguments: the first and the second choice, and returns
@@ -56,10 +63,9 @@ def output(current_score=0, token=0, choice=None):
     print(art.logo)
     if token == 1:
         print(f"\nYou are right! Current score {current_score}\n")
-    print(f"Compare {first_choice['name']}, a {first_choice['description']}, from {first_choice['country']}")
+    print(f"Compare {format_data(first_choice)}")
     print(art.vs)
-    print(f"Against {second_choice['name']}, a {second_choice['description']}, from {second_choice['country']}\n")
-
+    print(f"Against {format_data(second_choice)}")
     return correct_answer
 
 

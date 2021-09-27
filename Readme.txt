@@ -246,5 +246,7 @@
 		-The professor gave me an idea to solve one of the issues I saw happening:
 		 Every now and then, the random generation of names would generate exactly
 		 the same name twice, therefore, making the user lose due to both answers
-		 being equal. (neither will be higher than the opponent)
+		 being equal. (neither will be higher than the opponent).
+		-It never occurred to me to format the data for printing. Thanks to the
+		 professor I can start doing it.
 ===============================================================================
