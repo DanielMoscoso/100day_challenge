@@ -223,7 +223,7 @@
 		  3.-You should use "and" instead of "or".
 14.-Fourteenth day of the 100day challenge:
 ===============================================================================
-	-Higer or lower game:
+	-Higher or lower game:
 		-All the modules are imported and ready to use.
 		-Game with only one iteration debugged and ready to go.
 		-First function "score()": This function takes 4 arguments: The first and
@@ -237,4 +237,5 @@
 		 left is to clear the screen, and add the artwork.
 		-The function to clear the screen is added, and the artwork is also added.
 		-Works exactly as the professor, but it is very messy.
+		-Cleaner version: much better way of organizing the functions.
 ===============================================================================
