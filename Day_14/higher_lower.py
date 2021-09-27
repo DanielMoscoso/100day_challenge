@@ -44,6 +44,9 @@ def output(current_score=0, token=0, choice=None):
 
     second_choice = random.choice(game_data.data)
 
+    while first_choice == second_choice:
+        second_choice = random.choice(game_data.data)
+
     correct_answer = right_choice(first_choice, second_choice)  # Remember, this is a tuple.
     # # -------------- For debugging --------------
     # print(first_choice["follower_count"])

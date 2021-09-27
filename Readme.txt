@@ -243,4 +243,8 @@
 		 it takes that rule into consideration. It is a small (but clever) change.
 		 turning the output from "right_choice()" into a tuple of 2 outputs instead
 		 of only 1.
+		-The professor gave me an idea to solve one of the issues I saw happening:
+		 Every now and then, the random generation of names would generate exactly
+		 the same name twice, therefore, making the user lose due to both answers
+		 being equal. (neither will be higher than the opponent)
 ===============================================================================
