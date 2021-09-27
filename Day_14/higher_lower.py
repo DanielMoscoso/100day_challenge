@@ -25,21 +25,26 @@ def right_choice(first_item, second_item):
     which one has bigger follower counts, or in other words, the correct answer.
     """
     if first_item["follower_count"] > second_item["follower_count"]:
-        return "a"
+        return "a", first_item
     else:
-        return "b"
+        return "b", second_item
 
 
-def output(current_score=0, token=0):
+def output(current_score=0, token=0, choice=None):
     """
     This takes 3 arguments: the current score, the first and the second choice
     and a token. The token is for the code to know when to start printing the
     score; if it is 0/deactivated, or left initialized, then the score will not be
     printed. Then it outputs all the instructions to the screen.
     """
-    first_choice = random.choice(game_data.data)
+    if choice is None:
+        first_choice = random.choice(game_data.data)
+    else:
+        first_choice = choice
+
     second_choice = random.choice(game_data.data)
-    correct_answer = right_choice(first_choice, second_choice)
+
+    correct_answer = right_choice(first_choice, second_choice)  # Remember, this is a tuple.
     # # -------------- For debugging --------------
     # print(first_choice["follower_count"])
     # print(second_choice["follower_count"], "\n")
@@ -72,11 +77,11 @@ def play():
     token = 1  # Token now is 1 because whe want to print if the answer is correct.
 
     while keep_playing:
-        if answer == correct_answer:
+        if answer == correct_answer[0]:
             clear()
             current_score += 1
 
-            correct_answer = output(current_score, token)
+            correct_answer = output(current_score, token, correct_answer[1])
             answer = input("Who has more followers? 'A' or 'B'?: ").lower()
         else:
             clear()

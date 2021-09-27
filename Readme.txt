@@ -238,4 +238,9 @@
 		-The function to clear the screen is added, and the artwork is also added.
 		-Works exactly as the professor, but it is very messy.
 		-Cleaner version: much better way of organizing the functions.
+		-I did not realize there was a rule that stated "the winner of the 2
+		 will go to the next round, and be compared to someone/something else." Now
+		 it takes that rule into consideration. It is a small (but clever) change.
+		 turning the output from "right_choice()" into a tuple of 2 outputs instead
+		 of only 1.
 ===============================================================================
