@@ -235,4 +235,5 @@
 		 has bigger follower counts, or in other words, the correct answer.
 		-Recursion: The player can now play again if he/she wants to. The only thing
 		 left is to clear the screen, and add the artwork.
+		-The function to clear the screen is added, and the artwork is also added.
 ===============================================================================
