@@ -251,4 +251,13 @@
 		-Professor's way of solving the challenge.
 15.-Fifteenth day of the 100day challenge:
 ===============================================================================
+	-Cofee machine:
+		-Some of the logic is layed out: The machine asks the user what they want to do,
+		 (M)ake coffee, or print the (R)eport. Depending the answer, it outputs a report
+		 of the ingredients, or prompts the user to choose what type of coffee they want.
+		 There is a hidden answer "off" that turns off the machine. If the user inserts
+		 more money than needed, then the machine gives them change and the coffee.
+		 If they insert less than the total cost, then tells the user that it is not
+		 enough, and returns the money. If they insert the exact amount, then the
+		 machine dispenses the coffee.
 ===============================================================================
