@@ -223,5 +223,32 @@
 		  3.-You should use "and" instead of "or".
 14.-Fourteenth day of the 100day challenge:
 ===============================================================================
+	-Higher or lower game:
+		-All the modules are imported and ready to use.
+		-Game with only one iteration debugged and ready to go.
+		-First function "score()": This function takes 4 arguments: The first and
+		 second random choice the computer makes, the answer from the user, and the
+		 current score to calculate if the user was right or wrong. Then updates
+		 the score accordingly.
+		-I ended up using a way simpler function "right_choice()" -> This function
+		 takes 2 arguments: the first and the second choice, and returns which one
+		 has bigger follower counts, or in other words, the correct answer.
+		-Recursion: The player can now play again if he/she wants to. The only thing
+		 left is to clear the screen, and add the artwork.
+		-The function to clear the screen is added, and the artwork is also added.
+		-Works exactly as the professor, but it is very messy.
+		-Cleaner version: much better way of organizing the functions.
+		-I did not realize there was a rule that stated "the winner of the 2
+		 will go to the next round, and be compared to someone/something else." Now
+		 it takes that rule into consideration. It is a small (but clever) change.
+		 turning the output from "right_choice()" into a tuple of 2 outputs instead
+		 of only 1.
+		-The professor gave me an idea to solve one of the issues I saw happening:
+		 Every now and then, the random generation of names would generate exactly
+		 the same name twice, therefore, making the user lose due to both answers
+		 being equal. (neither will be higher than the opponent).
+		-It never occurred to me to format the data for printing. Thanks to the
+		 professor I can start doing it.
+		-Professor's way of solving the challenge.
 ===============================================================================
 15.-Fifteenth day of the 100day challenge:
