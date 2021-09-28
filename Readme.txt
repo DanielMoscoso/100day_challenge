@@ -222,7 +222,6 @@
 		  2.-You should be using 'elif' to make one big condition, and not a bunch of small ones.
 		  3.-You should use "and" instead of "or".
 14.-Fourteenth day of the 100day challenge:
-===============================================================================
 	-Higher or lower game:
 		-All the modules are imported and ready to use.
 		-Game with only one iteration debugged and ready to go.
@@ -250,5 +249,6 @@
 		-It never occurred to me to format the data for printing. Thanks to the
 		 professor I can start doing it.
 		-Professor's way of solving the challenge.
-===============================================================================
 15.-Fifteenth day of the 100day challenge:
+===============================================================================
+===============================================================================
