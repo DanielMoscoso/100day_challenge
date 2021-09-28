@@ -249,4 +249,5 @@
 		 being equal. (neither will be higher than the opponent).
 		-It never occurred to me to format the data for printing. Thanks to the
 		 professor I can start doing it.
+		-Professor's way of solving the challenge.
 ===============================================================================
