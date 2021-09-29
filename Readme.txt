@@ -276,4 +276,8 @@
 		-A way out of the infinite loop if the machine runs out of ingredients.
 		-Final function 'play()' for repeatability and to finish off the program.
 		 The rest is just housekeeping and DocStrings.
+		-While adding the DocStrings, I realized that the functions for making the
+		 different coffees were also checking if enough water was in the reservoir.
+		 This is not needed because it is already taken care of by 'brew()'. So, those
+		 lines were removed.
 ===============================================================================

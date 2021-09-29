@@ -1,4 +1,3 @@
-import os
 import info
 
 # TODO: 1.Prompt user by asking "What would you like? (espresso/latte/cappuccino):"
@@ -15,6 +14,9 @@ import info
 
 
 def calculations():
+    """
+    Here is where the total ammount of money the user inserted in the machine is calculated.
+    """
     quarters = int(input("How many quarters?: ")) / 4
     dimes = int(input("How many dimes?: ")) / 10
     nickles = int(input("How many nickles?: ")) / 20
@@ -25,58 +27,73 @@ def calculations():
 
 
 def espresso(resources):
-    # If the machine has enough water:
-    if resources["water"] >= info.MENU["espresso"]["ingredients"]["water"]:
-        print("Please insert coins: ")
-        total = calculations()
-        if total > info.MENU["espresso"]["cost"]:
-            change = total - info.MENU["espresso"]["cost"]
-            print(f"Here is ${change} in change.")
-            print("Here is your espresso. Enjoy!")
-        elif total < info.MENU["espresso"]["cost"]:
-            print("Sorry, that is not enough money. Money refunded.")
-            return 0  # No charge: return money.
-        else:
-            print("Here is your espresso. Enjoy!")
+    """
+    Here is where the espresso coffee is made: It checks if the user inserted
+    enough money to pay for the coffee. If they did, then the coffee is made,
+    and if there is any change, it returns it to the user along with the coffee.
+    """
+    print("Please insert coins: ")
+    total = calculations()
+    if total > info.MENU["espresso"]["cost"]:
+        change = total - info.MENU["espresso"]["cost"]
+        print(f"Here is ${change} in change.")
+        print("Here is your espresso. Enjoy!")
+    elif total < info.MENU["espresso"]["cost"]:
+        print("Sorry, that is not enough money. Money refunded.")
+        return 0  # No charge: return money.
+    else:
+        print("Here is your espresso. Enjoy!")
+
     return resources["money"] + info.MENU["espresso"]["cost"]
 
 
 def latte(resources):
-    # If the machine has enough water:
-    if resources["water"] >= info.MENU["latte"]["ingredients"]["water"]:
-        print("Please insert coins: ")
-        total = calculations()
-        if total > info.MENU["latte"]["cost"]:
-            change = total - info.MENU["latte"]["cost"]
-            print(f"Here is ${change} in change.")
-            print("Here is your latte. Enjoy!")
-        elif total < info.MENU["latte"]["cost"]:
-            print("Sorry, that is not enough money. Money refunded.")
-            return 0  # No charge: return money.
-        else:
-            print("Here is your latte. Enjoy!")
+    """
+    Here is where the latte coffee is made: It checks if the user inserted
+    enough money to pay for the coffee. If they did, then the coffee is made,
+    and if there is any change, it returns it to the user along with the coffee.
+    """
+    print("Please insert coins: ")
+    total = calculations()
+    if total > info.MENU["latte"]["cost"]:
+        change = total - info.MENU["latte"]["cost"]
+        print(f"Here is ${change} in change.")
+        print("Here is your latte. Enjoy!")
+    elif total < info.MENU["latte"]["cost"]:
+        print("Sorry, that is not enough money. Money refunded.")
+        return 0  # No charge: return money.
+    else:
+        print("Here is your latte. Enjoy!")
+
     return resources["money"] + info.MENU["latte"]["cost"]
 
 
 def cappuccino(resources):
-    # If the machine has enough water:
-    if resources["water"] >= info.MENU["cappuccino"]["ingredients"]["water"]:
-        print("Please insert coins: ")
-        total = calculations()
-        if total > info.MENU["cappuccino"]["cost"]:
-            change = total - info.MENU["cappuccino"]["cost"]
-            print(f"Here is ${change} in change.")
-            print("Here is your cappuccino. Enjoy!")
-        elif total < info.MENU["cappuccino"]["cost"]:
-            print("Sorry, that is not enough money. Money refunded.")
-            return 0  # No charge: return money.
-        else:
-            print("Here is your cappuccino. Enjoy!")
+    """
+    Here is where the cappuccino coffee is made: It checks if the user inserted
+    enough money to pay for the coffee. If they did, then the coffee is made,
+    and if there is any change, it returns it to the user along with the coffee.
+    """
+    print("Please insert coins: ")
+    total = calculations()
+    if total > info.MENU["cappuccino"]["cost"]:
+        change = total - info.MENU["cappuccino"]["cost"]
+        print(f"Here is ${change} in change.")
+        print("Here is your cappuccino. Enjoy!")
+    elif total < info.MENU["cappuccino"]["cost"]:
+        print("Sorry, that is not enough money. Money refunded.")
+        return 0  # No charge: return money.
+    else:
+        print("Here is your cappuccino. Enjoy!")
 
     return resources["money"] + info.MENU["cappuccino"]["cost"]
 
 
 def brew_profit(answer, resources):
+    """
+    Here is where the profit from the coffe that is being made is calculated,
+    an returned.
+    """
     if answer == "espresso":
         profit = espresso(resources)
     elif answer == "latte":
@@ -90,6 +107,14 @@ def brew_profit(answer, resources):
 
 
 def brew(resources, answer):
+    """
+    Here is where the all the previous conditions for brewing the coffee are checked:
+    if there are enough ingredients in their individual reservoirs. It creates a
+    truth table, and if there is any ingredient reservoir empty, then it adds a '0'
+    to it. At the end, if there are no reservoirs empty, then the function returns True,
+    allowing the machine to brew the coffee. Otherwise it would tell the user what ingredients
+    are missing.
+    """
     table = {}  # Truth table.
     for item in resources:
         if item == "money":  # If the item is money, then do not check it.
@@ -111,6 +136,10 @@ def brew(resources, answer):
 
 
 def ingredients(materials):
+    """
+    This function takes all the ingredients from the resouces dictionary, and prints
+    them out to the user.
+    """
     print("Water:", materials["water"])
     print("Milk:", materials["milk"])
     print("Coffee:", materials["coffee"])
@@ -118,6 +147,16 @@ def ingredients(materials):
 
 
 def play():
+    """
+    This is where all the fun begins: here is where the brewing machine is housed.
+    The machine will ask the user what coffee they want. Then checks if there are
+    enough ingredients to brew that coffe. If there are, then asks the user for the
+    money and tells them if they inserted enough money. If they did not, then the machine
+    tells the user, and returns the money. If the coffee can be properly made, it will be
+    given to the user, with their change, if any.
+    The user can also see the report of all the ingredients, and there is a hidden answer; 'o'
+    for 'off', in case the user needs to turn the machine off for maintenance.
+    """
     resources = {
         "water": 300,
         "milk": 200,
