@@ -285,4 +285,5 @@
 		-Artwork added.
 		-The option should be 'off' not 'o'.
 		-Adding the units to the quantities.
+		-Professor's solution to the challenge.
 ===============================================================================
