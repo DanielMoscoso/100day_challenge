@@ -14,7 +14,6 @@ import info
 # TODO: 8. Once all resources have been deducted, tell the user “Here is your {drink}. Enjoy!”.
 
 
-# %%
 def calculations():
     quarters = int(input("How many quarters?: ")) / 4
     dimes = int(input("How many dimes?: ")) / 10
@@ -118,38 +117,45 @@ def ingredients(materials):
     print(f"Money: ${materials['money']}\n")
 
 
-resources = {
-    "water": 300,
-    "milk": 200,
-    "coffee": 100,
-    "money": 0
-}
-# %%
+def play():
+    resources = {
+        "water": 300,
+        "milk": 200,
+        "coffee": 100,
+        "money": 0
+    }
 
-repeat = True
-while repeat:
-    answer = input("What would you like to do? (M)ake coffee, or print the (R)eport: ").lower()
+    repeat = True
+    while repeat:
+        answer = input("What would you like to do? (M)ake coffee, or print the (R)eport: ").lower()
 
-    # Make cofee
-    if answer == "m":
-        answer = input("What would you like? (espresso: $1.5 / latte: $2.5 / cappuccino: 3.0): ").lower()
-        if brew(resources, answer):  # Brewing is independent of money inserted!! It is dependent of the ingredients.
-            resources["money"] = brew_profit(answer, resources)  # Here is where you check if the person inserted the right amount of money.
-            if resources["money"] == 0:  # If the machine did not charge, then do not make any coffe.
+        # Make cofee
+        if answer == "m":
+            answer = input("What would you like? (espresso: $1.5 / latte: $2.5 / cappuccino: 3.0): ").lower()
+            if brew(resources, answer):  # Brewing is independent of money inserted!! It is dependent of the ingredients.
+                resources["money"] = brew_profit(answer, resources)  # Here is where you check if the person inserted the right amount of money.
+                if resources["money"] == 0:  # If the machine did not charge, then do not make any coffe.
+                    repeat = False  # Get out to the main menu.
+                else:
+                    resources["water"] -= info.MENU[answer]["ingredients"]["water"]
+                    resources["milk"] -= info.MENU[answer]["ingredients"]["milk"]
+                    resources["coffee"] -= info.MENU[answer]["ingredients"]["coffee"]
+            else:  # If there are not enough ingredients to make a coffee:
                 repeat = False  # Get out to the main menu.
-            else:
-                resources["water"] -= info.MENU[answer]["ingredients"]["water"]
-                resources["milk"] -= info.MENU[answer]["ingredients"]["milk"]
-                resources["coffee"] -= info.MENU[answer]["ingredients"]["coffee"]
-        else:  # If there are not enough ingredients to make a coffee:
+        # Get the report:
+        elif answer == "r":
+            ingredients(resources)
+        # Hidden answer: for turning the machine off.
+        elif answer == "o":
+            print("Turning off!")
             repeat = False  # Get out to the main menu.
-    # Get the report:
-    elif answer == "r":
-        ingredients(resources)
-    # Hidden answer: for turning the machine off.
-    elif answer == "o":
-        print("Turning off!")
-        repeat = False  # Get out to the main menu.
-    else:
-        print("Wrong input. Bye!")
-        repeat = False  # Get out to the main menu.
+        else:
+            print("Wrong input. Bye!")
+            repeat = False  # Get out to the main menu.
+
+    while input("Hello! type (A)gain to go to main menu, or (E)xit: ").lower() == "a":
+        play()
+        return
+
+
+play()

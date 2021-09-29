@@ -274,4 +274,6 @@
 		 I also did a little house cleaning: 'ingredients()' now prints things with
 		 less white spaces in between words.
 		-A way out of the infinite loop if the machine runs out of ingredients.
+		-Final function 'play()' for repeatability and to finish off the program.
+		 The rest is just housekeeping and DocStrings.
 ===============================================================================
