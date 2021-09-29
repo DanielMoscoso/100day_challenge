@@ -2,6 +2,7 @@ MENU = {
     "espresso": {
         "ingredients": {
             "water": 50,
+            "milk": 0,  # This was missing, and it is needed.
             "coffee": 18,
         },
         "cost": 1.5,

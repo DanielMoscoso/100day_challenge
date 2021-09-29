@@ -268,4 +268,9 @@
 		 from brewing the coffee, so it would be easier to added to the resources
 		 dictionary
 		-The ingredients used are now substracted from the initial total.
+		-The machine now checks if the user inserted enough money for a certain coffee.
+		 if they did, then checks if there are enough ingredients to make that coffee,
+		 and if there is not, then it outputs what is running out: water, milk, etc.
+		 I also did a little house cleaning: 'ingredients()' now prints things with
+		 less white spaces in between words.
 ===============================================================================
