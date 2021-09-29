@@ -1,4 +1,5 @@
 import info
+import art
 
 # TODO: 1.Prompt user by asking "What would you like? (espresso/latte/cappuccino):"
 # TODO: 2.Turn off the Coffee Machine by entering "off" to the prompt.
@@ -157,6 +158,9 @@ def play():
     The user can also see the report of all the ingredients, and there is a hidden answer; 'o'
     for 'off', in case the user needs to turn the machine off for maintenance.
     """
+    print(art.logo)
+    print(art.letters)
+    print("Welcome to your favorite vending machine!!")
     resources = {
         "water": 300,
         "milk": 200,
