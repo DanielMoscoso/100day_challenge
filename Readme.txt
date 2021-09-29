@@ -250,7 +250,6 @@
 		 professor I can start doing it.
 		-Professor's way of solving the challenge.
 15.-Fifteenth day of the 100day challenge:
-===============================================================================
 	-Cofee machine:
 		-Some of the logic is layed out: The machine asks the user what they want to do,
 		 (M)ake coffee, or print the (R)eport. Depending the answer, it outputs a report
@@ -286,5 +285,6 @@
 		-The option should be 'off' not 'o'.
 		-Adding the units to the quantities.
 		-Professor's solution to the challenge.
-===============================================================================
 16.-Sixteenth day of the 100day challenge:
+===============================================================================
+===============================================================================
