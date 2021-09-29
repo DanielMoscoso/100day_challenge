@@ -284,4 +284,5 @@
 		 returning the change to the user. The printing in the UI is also better formatted.
 		-Artwork added.
 		-The option should be 'off' not 'o'.
+		-Adding the units to the quantities.
 ===============================================================================

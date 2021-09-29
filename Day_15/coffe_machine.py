@@ -141,9 +141,9 @@ def ingredients(materials):
     This function takes all the ingredients from the resouces dictionary, and prints
     them out to the user.
     """
-    print("\nWater:", materials["water"])
-    print("Milk:", materials["milk"])
-    print("Coffee:", materials["coffee"])
+    print(f"\nWater: {materials['water']}ml")
+    print(f"Milk: {materials['milk']}ml")
+    print(f"Coffee: {materials['coffee']}gr")
     print(f"Money: ${materials['money']}\n")
 
 
