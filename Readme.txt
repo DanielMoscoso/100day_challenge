@@ -251,5 +251,40 @@
 		-Professor's way of solving the challenge.
 15.-Fifteenth day of the 100day challenge:
 ===============================================================================
+	-Cofee machine:
+		-Some of the logic is layed out: The machine asks the user what they want to do,
+		 (M)ake coffee, or print the (R)eport. Depending the answer, it outputs a report
+		 of the ingredients, or prompts the user to choose what type of coffee they want.
+		 There is a hidden answer "off" that turns off the machine. If the user inserts
+		 more money than needed, then the machine gives them change and the coffee.
+		 If they insert less than the total cost, then tells the user that it is not
+		 enough, and returns the money. If they insert the exact amount, then the
+		 machine dispenses the coffee.
+		-I created, tested and debugged all the functions: calculations(), ingredients(),
+		 espresso(), latte(), cappuccino(). I also added 'money' to the resources
+		 dictionary, so the output of all the coffee functions would be added to
+		 the total money as 'profit'.
+		-Better organized: 'brew_profit()' function has been added to get the profit
+		 from brewing the coffee, so it would be easier to added to the resources
+		 dictionary
+		-The ingredients used are now substracted from the initial total.
+		-The machine now checks if the user inserted enough money for a certain coffee.
+		 if they did, then checks if there are enough ingredients to make that coffee,
+		 and if there is not, then it outputs what is running out: water, milk, etc.
+		 I also did a little house cleaning: 'ingredients()' now prints things with
+		 less white spaces in between words.
+		-A way out of the infinite loop if the machine runs out of ingredients.
+		-Final function 'play()' for repeatability and to finish off the program.
+		 The rest is just housekeeping and DocStrings.
+		-While adding the DocStrings, I realized that the functions for making the
+		 different coffees were also checking if enough water was in the reservoir.
+		 This is not needed because it is already taken care of by 'brew()'. So, those
+		 lines were removed.
+		-I also forgot to round the numbers to the nearest 2 decimal places before
+		 returning the change to the user. The printing in the UI is also better formatted.
+		-Artwork added.
+		-The option should be 'off' not 'o'.
+		-Adding the units to the quantities.
+		-Professor's solution to the challenge.
 ===============================================================================
 16.-Sixteenth day of the 100day challenge:
