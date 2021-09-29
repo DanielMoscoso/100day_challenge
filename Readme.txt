@@ -264,4 +264,7 @@
 		 espresso(), latte(), cappuccino(). I also added 'money' to the resources
 		 dictionary, so the output of all the coffee functions would be added to
 		 the total money as 'profit'.
+		-Better organized: 'brew_profit()' function has been added to get the profit
+		 from brewing the coffee, so it would be easier to added to the resources
+		 dictionary
 ===============================================================================
