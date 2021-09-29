@@ -36,7 +36,7 @@ def espresso(resources):
     total = calculations()
     if total > info.MENU["espresso"]["cost"]:
         change = total - info.MENU["espresso"]["cost"]
-        print(f"Here is ${change} in change.")
+        print(f"Here is ${round(change, 2)} in change.")  # This will roung the answer up to 2 decimal places.
         print("Here is your espresso. Enjoy!")
     elif total < info.MENU["espresso"]["cost"]:
         print("Sorry, that is not enough money. Money refunded.")
@@ -57,7 +57,7 @@ def latte(resources):
     total = calculations()
     if total > info.MENU["latte"]["cost"]:
         change = total - info.MENU["latte"]["cost"]
-        print(f"Here is ${change} in change.")
+        print(f"Here is ${round(change, 2)} in change.")  # This will roung the answer up to 2 decimal places.
         print("Here is your latte. Enjoy!")
     elif total < info.MENU["latte"]["cost"]:
         print("Sorry, that is not enough money. Money refunded.")
@@ -78,7 +78,7 @@ def cappuccino(resources):
     total = calculations()
     if total > info.MENU["cappuccino"]["cost"]:
         change = total - info.MENU["cappuccino"]["cost"]
-        print(f"Here is ${change} in change.")
+        print(f"Here is ${round(change, 2)} in change.")  # This will roung the answer up to 2 decimal places.
         print("Here is your cappuccino. Enjoy!")
     elif total < info.MENU["cappuccino"]["cost"]:
         print("Sorry, that is not enough money. Money refunded.")
@@ -140,7 +140,7 @@ def ingredients(materials):
     This function takes all the ingredients from the resouces dictionary, and prints
     them out to the user.
     """
-    print("Water:", materials["water"])
+    print("\nWater:", materials["water"])
     print("Milk:", materials["milk"])
     print("Coffee:", materials["coffee"])
     print(f"Money: ${materials['money']}\n")
@@ -166,11 +166,11 @@ def play():
 
     repeat = True
     while repeat:
-        answer = input("What would you like to do? (M)ake coffee, or print the (R)eport: ").lower()
+        answer = input("\nWhat would you like to do? (M)ake coffee, or print the (R)eport: ").lower()
 
         # Make cofee
         if answer == "m":
-            answer = input("What would you like? (espresso: $1.5 / latte: $2.5 / cappuccino: 3.0): ").lower()
+            answer = input("\nWhat would you like? (espresso: $1.5 / latte: $2.5 / cappuccino: 3.0): ").lower()
             if brew(resources, answer):  # Brewing is independent of money inserted!! It is dependent of the ingredients.
                 resources["money"] = brew_profit(answer, resources)  # Here is where you check if the person inserted the right amount of money.
                 if resources["money"] == 0:  # If the machine did not charge, then do not make any coffe.

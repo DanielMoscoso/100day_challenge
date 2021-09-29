@@ -280,4 +280,6 @@
 		 different coffees were also checking if enough water was in the reservoir.
 		 This is not needed because it is already taken care of by 'brew()'. So, those
 		 lines were removed.
+		-I also forgot to round the numbers to the nearest 2 decimal places before
+		 returning the change to the user. The printing in the UI is also better formatted.
 ===============================================================================
