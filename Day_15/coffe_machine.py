@@ -141,6 +141,8 @@ while repeat:
                 resources["water"] -= info.MENU[answer]["ingredients"]["water"]
                 resources["milk"] -= info.MENU[answer]["ingredients"]["milk"]
                 resources["coffee"] -= info.MENU[answer]["ingredients"]["coffee"]
+        else:  # If there are not enough ingredients to make a coffee:
+            repeat = False  # Get out to the main menu.
     # Get the report:
     elif answer == "r":
         ingredients(resources)
