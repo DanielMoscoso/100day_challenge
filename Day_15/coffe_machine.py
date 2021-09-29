@@ -73,7 +73,7 @@ def cappuccino(resources):
     return resources["money"] + info.MENU["cappuccino"]["cost"]
 
 
-def brew_profit(answer):
+def brew_profit(answer, resources):
     if answer == "espresso":
         profit = espresso(resources)
     elif answer == "latte":
@@ -105,7 +105,10 @@ answer = input("What would you like to do? (M)ake coffee, or print the (R)eport:
 # Make cofee
 if answer == "m":
     answer = input("What would you like? (espresso: $1.5 / latte: $2.5 / cappuccino: 3.0): ").lower()
-    resources["money"] = brew_profit(answer)
+    resources["money"] = brew_profit(answer, resources)
+    resources["water"] -= info.MENU[answer]["ingredients"]["water"]
+    resources["milk"] -= info.MENU[answer]["ingredients"]["milk"]
+    resources["coffee"] -= info.MENU[answer]["ingredients"]["coffee"]
 # Get the report:
 elif answer == "r":
     ingredients(resources)

@@ -267,4 +267,5 @@
 		-Better organized: 'brew_profit()' function has been added to get the profit
 		 from brewing the coffee, so it would be easier to added to the resources
 		 dictionary
+		-The ingredients used are now substracted from the initial total.
 ===============================================================================
