@@ -260,4 +260,8 @@
 		 If they insert less than the total cost, then tells the user that it is not
 		 enough, and returns the money. If they insert the exact amount, then the
 		 machine dispenses the coffee.
+		-I created, tested and debugged all the functions: calculations(), ingredients(),
+		 espresso(), latte(), cappuccino(). I also added 'money' to the resources
+		 dictionary, so the output of all the coffee functions would be added to
+		 the total money as 'profit'.
 ===============================================================================
