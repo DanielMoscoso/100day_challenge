@@ -189,7 +189,7 @@ def play():
         elif answer == "r":
             ingredients(resources)
         # Hidden answer: for turning the machine off.
-        elif answer == "o":
+        elif answer == "off":
             print("Turning off!")
             repeat = False  # Get out to the main menu.
         else:

@@ -283,4 +283,5 @@
 		-I also forgot to round the numbers to the nearest 2 decimal places before
 		 returning the change to the user. The printing in the UI is also better formatted.
 		-Artwork added.
+		-The option should be 'off' not 'o'.
 ===============================================================================
