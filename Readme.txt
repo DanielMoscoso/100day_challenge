@@ -292,4 +292,11 @@
 	-Coffee machine OOP:
 		-Extraction of all the files.
 		-Getting my old template of the coffee machine.
+		-Everything ready and debugged. I know I should not have done it all in one swoop,
+		 but I felt if I stopped to record something, I would lose my train of thought.
+		 If I got stuck somewhere, then I would have recorded it. I also did minor modifications
+		 to the Day_15 'coffee_machine.py' mainly in the last print statements, so they look
+		 nicer on screen, and also ending the entire program when typing "off" or a wrong
+		 answer. (Before it would ask 'Hello! type (A)gain to go to main menu, or (E)xit:', then
+		 do something).
 ===============================================================================

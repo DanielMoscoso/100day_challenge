@@ -1,6 +1,8 @@
 from menu import Menu, MenuItem
 from coffee_maker import CoffeeMaker
 from money_machine import MoneyMachine
+import art
+import os
 # # - You might need to use this if the IDE is currently running on a different directory -
 # import os
 # os.getcwd()
@@ -8,8 +10,29 @@ from money_machine import MoneyMachine
 # # - You might need to use this if the IDE is currently running on a different directory -
 
 coffees = Menu()
+machine = CoffeeMaker()
+money_machine = MoneyMachine()
 
-coffees.get_items()
+
+def clear():
+    """
+    This function is used for clearing the entire screen.
+    If you IDE does not support it, then you might want to see it
+    in action when running on command line.
+    """
+    # For windows
+    if os.name == 'nt':
+        os.system('cls')
+
+    # For mac and linux(here, os.name is 'posix')
+    else:
+        os.system('clear')
+
+
+def artwork():
+    print(art.logo)
+    print(art.letters)
+    print("Welcome to your favorite vending machine!!")
 
 
 def play():
@@ -23,15 +46,8 @@ def play():
     The user can also see the report of all the ingredients, and there is a hidden answer; 'o'
     for 'off', in case the user needs to turn the machine off for maintenance.
     """
-    print(art.logo)
-    print(art.letters)
-    print("Welcome to your favorite vending machine!!")
-    resources = {
-        "water": 300,
-        "milk": 200,
-        "coffee": 100,
-        "money": 0
-    }
+
+    artwork()
 
     repeat = True
     while repeat:
@@ -39,27 +55,30 @@ def play():
 
         # Make cofee
         if answer == "m":
-            answer = input("\nWhat would you like? (espresso: $1.5 / latte: $2.5 / cappuccino: 3.0): ").lower()
-            if brew(resources, answer):  # Brewing is independent of money inserted!! It is dependent of the ingredients.
-                resources["money"] = brew_profit(answer, resources)  # Here is where you check if the person inserted the right amount of money.
-                if resources["money"] == 0:  # If the machine did not charge, then do not make any coffe.
-                    repeat = False  # Get out to the main menu.
-                else:
-                    resources["water"] -= info.MENU[answer]["ingredients"]["water"]
-                    resources["milk"] -= info.MENU[answer]["ingredients"]["milk"]
-                    resources["coffee"] -= info.MENU[answer]["ingredients"]["coffee"]
+            drink = input("\nWhat would you like? (espresso: $1.5 / latte: $2.5 / cappuccino: 3.0): ").lower()
+            drink_class = coffees.find_drink(drink)
+            drink_class.ingredients
+            if machine.is_resource_sufficient(drink_class):  # Brewing is independent of money inserted!! It is dependent of the ingredients.
+                money_machine.make_payment(drink_class.cost)
+                machine.make_coffee(drink_class)
             else:  # If there are not enough ingredients to make a coffee:
                 repeat = False  # Get out to the main menu.
         # Get the report:
         elif answer == "r":
-            ingredients(resources)
+            clear()
+            artwork()
+            machine.report()
+            money_machine.report()
         # Hidden answer: for turning the machine off.
         elif answer == "off":
-            print("Turning off!")
+            clear()
+            print("\nTurning off!")
             repeat = False  # Get out to the main menu.
+            return
         else:
-            print("Wrong input. Bye!")
+            print("\nWrong input. Bye!")
             repeat = False  # Get out to the main menu.
+            return
 
     while input("Hello! type (A)gain to go to main menu, or (E)xit: ").lower() == "a":
         play()
