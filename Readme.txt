@@ -300,4 +300,7 @@
 		 answer. (Before it would ask 'Hello! type (A)gain to go to main menu, or (E)xit:', then
 		 do something).
 		-Last DocString.
+		-There was a tinny bug I did not see at first. previous logic: If the user does not have enough
+		 money to brew the coffee, it returns the money AND brews the coffee. Now, if the user does not
+		 insert enough money, then the machine does not brew the coffee.
 ===============================================================================

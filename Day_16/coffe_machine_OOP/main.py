@@ -62,8 +62,8 @@ def play():
             drink_class = coffees.find_drink(drink)
             drink_class.ingredients
             if machine.is_resource_sufficient(drink_class):  # Brewing is independent of money inserted!! It is dependent of the ingredients.
-                money_machine.make_payment(drink_class.cost)
-                machine.make_coffee(drink_class)
+                if money_machine.make_payment(drink_class.cost):  # If the payment went through.
+                    machine.make_coffee(drink_class)
             else:  # If there are not enough ingredients to make a coffee:
                 repeat = False  # Get out to the main menu.
         # Get the report:
