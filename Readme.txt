@@ -287,4 +287,6 @@
 		-Professor's solution to the challenge.
 16.-Sixteenth day of the 100day challenge:
 ===============================================================================
+	-Warm up:
+		-How to use OOP and PrettyTable as an example.
 ===============================================================================
