@@ -30,6 +30,9 @@ def clear():
 
 
 def artwork():
+    """
+    This will print the entire starting screen artwork.
+    """
     print(art.logo)
     print(art.letters)
     print("Welcome to your favorite vending machine!!")
@@ -85,4 +88,5 @@ def play():
         return
 
 
-play()
+if __name__ == '__main__':
+    play()

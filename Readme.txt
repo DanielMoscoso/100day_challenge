@@ -299,4 +299,5 @@
 		 nicer on screen, and also ending the entire program when typing "off" or a wrong
 		 answer. (Before it would ask 'Hello! type (A)gain to go to main menu, or (E)xit:', then
 		 do something).
+		-Last DocString.
 ===============================================================================
