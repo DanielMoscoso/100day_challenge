@@ -303,4 +303,5 @@
 		-There was a tinny bug I did not see at first. previous logic: If the user does not have enough
 		 money to brew the coffee, it returns the money AND brews the coffee. Now, if the user does not
 		 insert enough money, then the machine does not brew the coffee.
+		-Her way is much more condensed, and it matches her previous way of tackling the challenge.
 ===============================================================================
