@@ -291,4 +291,5 @@
 		-How to use OOP and PrettyTable as an example.
 	-Coffee machine OOP:
 		-Extraction of all the files.
+		-Getting my old template of the coffee machine.
 ===============================================================================
