@@ -287,5 +287,22 @@
 		-Professor's solution to the challenge.
 16.-Sixteenth day of the 100day challenge:
 ===============================================================================
+	-Warm up:
+		-How to use OOP and PrettyTable as an example.
+	-Coffee machine OOP:
+		-Extraction of all the files.
+		-Getting my old template of the coffee machine.
+		-Everything ready and debugged. I know I should not have done it all in one swoop,
+		 but I felt if I stopped to record something, I would lose my train of thought.
+		 If I got stuck somewhere, then I would have recorded it. I also did minor modifications
+		 to the Day_15 'coffee_machine.py' mainly in the last print statements, so they look
+		 nicer on screen, and also ending the entire program when typing "off" or a wrong
+		 answer. (Before it would ask 'Hello! type (A)gain to go to main menu, or (E)xit:', then
+		 do something).
+		-Last DocString.
+		-There was a tinny bug I did not see at first. previous logic: If the user does not have enough
+		 money to brew the coffee, it returns the money AND brews the coffee. Now, if the user does not
+		 insert enough money, then the machine does not brew the coffee.
+		-Her way is much more condensed, and it matches her previous way of tackling the challenge.
 ===============================================================================
 17.-Seventeenth day of the 100day challenge:

@@ -190,11 +190,13 @@ def play():
             ingredients(resources)
         # Hidden answer: for turning the machine off.
         elif answer == "off":
-            print("Turning off!")
+            print("\nTurning off!")
             repeat = False  # Get out to the main menu.
+            return
         else:
-            print("Wrong input. Bye!")
+            print("\nWrong input. Bye!")
             repeat = False  # Get out to the main menu.
+            return
 
     while input("Hello! type (A)gain to go to main menu, or (E)xit: ").lower() == "a":
         play()
