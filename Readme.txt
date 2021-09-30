@@ -286,7 +286,7 @@
 		-Adding the units to the quantities.
 		-Professor's solution to the challenge.
 16.-Sixteenth day of the 100day challenge:
-===============================================================================
+
 	-Warm up:
 		-How to use OOP and PrettyTable as an example.
 	-Coffee machine OOP:
@@ -304,5 +304,6 @@
 		 money to brew the coffee, it returns the money AND brews the coffee. Now, if the user does not
 		 insert enough money, then the machine does not brew the coffee.
 		-Her way is much more condensed, and it matches her previous way of tackling the challenge.
-===============================================================================
 17.-Seventeenth day of the 100day challenge:
+===============================================================================
+===============================================================================
