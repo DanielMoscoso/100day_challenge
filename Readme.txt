@@ -306,5 +306,18 @@
 		-Her way is much more condensed, and it matches her previous way of tackling the challenge.
 17.-Seventeenth day of the 100day challenge:
 ===============================================================================
+	-Warm up:
+		-Creating a class, and adding its first attributes.
+		-Adding the first method.
+	-Questionnaire game:
+		-First class and its attributes.
+		-Changes made to 'data.py'
+		-Question bank created. And '__init__.py' created.
+		-'next_question()' is created.
+		-'next_question()' is implement in 'main.py'.
+		-'still_has_questions()' is created and implemented in 'main.py'.
+		-'check_answer()' is created and implemented in 'main.py'.
+		 Final version of the code is finished; It checks and outputs how many
+		 correct answers the user had out of the total.
 ===============================================================================
 18.-Eighteenth day of the 100day challenge:
