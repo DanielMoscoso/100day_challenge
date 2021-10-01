@@ -314,4 +314,5 @@
 		-Changes made to 'data.py'
 		-Question bank created. And '__init__.py' created.
 		-'next_question()' is created.
+		-'next_question()' is implement in 'main.py'.
 ===============================================================================
