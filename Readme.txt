@@ -316,4 +316,7 @@
 		-'next_question()' is created.
 		-'next_question()' is implement in 'main.py'.
 		-'still_has_questions()' is created and implemented in 'main.py'.
+		-'check_answer()' is created and implemented in 'main.py'.
+		 Final version of the code is finished; It checks and outputs how many
+		 correct answers the user had out of the total.
 ===============================================================================
