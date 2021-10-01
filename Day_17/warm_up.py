@@ -1,7 +1,7 @@
 import os
 
 
-class User():
+class User:  # You can have the '()' but you don't need it since you are not inheriting anything.
     def __init__(self, user_id, username):
         self.user_id = user_id
         self.user_name = username

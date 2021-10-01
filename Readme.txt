@@ -309,4 +309,6 @@
 	-Warm up:
 		-Creating a class, and adding its first attributes.
 		-Adding the first method.
+	-Questionnaire game:
+		-First class and its attributes.
 ===============================================================================
