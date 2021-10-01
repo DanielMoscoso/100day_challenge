@@ -313,4 +313,5 @@
 		-First class and its attributes.
 		-Changes made to 'data.py'
 		-Question bank created. And '__init__.py' created.
+		-'next_question()' is created.
 ===============================================================================
