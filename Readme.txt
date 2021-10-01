@@ -306,4 +306,6 @@
 		-Her way is much more condensed, and it matches her previous way of tackling the challenge.
 17.-Seventeenth day of the 100day challenge:
 ===============================================================================
+	-Warm up:
+		-Creating a class, and adding its first attributes.
 ===============================================================================
