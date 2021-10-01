@@ -315,4 +315,5 @@
 		-Question bank created. And '__init__.py' created.
 		-'next_question()' is created.
 		-'next_question()' is implement in 'main.py'.
+		-'still_has_questions()' is created and implemented in 'main.py'.
 ===============================================================================
