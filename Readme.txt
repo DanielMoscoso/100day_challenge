@@ -311,4 +311,5 @@
 		-Adding the first method.
 	-Questionnaire game:
 		-First class and its attributes.
+		-Changes made to 'data.py'
 ===============================================================================
