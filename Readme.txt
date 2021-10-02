@@ -325,4 +325,5 @@
 		-Tim the turtle drawing a dotted line.
 		-Draw 7 shapes.
 		-Change colors.
+		-Random walk.
 ===============================================================================
