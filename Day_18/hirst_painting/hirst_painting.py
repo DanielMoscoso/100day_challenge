@@ -9,6 +9,10 @@ import turtle
 
 # ---------------------------- In case you need it ----------------------------
 def reset_kernel():
+    """
+    This function helps set up the kernel location. Just in case the IDE is running
+    in a different location.
+    """
     import os
     # os.getcwd()
     os.chdir('C:\\Users\\Daniel\\Documents\\Python\\100days\\Day_18\\hirst_painting')
@@ -16,6 +20,9 @@ def reset_kernel():
 
 
 def color_extraction(number_of_colors=0):
+    """
+    Here you can extract the desired ammount of colors from a picture.
+    """
     colors = colorgram.extract('spot_paint.gif', number_of_colors)
 
     list_of_colors = []
@@ -26,6 +33,9 @@ def color_extraction(number_of_colors=0):
 
 
 def paint_matrix(turtle, color_list=[(0, 0, 0)], horizontal_dots=1, vertical_dots=1, starting_x=0):
+    """
+    Here are the essential parts of the vertical dot painter.
+    """
     for _ in range(vertical_dots):  # Y axis
         move_sideways(turtle, color_list, horizontal_dots)
 
@@ -35,6 +45,9 @@ def paint_matrix(turtle, color_list=[(0, 0, 0)], horizontal_dots=1, vertical_dot
 
 
 def move_sideways(turtle, color_list, horizontal_dots):
+    """
+    Here are the essential parts of the horizontal dot painter.
+    """
     for _ in range(horizontal_dots):  # X axis
         color_choice = random.choice(color_list)
         turtle.color(color_choice)
@@ -47,6 +60,9 @@ def move_sideways(turtle, color_list, horizontal_dots):
 
 
 def set_up(turtle, starting_x=0, starting_y=0):
+    """
+    Here you will set up the location of the turtle.
+    """
     tim.shape("turtle")
     tim.penup()
     tim.setposition(starting_x, starting_y)

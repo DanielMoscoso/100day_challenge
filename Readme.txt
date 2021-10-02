@@ -338,4 +338,5 @@
 		 have to clean up the code, but it works.
 		-Much cleaner code: Everything is now in functions and the computer asks
 		 how many dots the user wants on the canvas.
+		-DocString.
 ===============================================================================
