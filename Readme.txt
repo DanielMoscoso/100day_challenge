@@ -333,4 +333,7 @@
 		-Colorgram module imported, and 40 colors extracted from the picture.
 		-Timmy draws 10 circles at the bottom of the screen.
 		-Draws 10 circles with different colors from the list of 40 colors extracted.
+		-It draws a 10x10 matrix of circles, with different color each. Every circle
+		 is 20units is diameter and with a distance of 50units of each other. I still
+		 have to clean up the code, but it works.
 ===============================================================================

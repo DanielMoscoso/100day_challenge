@@ -37,23 +37,32 @@ color_list = [(246, 241, 244), (222, 152, 103), (233, 237, 240), (128, 172, 199)
 
 import turtle
 import random
+
+
+starting_x = -400
+starting_y = -350
+
 turtle.colormode(255)
 tim = turtle.Turtle()
 tim.shape("turtle")
 tim.penup()
-tim.setposition(-400, -350)
+tim.setposition(starting_x, starting_y)
 tim.pendown()
 
 # Dotted line:
-for i in range(10):
-    color_choice = random.choice(color_list)
-    tim.color(color_choice)
-    tim.begin_fill()
-    tim.circle(20)
-    tim.end_fill()
-    tim.penup()
-    tim.setx(tim.position()[0] + 70)
-    tim.pendown()
+for _ in range(10):  # Y axis
+    for _ in range(10):  # X axis
+        color_choice = random.choice(color_list)
+        tim.color(color_choice)
+        tim.begin_fill()
+        tim.circle(20)
+        tim.end_fill()
+        tim.penup()
+        tim.setx(tim.position()[0] + 70)
+        tim.pendown()
 
+    tim.penup()
+    tim.setposition(starting_x, tim.position()[1] + 70)
+    tim.pendown()
 screen = turtle.Screen()
 screen.exitonclick()
