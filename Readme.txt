@@ -336,4 +336,6 @@
 		-It draws a 10x10 matrix of circles, with different color each. Every circle
 		 is 20units is diameter and with a distance of 50units of each other. I still
 		 have to clean up the code, but it works.
+		-Much cleaner code: Everything is now in functions and the computer asks
+		 how many dots the user wants on the canvas.
 ===============================================================================
