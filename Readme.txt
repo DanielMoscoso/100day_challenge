@@ -331,5 +331,6 @@
 	-Hirst Painting:
 		-Ready.
 		-Colorgram module imported, and 40 colors extracted from the picture.
-		-Timmy draws 10 circles.
+		-Timmy draws 10 circles at the bottom of the screen.
+		-Draws 10 circles with different colors from the list of 40 colors extracted.
 ===============================================================================
