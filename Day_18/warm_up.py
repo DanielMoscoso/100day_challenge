@@ -68,5 +68,29 @@ tim.color("red")
 # # -------------------------- Completely Random Walk: --------------------------
 
 
+# -------------------------------- Spirograph: --------------------------------
+def random_walk():
+    tim.pensize(1)
+    tim.speed(0)
+    direction = [0, 90, 180, 270]
+
+    tim.circle(200)
+
+    # # This is if you want a completely random color:
+    # color1 = random.randint(0, 255))
+    # color2 = random.randint(0, 255))
+    # color3 = random.randint(0, 255))
+    # tim.pencolor((color1, color2, color3))
+
+    # # This is if you want a set of colors:
+    colors = ['cyan', 'SeaGreen', 'CornFlowerBlue', 'IndianRed', 'DarkOrchid', 'LightSeaGreen', 'teal', 'slate gray', 'light coral', 'wheat']
+    tim.color(random.choice(colors))
+    tim.right(3)
+
+
+for _ in range(120):
+    random_walk()
+# -------------------------------- Spirograph: --------------------------------
+
 screen = Screen()
 screen.exitonclick()
