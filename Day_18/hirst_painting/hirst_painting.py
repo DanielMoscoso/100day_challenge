@@ -7,16 +7,16 @@ import turtle
 # TODO: 2.- Every dot with a diameter of 20.
 # TODO: 3.- Every dot with a space of 50 in between.
 
-# ---------------------------- In case you need it ----------------------------
-def reset_kernel():
-    """
-    This function helps set up the kernel location. Just in case the IDE is running
-    in a different location.
-    """
-    import os
-    # os.getcwd()
-    os.chdir('C:\\Users\\Daniel\\Documents\\Python\\100days\\Day_18\\hirst_painting')
-# ---------------------------- In case you need it ----------------------------
+# # ---------------------------- In case you need it ----------------------------
+# def reset_kernel():
+#     """
+#     This function helps set up the kernel location. Just in case the IDE is running
+#     in a different location.
+#     """
+#     import os
+#     # os.getcwd()
+#     os.chdir('C:\\Users\\Daniel\\Documents\\Python\\100days\\Day_18\\hirst_painting')
+# # ---------------------------- In case you need it ----------------------------
 
 
 def color_extraction(number_of_colors=0):
@@ -69,7 +69,7 @@ def set_up(turtle, starting_x=0, starting_y=0):
     tim.pendown()
 
 
-reset_kernel()
+# reset_kernel()
 
 color_extraction(40)
 

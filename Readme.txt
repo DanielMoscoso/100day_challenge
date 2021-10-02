@@ -340,4 +340,5 @@
 		 how many dots the user wants on the canvas.
 		-DocString.
 		-Two of the extremely light colors were removed.
+		-For running it on cmd.
 ===============================================================================
