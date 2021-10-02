@@ -320,4 +320,6 @@
 		 correct answers the user had out of the total.
 18.-Eighteenth day of the 100day challenge:
 ===============================================================================
+	-Warm up:
+		-Tim the turtle drawing a square.
 ===============================================================================
