@@ -330,4 +330,5 @@
 		-Spirograph 2.0.
 	-Hirst Painting:
 		-Ready.
+		-Colorgram module imported, and 40 colors extracted from the picture.
 ===============================================================================
