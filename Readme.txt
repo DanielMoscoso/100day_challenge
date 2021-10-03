@@ -342,4 +342,5 @@
 		-Two of the extremely light colors were removed.
 		-For running it on cmd.
 		-Faster to run, and it only shows the dots.
+		-Professor's way.
 ===============================================================================
