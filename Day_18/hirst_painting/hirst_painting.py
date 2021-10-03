@@ -64,6 +64,8 @@ def set_up(turtle, starting_x=0, starting_y=0):
     Here you will set up the location of the turtle.
     """
     tim.shape("turtle")
+    tim.hideturtle()
+    tim.speed(0)
     tim.penup()
     tim.setposition(starting_x, starting_y)
     tim.pendown()
