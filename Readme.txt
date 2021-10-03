@@ -319,7 +319,7 @@
 		 Final version of the code is finished; It checks and outputs how many
 		 correct answers the user had out of the total.
 18.-Eighteenth day of the 100day challenge:
-===============================================================================
+
 	-Warm up:
 		-Tim the turtle drawing a square.
 		-Tim the turtle drawing a dotted line.
@@ -343,5 +343,6 @@
 		-For running it on cmd.
 		-Faster to run, and it only shows the dots.
 		-Professor's way.
-===============================================================================
 19.-Nineteenth day of the 100day challenge:
+===============================================================================
+===============================================================================
