@@ -12,6 +12,10 @@ from turtle import Turtle
 
 STARTING_POSITION = [(0, 0), (-20, 0), (-40, 0)]
 MOVE_DISTANCE = 20
+UP = 90
+DOWN = 270
+LEFT = 180
+RIGHT = 0
 
 
 class Snake:
@@ -38,28 +42,28 @@ class Snake:
 
     def up(self):
         # If you are facing down, then do not go over youself.
-        if self.head.heading() == 270:
+        if self.head.heading() == DOWN:
             pass
         else:
-            self.head.setheading(90)
+            self.head.setheading(UP)
 
     def left(self):
         # If you are facing left, then do not go over youself.
-        if self.head.heading() == 0:
+        if self.head.heading() == RIGHT:
             pass
         else:
-            self.head.setheading(180)
+            self.head.setheading(LEFT)
 
     def down(self):
         # If you are facing up, then do not go over youself.
-        if self.head.heading() == 90:
+        if self.head.heading() == UP:
             pass
         else:
-            self.head.setheading(270)
+            self.head.setheading(DOWN)
 
     def right(self):
         # If you are facing left, then do not go over youself.
-        if self.head.heading() == 180:
+        if self.head.heading() == LEFT:
             pass
         else:
-            self.head.setheading(0)
+            self.head.setheading(RIGHT)

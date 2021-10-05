@@ -367,4 +367,5 @@
 		-Failsafe in case you are facing one way, and want to go the exact opposite way.
 		 (You should not be able to do it. Otherwise, you would be going over yourself).
 		-Better way of accessing the head of the snake in the 'snake.py' module.
+		-Also, better way of accessing the directions; as constants.
 ===============================================================================
