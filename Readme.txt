@@ -363,4 +363,7 @@
 		-Start of the OOP process.
 		-Cleaner and slightly better written code.
 		-To do list.
+		-Up, Left, Down, and Right turns implemented.
+		-Failsafe in case you are facing one way, and want to go the exact opposite way.
+		 (You should not be able to do it. Otherwise, you would be going over yourself).
 ===============================================================================

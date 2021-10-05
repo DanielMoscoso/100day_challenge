@@ -36,13 +36,29 @@ class Snake:
         self.segments[0].forward(MOVE_DISTANCE)
 
     def up(self):
-        self.segments[0].setheading(90)
+        # If you are facing down, then do not go over youself.
+        if self.segments[0].heading() == 270:
+            pass
+        else:
+            self.segments[0].setheading(90)
 
     def left(self):
-        self.segments[0].setheading(180)
+        # If you are facing left, then do not go over youself.
+        if self.segments[0].heading() == 0:
+            pass
+        else:
+            self.segments[0].setheading(180)
 
     def down(self):
-        self.segments[0].setheading(270)
+        # If you are facing up, then do not go over youself.
+        if self.segments[0].heading() == 90:
+            pass
+        else:
+            self.segments[0].setheading(270)
 
     def right(self):
-        self.segments[0].setheading(0)
+        # If you are facing left, then do not go over youself.
+        if self.segments[0].heading() == 180:
+            pass
+        else:
+            self.segments[0].setheading(0)

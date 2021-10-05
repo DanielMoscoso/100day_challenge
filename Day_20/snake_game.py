@@ -1,8 +1,16 @@
 from turtle import Turtle, Screen
 import time
 from modules import snake
-import os
-os.chdir('C:\\Users\\Daniel\\Documents\\Python\\100days\\Day_20')
+# # ---------------------------- In case you need it ----------------------------
+# def reset_kernel():
+#     """
+#     This function helps set up the kernel location. Just in case the IDE is running
+#     in a different location.
+#     """
+#     import os
+#     os.getcwd()
+#     os.chdir('C:\\Users\\Daniel\\Documents\\Python\\100days\\Day_20\\modules')
+# # ---------------------------- In case you need it ----------------------------
 
 # TODO: 1.-Create a snake body.
 # TODO: 2.-Move the snake.
