@@ -353,4 +353,6 @@
 	-All the turtles have different speed. The only thing is that when 2 turtles are
 	 within a few paces of the finish line, and 2 or any combination of turtles, crosses
 	 the line, then all of them win (even though it clearly states who crosses first).
+	-Apparently this will solve it. (I am not completely convinced, but I do not want
+	 to run more iterations of the game)
 ===============================================================================

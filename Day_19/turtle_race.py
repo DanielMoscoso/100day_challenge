@@ -23,7 +23,7 @@ while move:
     for number in range(6):
         turtles[number].forward(random.randint(0, 10))
 
-        if turtles[number].xcor() >= 220:
+        if turtles[number].xcor() > 230:
             move = False
             if user_bet == colors[number]:
                 print(f"You win!!. The {colors[number]} turtle is the winner!")
