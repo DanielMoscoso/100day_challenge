@@ -345,5 +345,15 @@
 		-Professor's way.
 19.-Nineteenth day of the 100day challenge:
 ===============================================================================
+	-Etch a sketch.
+	-Turtle race: All the turtles are racing, but they always end up in the same
+	 places. I think it is because I should model the game in terms of real physics;
+	 speed = distance/time. Right now I only change how fast the game renders/updates
+	 each turtle.
+	-All the turtles have different speed. The only thing is that when 2 turtles are
+	 within a few paces of the finish line, and 2 or any combination of turtles, crosses
+	 the line, then all of them win (even though it clearly states who crosses first).
+	-Apparently this will solve it. (I am not completely convinced, but I do not want
+	 to run more iterations of the game)
 ===============================================================================
 20.-Twentieth day of the 100day challenge:
