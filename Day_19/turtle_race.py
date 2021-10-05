@@ -15,16 +15,17 @@ for number, item in enumerate(colors):
     turtles[number].color(item)
     turtles[number].penup()
     turtles[number].goto(x=-230, y=token)
-    turtles[number].speed(random.randint(0, 10))
+    turtles[number].speed(0)
     token += 40
 
 move = True
 while move:
     for number in range(6):
-        turtles[number].forward(10)
+        turtles[number].forward(random.randint(0, 10))
 
-        if turtles[number].xcor() == 230:
-            print(f"{colors[number]} wins!")
+        if turtles[number].xcor() >= 220:
             move = False
-
-screen.exitonclick()
+            if user_bet == colors[number]:
+                print(f"You win!!. The {colors[number]} turtle is the winner!")
+            else:
+                print(f"You lose. The {colors[number]} turtle is the winner.")
