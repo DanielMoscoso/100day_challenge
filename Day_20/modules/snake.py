@@ -18,6 +18,7 @@ class Snake:
     def __init__(self):
         self.segments = []
         self.create_snake()
+        self.head = self.segments[0]
 
     def create_snake(self):
         for position in STARTING_POSITION:
@@ -33,32 +34,32 @@ class Snake:
             new_y = self.segments[seg_num - 1].ycor()
             self.segments[seg_num].goto(new_x, new_y)
 
-        self.segments[0].forward(MOVE_DISTANCE)
+        self.head.forward(MOVE_DISTANCE)
 
     def up(self):
         # If you are facing down, then do not go over youself.
-        if self.segments[0].heading() == 270:
+        if self.head.heading() == 270:
             pass
         else:
-            self.segments[0].setheading(90)
+            self.head.setheading(90)
 
     def left(self):
         # If you are facing left, then do not go over youself.
-        if self.segments[0].heading() == 0:
+        if self.head.heading() == 0:
             pass
         else:
-            self.segments[0].setheading(180)
+            self.head.setheading(180)
 
     def down(self):
         # If you are facing up, then do not go over youself.
-        if self.segments[0].heading() == 90:
+        if self.head.heading() == 90:
             pass
         else:
-            self.segments[0].setheading(270)
+            self.head.setheading(270)
 
     def right(self):
         # If you are facing left, then do not go over youself.
-        if self.segments[0].heading() == 180:
+        if self.head.heading() == 180:
             pass
         else:
-            self.segments[0].setheading(0)
+            self.head.setheading(0)
