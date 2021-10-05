@@ -359,4 +359,5 @@
 ===============================================================================
 	-Snake game:
 		-Starting 3 segments in the snake game.
+		-All the segments move as one, and they turn where the head turns.
 ===============================================================================

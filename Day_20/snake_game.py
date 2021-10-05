@@ -18,4 +18,16 @@ for position in starting_position:
     segments.append(new_segment)
 
 
+game_is_on = True
+while game_is_on:
+    screen.update()
+    time.sleep(0.1)
+
+    for seg_num in range(len(segments) - 1, 0, -1):
+        nex_x = segments[seg_num - 1].xcor()
+        nex_y = segments[seg_num - 1].ycor()
+        segments[seg_num].goto(nex_x, nex_y)
+
+    segments[0].forward(20)
+
 screen.exitonclick()
