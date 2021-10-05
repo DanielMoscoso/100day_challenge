@@ -357,4 +357,6 @@
 	 to run more iterations of the game)
 20.-Twentieth day of the 100day challenge:
 ===============================================================================
+	-Snake game:
+		-Starting 3 segments in the snake game.
 ===============================================================================
