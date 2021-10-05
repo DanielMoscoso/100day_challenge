@@ -362,4 +362,5 @@
 		-All the segments move as one, and they turn where the head turns.
 		-Start of the OOP process.
 		-Cleaner and slightly better written code.
+		-To do list.
 ===============================================================================
