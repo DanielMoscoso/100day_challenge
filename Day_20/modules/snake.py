@@ -1,4 +1,4 @@
-from turtle import Turtle, Screen
+from turtle import Turtle
 # # ---------------------------- In case you need it ----------------------------
 # def reset_kernel():
 #     """
@@ -10,13 +10,17 @@ from turtle import Turtle, Screen
 #     os.chdir('C:\\Users\\Daniel\\Documents\\Python\\100days\\Day_20\\modules')
 # # ---------------------------- In case you need it ----------------------------
 
+STARTING_POSITION = [(0, 0), (-20, 0), (-40, 0)]
+MOVE_DISTANCE = 20
+
 
 class Snake:
     def __init__(self):
-        self.starting_position = [(0, 0), (-20, 0), (-40, 0)]
-
         self.segments = []
-        for position in self.starting_position:
+        self.create_snake()
+
+    def create_snake():
+        for position in STARTING_POSITION:
             new_segment = Turtle(shape="square")
             new_segment.color("white")
             new_segment.penup()
@@ -25,8 +29,8 @@ class Snake:
 
     def move(self):
         for seg_num in range(len(self.segments) - 1, 0, -1):
-            self.nex_x = self.segments[seg_num - 1].xcor()
-            self.nex_y = self.segments[seg_num - 1].ycor()
-            self.segments[seg_num].goto(self.nex_x, self.nex_y)
+            new_x = self.segments[seg_num - 1].xcor()
+            new_y = self.segments[seg_num - 1].ycor()
+            self.segments[seg_num].goto(new_x, new_y)
 
-        self.segments[0].forward(20)
+        self.segments[0].forward(MOVE_DISTANCE)
