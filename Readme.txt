@@ -346,4 +346,8 @@
 19.-Nineteenth day of the 100day challenge:
 ===============================================================================
 	-Etch a sketch.
+	-Turtle race: All the turtles are racing, but they always end up in the same
+	 places. I think it is because I should model the game in terms of real physics;
+	 speed = distance/time. Right now I only change how fast the game renders/updates
+	 each turtle.
 ===============================================================================
