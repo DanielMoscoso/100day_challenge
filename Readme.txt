@@ -344,7 +344,7 @@
 		-Faster to run, and it only shows the dots.
 		-Professor's way.
 19.-Nineteenth day of the 100day challenge:
-===============================================================================
+
 	-Etch a sketch.
 	-Turtle race: All the turtles are racing, but they always end up in the same
 	 places. I think it is because I should model the game in terms of real physics;
@@ -355,5 +355,6 @@
 	 the line, then all of them win (even though it clearly states who crosses first).
 	-Apparently this will solve it. (I am not completely convinced, but I do not want
 	 to run more iterations of the game)
-===============================================================================
 20.-Twentieth day of the 100day challenge:
+===============================================================================
+===============================================================================
