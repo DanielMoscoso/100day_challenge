@@ -357,5 +357,16 @@
 	 to run more iterations of the game)
 20.-Twentieth day of the 100day challenge:
 ===============================================================================
+	-Snake game:
+		-Starting 3 segments in the snake game.
+		-All the segments move as one, and they turn where the head turns.
+		-Start of the OOP process.
+		-Cleaner and slightly better written code.
+		-To do list.
+		-Up, Left, Down, and Right turns implemented.
+		-Failsafe in case you are facing one way, and want to go the exact opposite way.
+		 (You should not be able to do it. Otherwise, you would be going over yourself).
+		-Better way of accessing the head of the snake in the 'snake.py' module.
+		-Also, better way of accessing the directions; as constants.
 ===============================================================================
 21.-Twenty first day of the 100day challenge:
