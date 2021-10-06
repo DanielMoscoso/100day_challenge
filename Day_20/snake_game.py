@@ -2,6 +2,7 @@ from turtle import Screen
 import time
 from modules import snake
 from modules import food
+from modules import scoreboard
 # # ---------------------------- In case you need it ----------------------------
 # def reset_kernel():
 #     """
@@ -29,6 +30,7 @@ screen.tracer(0)
 
 snake = snake.Snake()
 food = food.Food()
+score = scoreboard.Scoreboard()
 
 screen.listen()
 screen.onkey(snake.up, "w")
@@ -44,6 +46,8 @@ while game_is_on:
     snake.move()
 
     if snake.head.distance(food) < 15:
+        screen.update()
         food.refresh()
+        score.increase_score()
 
 screen.exitonclick()

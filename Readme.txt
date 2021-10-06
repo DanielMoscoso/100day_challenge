@@ -375,4 +375,5 @@
 		-The food for the snake is randomly generated on the screen. The food has its
 		 own module and belongs to a class.
 		-Every time the snake hits the food, it automatically changes location.
+		-Have a scoreboard that updates every time the user eats a dot.
 ===============================================================================
