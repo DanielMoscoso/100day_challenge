@@ -369,4 +369,6 @@
 		-Also, better way of accessing the directions; as constants.
 21.-Twenty first day of the 100day challenge:
 ===============================================================================
+	-Warm up:
+		-Inheritance.
 ===============================================================================
