@@ -356,7 +356,6 @@
 	-Apparently this will solve it. (I am not completely convinced, but I do not want
 	 to run more iterations of the game)
 20.-Twentieth day of the 100day challenge:
-===============================================================================
 	-Snake game:
 		-Starting 3 segments in the snake game.
 		-All the segments move as one, and they turn where the head turns.
@@ -368,5 +367,6 @@
 		 (You should not be able to do it. Otherwise, you would be going over yourself).
 		-Better way of accessing the head of the snake in the 'snake.py' module.
 		-Also, better way of accessing the directions; as constants.
-===============================================================================
 21.-Twenty first day of the 100day challenge:
+===============================================================================
+===============================================================================
