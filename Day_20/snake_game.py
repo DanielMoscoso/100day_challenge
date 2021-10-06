@@ -1,6 +1,7 @@
-from turtle import Turtle, Screen
+from turtle import Screen
 import time
 from modules import snake
+from modules import food
 # # ---------------------------- In case you need it ----------------------------
 # def reset_kernel():
 #     """
@@ -27,6 +28,7 @@ screen.title("My snake game")
 screen.tracer(0)
 
 snake = snake.Snake()
+food = food.Food()
 
 screen.listen()
 screen.onkey(snake.up, "w")

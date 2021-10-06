@@ -371,4 +371,7 @@
 ===============================================================================
 	-Warm up:
 		-Inheritance.
+	-Snake game (continuation):
+		-The food for the snake is randomly generated on the screen. The food has its
+		 own module and belongs to a class.
 ===============================================================================
