@@ -1,9 +1,11 @@
 # TODO: 1.-Line in the middle of the screen.
 # TODO: 2.-Individual class for the ball.
-# TODO: 3.-Detect ball collision with walls.
-# TODO: 4.-Individual class for the players.
+# TODO: 2.1.-Ball movement.
+# TODO: 3.-Individual class for scores.
+# TODO: 4.-Individual class for the players' paddles.
+# TODO: 4.1.-Paddle movement.
 # TODO: 5.-Detect ball collision with players for scores.
-# TODO: 6.-Individual class for scores.
+# TODO: 6.-Detect ball collision with walls for game over.
 
 from turtle import Turtle, Screen
 from modules import ball, middle_line, scoreboard, paddle

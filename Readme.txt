@@ -404,4 +404,5 @@
 		 module. Therefore, it still needs modifications). I also changed the 'scoreboard'
 		 module so it would be better written. And the 'middle_line' module was modified
 		 so the shape and color of the turtles remained constants.
+		-Updated 'To Do' list.
 ===============================================================================
