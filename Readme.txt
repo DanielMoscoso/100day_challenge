@@ -383,4 +383,6 @@
 		-Faster gameplay, and better written 'for loop' when eating itself.
 22.-Twenty second day of the 100day challenge:
 ===============================================================================
+	-Pong game:
+		-Everything ready to go.
 ===============================================================================
