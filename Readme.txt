@@ -369,5 +369,18 @@
 		-Also, better way of accessing the directions; as constants.
 21.-Twenty first day of the 100day challenge:
 ===============================================================================
+	-Warm up:
+		-Inheritance.
+	-Snake game (continuation):
+		-The food for the snake is randomly generated on the screen. The food has its
+		 own module and belongs to a class.
+		-Every time the snake hits the food, it automatically changes location.
+		-Have a scoreboard that updates every time the user eats a dot.
+		-The game stops if the snake collides with any wall.
+		-If the user hits a wall, then the game stops, and the text "GAME OVER"
+		 appears in the middle.
+		-If the snake eats a dot, then it gets bigger by 1 link/turtle.
+		-If the snake eats itself, then it is game over.
+		-Faster gameplay, and better written 'for loop' when eating itself.
 ===============================================================================
 22.-Twenty second day of the 100day challenge:

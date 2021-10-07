@@ -1,6 +1,8 @@
-from turtle import Turtle, Screen
+from turtle import Screen
 import time
 from modules import snake
+from modules import food
+from modules import scoreboard
 # # ---------------------------- In case you need it ----------------------------
 # def reset_kernel():
 #     """
@@ -27,6 +29,8 @@ screen.title("My snake game")
 screen.tracer(0)
 
 snake = snake.Snake()
+food = food.Food()
+score = scoreboard.Scoreboard()
 
 screen.listen()
 screen.onkey(snake.up, "w")
@@ -40,5 +44,22 @@ while game_is_on:
     time.sleep(0.1)
 
     snake.move()
+
+    # Eating a dot:
+    if snake.head.distance(food) < 15:
+        food.refresh()
+        snake.extend()
+        score.increase_score()
+
+    # If it hits a wall, game over:
+    if snake.head.xcor() > 280 or snake.head.xcor() < -280 or snake.head.ycor() > 280 or snake.head.ycor() < -280:
+        game_is_on = False
+        score.game_over()
+
+    # If it eats itself, game over:
+    for segment in snake.segments[1:]:
+        if snake.head.distance(segment) < 10:
+            game_is_on = False
+            score.game_over()
 
 screen.exitonclick()
