@@ -377,4 +377,6 @@
 		-Every time the snake hits the food, it automatically changes location.
 		-Have a scoreboard that updates every time the user eats a dot.
 		-The game stops if the snake collides with any wall.
+		-If the user hits a wall, then the game stops, and the text "GAME OVER"
+		 appears in the middle.
 ===============================================================================
