@@ -1,17 +1,18 @@
 from turtle import Turtle
 
+SHAPE = "square"
+COLOR = "white"
+SIZE = 0.5
+
 
 class Middle_Line:
     def __init__(self):
-        self.color = "white"
-        self.shape = "square"
-        self.size = 0.5
         self.add_marker()
 
     def add_marker(self):
-        timmy = Turtle(self.shape)
-        timmy.color(self.color)
-        timmy.shapesize(self.size, self.size)
+        timmy = Turtle(SHAPE)
+        timmy.color(COLOR)
+        timmy.shapesize(SIZE, SIZE)
         timmy.penup()
         timmy.setpos((0, -290))
         timmy.setheading(90)

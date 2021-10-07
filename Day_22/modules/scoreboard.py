@@ -12,12 +12,12 @@ class Scoreboard(Turtle):
         self.color("white")
         self.hideturtle()
         self.penup()
-        self.score_position(player)
+        self.score_position()
         self.speed(0)  # Fastest
         self.write_score()
 
-    def score_position(self, player):
-        if player == "one":
+    def score_position(self):
+        if self.player == "one":
             self.goto(-200, 275)
         else:
             self.goto(200, 275)

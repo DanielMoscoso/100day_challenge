@@ -399,4 +399,9 @@
 		-The ball is correctly instantiated and accessed in the 'Ball()'. And the
 		 module for the dotted line in the middle of the screen is added.
 		-Scoreboard module implemented: 2 scoreboards are printed on the screen.
+		-Paddle modules implemented: 2 paddles are added to the screen, and positioned
+		 on either side of the board. (This module is an adaptation of the 'snake'
+		 module. Therefore, it still needs modifications). I also changed the 'scoreboard'
+		 module so it would be better written. And the 'middle_line' module was modified
+		 so the shape and color of the turtles remained constants.
 ===============================================================================

@@ -6,7 +6,7 @@
 # TODO: 6.-Individual class for scores.
 
 from turtle import Turtle, Screen
-from modules import ball, middle_line, scoreboard
+from modules import ball, middle_line, scoreboard, paddle
 import time
 
 
@@ -17,6 +17,9 @@ screen.title("Pong Game")
 screen.tracer(0)
 
 middle_line.Middle_Line()
+
+paddle.Paddle("one")
+paddle.Paddle("two")
 
 pong_ball = ball.Ball()
 while True:
