@@ -379,4 +379,5 @@
 		-The game stops if the snake collides with any wall.
 		-If the user hits a wall, then the game stops, and the text "GAME OVER"
 		 appears in the middle.
+		-If the snake eats a dot, then it gets bigger by 1 link/turtle.
 ===============================================================================
