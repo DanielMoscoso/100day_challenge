@@ -394,4 +394,6 @@
 		 if the ball went BEYOND what it could cover in the next step, it sees itself
 		 still trapped in the wall, therefore changing direction again. It seems
 		 as if it changed directions twice in a row, "mid-air" without touching a wall.
+		-This should solve the problem for now: every time the ball hits a wall, it
+		 takes a tiny step, then begins the process of checking once more.
 ===============================================================================

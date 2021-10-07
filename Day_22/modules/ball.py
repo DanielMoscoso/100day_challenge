@@ -21,6 +21,9 @@ class Ball:
 
     def bounce(self, direction):
         self.ball.setheading(self.bouncing_direction(direction))
+        # The ball needs to move a little more every time it hits a wall.
+        # Otherwise, it gets confused on very tight edges.
+        self.ball.forward(5)
 
     def bouncing_direction(self, direction):
         up_left = random.randint(120, 150)
