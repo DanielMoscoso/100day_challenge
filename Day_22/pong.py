@@ -29,6 +29,9 @@ screen.listen()
 screen.onkey(paddle_one.up, "w")
 screen.onkey(paddle_one.down, "s")
 
+screen.onkey(paddle_two.up, "o")
+screen.onkey(paddle_two.down, "l")
+
 pong_ball = ball.Ball()
 while True:
     screen.update()

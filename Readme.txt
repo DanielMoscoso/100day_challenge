@@ -411,4 +411,5 @@
 		 for moving down. The 'up()' and 'down()' methods have been adapted for the
 		 paddle class too.
 		-DocStrings for the paddle class.
+		-Movement for the second player is added.
 ===============================================================================
