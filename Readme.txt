@@ -381,4 +381,5 @@
 		 appears in the middle.
 		-If the snake eats a dot, then it gets bigger by 1 link/turtle.
 		-If the snake eats itself, then it is game over.
+		-Faster gameplay, and better written 'for loop' when eating itself.
 ===============================================================================

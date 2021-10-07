@@ -36,6 +36,7 @@ class Snake:
         new_segment.color("white")
         new_segment.penup()
         new_segment.setpos(position)
+        new_segment.speed(0)
         self.segments.append(new_segment)
 
     def move(self):
