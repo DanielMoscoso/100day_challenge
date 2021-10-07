@@ -4,3 +4,18 @@
 # TODO: 4.-Individual class for the players.
 # TODO: 5.-Detect ball collision with players for scores.
 # TODO: 6.-Individual class for scores.
+
+from turtle import Screen
+from modules import ball
+import time
+
+screen = Screen()
+screen.setup(width=800, height=600)
+screen.bgcolor("black")
+screen.title("Pong Game")
+screen.tracer(0)
+
+ball = ball.Ball()
+screen.update()
+
+screen.exitonclick()
