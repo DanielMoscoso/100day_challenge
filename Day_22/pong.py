@@ -5,8 +5,8 @@
 # TODO: 5.-Detect ball collision with players for scores.
 # TODO: 6.-Individual class for scores.
 
-from turtle import Screen
-from modules import ball
+from turtle import Turtle, Screen
+from modules import ball, middle_line
 import time
 
 
@@ -15,6 +15,8 @@ screen.setup(width=800, height=600)
 screen.bgcolor("black")
 screen.title("Pong Game")
 screen.tracer(0)
+
+middle_line.Middle_Line()
 
 pong_ball = ball.Ball()
 while True:

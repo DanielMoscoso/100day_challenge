@@ -7,17 +7,19 @@ SPEED = 20
 class Ball:
     def __init__(self):
         self.color = "white"
-        self.shape = "square"
+        self.shape = "circle"
         self.size = 0.5
-        self.add_ball()
+        self.ball = self.add_ball()
 
     def add_ball(self):
-        self.ball = Turtle(self.shape)
-        self.ball.color(self.color)
-        self.ball.shapesize(self.size, self.size)
-        self.ball.penup()
-        self.ball.setpos((0, -1))
-        self.ball.speed(0)
+        ball = Turtle(self.shape)
+        ball.color(self.color)
+        ball.shapesize(self.size, self.size)
+        ball.penup()
+        ball.setpos((0, -1))
+        ball.speed(0)
+
+        return ball
 
     def bounce(self, direction):
         self.ball.setheading(self.bouncing_direction(direction))
@@ -32,24 +34,18 @@ class Ball:
         down_right = random.randint(300, 330)
 
         if direction == "left" and self.ball.ycor() > 0:
-            print("right wall")
             return up_left
         elif direction == "left" and self.ball.ycor() < 0:
-            print("right wall")
             return down_left
 
         elif direction == "right" and self.ball.ycor() > 0:
-            print("left wall")
             return up_right
         elif direction == "right" and self.ball.ycor() < 0:
-            print("left wall")
             return down_right
 
         elif direction == "down" and self.ball.heading() < 90:
-            print(f"Hit wall! facing: {self.ball.heading()}. going down_right: {down_right}")
             return down_right
         elif direction == "down" and self.ball.heading() > 90:
-            print(f"Hit wall! facing: {self.ball.heading()}. going down_left: {down_left}")
             return down_left
 
         elif direction == "up" and self.ball.heading() < 270:

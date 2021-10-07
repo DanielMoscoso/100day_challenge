@@ -396,4 +396,6 @@
 		 as if it changed directions twice in a row, "mid-air" without touching a wall.
 		-This should solve the problem for now: every time the ball hits a wall, it
 		 takes a tiny step, then begins the process of checking once more.
+		-The ball is correctly instantiated and accessed in the 'Ball()'. And the
+		 module for the dotted line in the middle of the screen is added.
 ===============================================================================
