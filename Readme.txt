@@ -386,4 +386,5 @@
 	-Pong game:
 		-Everything ready to go.
 		-A ball is created and placed in the middle of the screen.
+		-The ball bounces off the walls in the correct directions.
 ===============================================================================

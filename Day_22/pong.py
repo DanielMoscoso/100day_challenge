@@ -9,13 +9,28 @@ from turtle import Screen
 from modules import ball
 import time
 
+
 screen = Screen()
 screen.setup(width=800, height=600)
 screen.bgcolor("black")
 screen.title("Pong Game")
 screen.tracer(0)
 
-ball = ball.Ball()
-screen.update()
+pong_ball = ball.Ball()
+while True:
+    screen.update()
+    time.sleep(0.1)
+
+    # If it hits a wall, game over:
+    if pong_ball.x_cor() > 370:  # Right wall
+        pong_ball.bounce("left")
+    elif pong_ball.x_cor() < -370:  # Left wall
+        pong_ball.bounce("right")
+    elif pong_ball.y_cor() > 270:  # Upper wall
+        pong_ball.bounce("down")
+    elif pong_ball.y_cor() < -270:  # Lower wall
+        pong_ball.bounce("up")
+
+    pong_ball.move()
 
 screen.exitonclick()
