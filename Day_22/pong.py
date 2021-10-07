@@ -6,7 +6,7 @@
 # TODO: 6.-Individual class for scores.
 
 from turtle import Turtle, Screen
-from modules import ball, middle_line
+from modules import ball, middle_line, scoreboard
 import time
 
 
@@ -22,6 +22,9 @@ pong_ball = ball.Ball()
 while True:
     screen.update()
     time.sleep(0.1)
+
+    scoreboard.Scoreboard("one")
+    scoreboard.Scoreboard("two")
 
     # If it hits a wall, game over:
     if pong_ball.x_cor() > 370:  # Right wall

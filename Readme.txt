@@ -398,4 +398,5 @@
 		 takes a tiny step, then begins the process of checking once more.
 		-The ball is correctly instantiated and accessed in the 'Ball()'. And the
 		 module for the dotted line in the middle of the screen is added.
+		-Scoreboard module implemented: 2 scoreboards are printed on the screen.
 ===============================================================================
