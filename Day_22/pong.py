@@ -49,4 +49,14 @@ while True:
 
     pong_ball.move()
 
+    # Bounce off player one's paddle:
+    for segment in paddle_one.segments:
+        if pong_ball.ball.distance(segment) < 20.5:
+            pong_ball.bounce("right")
+
+    # Bounce off player two's paddle:
+    for segment in paddle_two.segments:
+        if pong_ball.ball.distance(segment) < 20.5:
+            pong_ball.bounce("left")
+
 screen.exitonclick()
