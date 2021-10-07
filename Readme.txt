@@ -368,7 +368,6 @@
 		-Better way of accessing the head of the snake in the 'snake.py' module.
 		-Also, better way of accessing the directions; as constants.
 21.-Twenty first day of the 100day challenge:
-===============================================================================
 	-Warm up:
 		-Inheritance.
 	-Snake game (continuation):
@@ -382,5 +381,6 @@
 		-If the snake eats a dot, then it gets bigger by 1 link/turtle.
 		-If the snake eats itself, then it is game over.
 		-Faster gameplay, and better written 'for loop' when eating itself.
-===============================================================================
 22.-Twenty second day of the 100day challenge:
+===============================================================================
+===============================================================================
