@@ -387,4 +387,11 @@
 		-Everything ready to go.
 		-A ball is created and placed in the middle of the screen.
 		-The ball bounces off the walls in the correct directions.
+		-There is a method that holds the direction of bouncing. And there is also a
+		 small bug: since the ball moves at a certain speed, then checks if it inside
+		 certain boundaries (walls), then it behaves like a ghost. It can go through
+		 a wall, realizes it went through it and change direction as if bouncing. So
+		 if the ball went BEYOND what it could cover in the next step, it sees itself
+		 still trapped in the wall, therefore changing direction again. It seems
+		 as if it changed directions twice in a row, "mid-air" without touching a wall.
 ===============================================================================

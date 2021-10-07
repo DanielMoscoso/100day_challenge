@@ -1,7 +1,7 @@
 from turtle import Turtle
 import random
 
-VELOCITY = 20
+SPEED = 20
 
 
 class Ball:
@@ -20,33 +20,42 @@ class Ball:
         self.ball.speed(0)
 
     def bounce(self, direction):
+        self.ball.setheading(self.bouncing_direction(direction))
+
+    def bouncing_direction(self, direction):
         up_left = random.randint(120, 150)
         up_right = random.randint(30, 60)
         down_left = random.randint(210, 240)
         down_right = random.randint(300, 330)
 
         if direction == "left" and self.ball.ycor() > 0:
-            self.ball.setheading(up_left)
+            print("right wall")
+            return up_left
         elif direction == "left" and self.ball.ycor() < 0:
-            self.ball.setheading(down_left)
+            print("right wall")
+            return down_left
 
         elif direction == "right" and self.ball.ycor() > 0:
-            self.ball.setheading(up_right)
+            print("left wall")
+            return up_right
         elif direction == "right" and self.ball.ycor() < 0:
-            self.ball.setheading(down_right)
+            print("left wall")
+            return down_right
 
         elif direction == "down" and self.ball.heading() < 90:
-            self.ball.setheading(down_right)
+            print(f"Hit wall! facing: {self.ball.heading()}. going down_right: {down_right}")
+            return down_right
         elif direction == "down" and self.ball.heading() > 90:
-            self.ball.setheading(down_left)
+            print(f"Hit wall! facing: {self.ball.heading()}. going down_left: {down_left}")
+            return down_left
 
         elif direction == "up" and self.ball.heading() < 270:
-            self.ball.setheading(up_left)
+            return up_left
         elif direction == "up" and self.ball.heading() > 270:
-            self.ball.setheading(up_right)
+            return up_right
 
     def move(self):
-        self.ball.forward(VELOCITY)
+        self.ball.forward(SPEED)
 
     def x_cor(self):
         return self.ball.xcor()
