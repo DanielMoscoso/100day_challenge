@@ -4,8 +4,8 @@
 # TODO: 3.-Individual class for scores.
 # TODO: 4.-Individual class for the players' paddles.
 # TODO: 4.1.-Paddle movement.
-# TODO: 5.-Detect ball collision with players for scores.
-# TODO: 6.-Detect ball collision with walls for game over.
+# TODO: 5.-Detect ball collision with players' paddles.
+# TODO: 6.-Detect ball collision with lateral walls for scores.
 
 from turtle import Turtle, Screen
 from modules import ball, middle_line, scoreboard, paddle

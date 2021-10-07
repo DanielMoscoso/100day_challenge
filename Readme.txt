@@ -414,4 +414,5 @@
 		-Movement for the second player is added.
 		-Small logic for GAME OVER is added.
 		-The ball now bounces off the 2 player's paddles.
+		-Updated 'To Do' list.
 ===============================================================================
