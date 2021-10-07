@@ -405,4 +405,9 @@
 		 module so it would be better written. And the 'middle_line' module was modified
 		 so the shape and color of the turtles remained constants.
 		-Updated 'To Do' list.
+		-Paddles move up or down: the paddle methods for going up and down are now
+		 correctly implemented, and the 'move()' method from the 'snake' module has
+		 been adapted. Now there are 2 methods; one for moving up and the other
+		 for moving down. The 'up()' and 'down()' methods have been adapted for the
+		 paddle class too.
 ===============================================================================

@@ -20,16 +20,19 @@ screen.tracer(0)
 
 middle_line.Middle_Line()
 
-paddle.Paddle("one")
-paddle.Paddle("two")
+player_one = scoreboard.Scoreboard("one")
+player_two = scoreboard.Scoreboard("two")
+paddle_one = paddle.Paddle("one")
+paddle_two = paddle.Paddle("two")
+
+screen.listen()
+screen.onkey(paddle_one.up, "w")
+screen.onkey(paddle_one.down, "s")
 
 pong_ball = ball.Ball()
 while True:
     screen.update()
     time.sleep(0.1)
-
-    scoreboard.Scoreboard("one")
-    scoreboard.Scoreboard("two")
 
     # If it hits a wall, game over:
     if pong_ball.x_cor() > 370:  # Right wall

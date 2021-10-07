@@ -24,7 +24,6 @@ class Paddle:
         else:
             for position in STARTING_POSITION[1]:
                 self.add_segment(position)
-        print(self.segments)
 
     def add_segment(self, position):
         new_segment = Turtle(SHAPE)
@@ -34,7 +33,7 @@ class Paddle:
         new_segment.speed(0)
         self.segments.append(new_segment)
 
-    def move(self):
+    def move_down(self):
         for seg_num in range(len(self.segments) - 1, 0, -1):
             new_x = self.segments[seg_num - 1].xcor()
             new_y = self.segments[seg_num - 1].ycor()
@@ -42,30 +41,20 @@ class Paddle:
 
         self.head.forward(MOVE_DISTANCE)
 
-    def up(self):
-        # If you are facing down, then do not go over youself.
-        if self.head.heading() == DOWN:
-            pass
-        else:
-            self.head.setheading(UP)
+    def move_up(self):
+        for seg_num in range(0, len(self.segments) - 1):
+            new_x = self.segments[seg_num + 1].xcor()
+            new_y = self.segments[seg_num + 1].ycor()
+            self.segments[seg_num].goto(new_x, new_y)
 
-    def left(self):
-        # If you are facing left, then do not go over youself.
-        if self.head.heading() == RIGHT:
-            pass
-        else:
-            self.head.setheading(LEFT)
+        self.head.forward(MOVE_DISTANCE)
+
+    def up(self):
+        self.head = self.segments[-1]
+        self.head.setheading(UP)
+        self.move_up()
 
     def down(self):
-        # If you are facing up, then do not go over youself.
-        if self.head.heading() == UP:
-            pass
-        else:
-            self.head.setheading(DOWN)
-
-    def right(self):
-        # If you are facing left, then do not go over youself.
-        if self.head.heading() == LEFT:
-            pass
-        else:
-            self.head.setheading(RIGHT)
+        self.head = self.segments[0]
+        self.head.setheading(DOWN)
+        self.move_down()
