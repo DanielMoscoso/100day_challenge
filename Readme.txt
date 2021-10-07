@@ -410,4 +410,5 @@
 		 been adapted. Now there are 2 methods; one for moving up and the other
 		 for moving down. The 'up()' and 'down()' methods have been adapted for the
 		 paddle class too.
+		-DocStrings for the paddle class.
 ===============================================================================
