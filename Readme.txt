@@ -436,4 +436,5 @@
 		-A blue turtle is created, placed at the bottom of the screen, and can move
 		 up or down with the 'w' or 's' key respectively. Scoreboard is also implemented,
 		 and is taken and adapted from the pong module.
+		-A scoreboard is created. It is also an adaptation from the 'pong' game.
 ===============================================================================

@@ -6,7 +6,7 @@
 # TODO: 6.-The cars speed up as the levels increase.
 # TODO: 7.-If the turtle hits a car, then it is Game Over.
 
-from modules import cars
+from modules import cars, scoreboard
 from turtle import Turtle, Screen
 import time
 
@@ -34,6 +34,8 @@ timmy.speed(0)
 timmy.penup()
 timmy.setheading(90)
 timmy.goto(0, -280)
+
+score = scoreboard.Scoreboard()
 
 screen.listen()
 screen.onkey(move_up, "w")
