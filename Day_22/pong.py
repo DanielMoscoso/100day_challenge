@@ -80,6 +80,7 @@ def play(repeat=True, lives=5):
 
 games = int(input("How many games do you want to play?: "))
 
+# Initialization:
 screen = Screen()
 screen.setup(width=800, height=600)
 screen.bgcolor("black")
@@ -102,6 +103,7 @@ screen.onkey(paddle_two.down, "l")
 
 pong_ball = ball.Ball()
 
+# Game logic:
 while play(lives=games) or player_one.score == player_two.score:
     screen.update()
     time.sleep(0.1)
