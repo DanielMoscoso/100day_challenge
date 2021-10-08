@@ -19,6 +19,47 @@ def new_game():
     screen.update()
 
 
+def paddle_bounce(paddle):
+    if paddle.player == "one":
+        for segment in paddle.segments:
+            if pong_ball.ball.distance(segment) < 21:
+                pong_ball.bounce("right")
+    else:
+        for segment in paddle.segments:
+            if pong_ball.ball.distance(segment) < 21:
+                pong_ball.bounce("left")
+
+
+def wall_bouncing():
+    if pong_ball.y_cor() > 270:  # Upper wall
+        pong_ball.bounce("down")
+    elif pong_ball.y_cor() < -270:  # Lower wall
+        pong_ball.bounce("up")
+    else:  # Anithing in between
+        pass
+
+
+def play(repeat=True):
+    if pong_ball.x_cor() > 340:
+        player_one.increase_score()
+        new_game()
+        if player_one.score == 2:
+            player_two.game_over()
+            repeat = False
+        time.sleep(0.5)
+    elif pong_ball.x_cor() < -340:
+        player_two.increase_score()
+        new_game()
+        if player_two.score == 2:
+            player_one.game_over()
+            repeat = False
+        time.sleep(0.5)
+    else:
+        pass
+
+    return repeat
+
+
 screen = Screen()
 screen.setup(width=800, height=600)
 screen.bgcolor("black")
@@ -41,54 +82,18 @@ screen.onkey(paddle_two.down, "l")
 
 pong_ball = ball.Ball()
 
-repeat = True
-while repeat:
+while play():
     screen.update()
     time.sleep(0.1)
 
-    # If it hits a wall, game over:
-    if pong_ball.x_cor() > 370:  # Right wall
-        pong_ball.bounce("left")
-    elif pong_ball.x_cor() < -370:  # Left wall
-        pong_ball.bounce("right")
-    elif pong_ball.y_cor() > 270:  # Upper wall
-        pong_ball.bounce("down")
-    elif pong_ball.y_cor() < -270:  # Lower wall
-        pong_ball.bounce("up")
-
     pong_ball.move()
 
+    # If it hits the upper or lower wall, then bounce:
+    wall_bouncing()
+
     # Bounce off player one's paddle:
-    for segment in paddle_one.segments:
-        if pong_ball.ball.distance(segment) < 21:
-            pong_ball.bounce("right")
-
+    paddle_bounce(paddle_one)
     # Bounce off player two's paddle:
-    for segment in paddle_two.segments:
-        if pong_ball.ball.distance(segment) < 21:
-            pong_ball.bounce("left")
-
-    if pong_ball.x_cor() > 340:
-        player_one.increase_score()
-        new_game()
-        if player_one.score == 2:
-            player_two.game_over()
-            repeat = False
-        elif player_two.score == 2:
-            player_one.game_over()
-            repeat = False
-        time.sleep(0.5)
-    elif pong_ball.x_cor() < -340:
-        player_two.increase_score()
-        new_game()
-        if player_one.score == 2:
-            player_two.game_over()
-            repeat = False
-        elif player_two.score == 2:
-            player_one.game_over()
-            repeat = False
-        time.sleep(0.5)
-    else:
-        pass
+    paddle_bounce(paddle_two)
 
 screen.exitonclick()
