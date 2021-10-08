@@ -415,4 +415,6 @@
 		-Small logic for GAME OVER is added.
 		-The ball now bounces off the 2 player's paddles.
 		-Updated 'To Do' list.
+		-The scores are now being kept.
+		-The paddles and the ball are now reset once a player loses a game.
 ===============================================================================

@@ -43,6 +43,17 @@ class Paddle:
         new_segment.speed(0)
         self.segments.append(new_segment)
 
+    def reset_paddle(self):
+        """
+        This resets the position of the designated paddle.
+        """
+        if self.player == "one":
+            for index, position in enumerate(STARTING_POSITION[0]):
+                self.segments[index].goto(position)
+        else:
+            for index, position in enumerate(STARTING_POSITION[1]):
+                self.segments[index].goto(position)
+
     def move_down(self):
         """
         It takes the list of objects that form the paddle in the order that were

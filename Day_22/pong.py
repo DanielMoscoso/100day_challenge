@@ -33,7 +33,9 @@ screen.onkey(paddle_two.up, "o")
 screen.onkey(paddle_two.down, "l")
 
 pong_ball = ball.Ball()
-while True:
+
+repeat = True
+while repeat:
     screen.update()
     time.sleep(0.1)
 
@@ -51,12 +53,29 @@ while True:
 
     # Bounce off player one's paddle:
     for segment in paddle_one.segments:
-        if pong_ball.ball.distance(segment) < 20.5:
+        if pong_ball.ball.distance(segment) < 21:
             pong_ball.bounce("right")
 
     # Bounce off player two's paddle:
     for segment in paddle_two.segments:
-        if pong_ball.ball.distance(segment) < 20.5:
+        if pong_ball.ball.distance(segment) < 21:
             pong_ball.bounce("left")
+
+    if pong_ball.x_cor() > 340:
+        player_one.increase_score()
+        pong_ball.reset_pos()
+        paddle_one.reset_paddle()
+        paddle_two.reset_paddle()
+        screen.update()
+        repeat = False
+    elif pong_ball.x_cor() < -340:
+        player_two.increase_score()
+        pong_ball.reset_pos()
+        paddle_one.reset_paddle()
+        paddle_two.reset_paddle()
+        screen.update()
+        repeat = False
+    else:
+        pass
 
 screen.exitonclick()

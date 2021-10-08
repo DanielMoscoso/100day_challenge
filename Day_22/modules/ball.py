@@ -56,6 +56,10 @@ class Ball:
     def move(self):
         self.ball.forward(SPEED)
 
+    def reset_pos(self):
+        self.ball.setpos((0, 0))
+        self.ball.setheading(0)
+
     def x_cor(self):
         return self.ball.xcor()
 
