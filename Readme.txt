@@ -427,4 +427,7 @@
 		 navigate.
 		-The rest of the DocStrings.
 		-Some comments for better readability.
+		-The paddles may run faster if instead of 8 turtle objects for the body, you
+		 make only one object, and stretch it vertically. It also makes the logic
+		 MUCH more simpler.
 ===============================================================================
