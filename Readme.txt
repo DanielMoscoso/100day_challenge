@@ -383,5 +383,52 @@
 		-Faster gameplay, and better written 'for loop' when eating itself.
 22.-Twenty second day of the 100day challenge:
 ===============================================================================
+	-Pong game:
+		-Everything ready to go.
+		-A ball is created and placed in the middle of the screen.
+		-The ball bounces off the walls in the correct directions.
+		-There is a method that holds the direction of bouncing. And there is also a
+		 small bug: since the ball moves at a certain speed, then checks if it inside
+		 certain boundaries (walls), then it behaves like a ghost. It can go through
+		 a wall, realizes it went through it and change direction as if bouncing. So
+		 if the ball went BEYOND what it could cover in the next step, it sees itself
+		 still trapped in the wall, therefore changing direction again. It seems
+		 as if it changed directions twice in a row, "mid-air" without touching a wall.
+		-This should solve the problem for now: every time the ball hits a wall, it
+		 takes a tiny step, then begins the process of checking once more.
+		-The ball is correctly instantiated and accessed in the 'Ball()'. And the
+		 module for the dotted line in the middle of the screen is added.
+		-Scoreboard module implemented: 2 scoreboards are printed on the screen.
+		-Paddle modules implemented: 2 paddles are added to the screen, and positioned
+		 on either side of the board. (This module is an adaptation of the 'snake'
+		 module. Therefore, it still needs modifications). I also changed the 'scoreboard'
+		 module so it would be better written. And the 'middle_line' module was modified
+		 so the shape and color of the turtles remained constants.
+		-Updated 'To Do' list.
+		-Paddles move up or down: the paddle methods for going up and down are now
+		 correctly implemented, and the 'move()' method from the 'snake' module has
+		 been adapted. Now there are 2 methods; one for moving up and the other
+		 for moving down. The 'up()' and 'down()' methods have been adapted for the
+		 paddle class too.
+		-DocStrings for the paddle class.
+		-Movement for the second player is added.
+		-Small logic for GAME OVER is added.
+		-The ball now bounces off the 2 player's paddles.
+		-Updated 'To Do' list.
+		-The scores are now being kept.
+		-The paddles and the ball are now reset once a player loses a game.
+		-Fully functional game. I just have to do some housekeeping.
+		-Pong module separated into functions.
+		-The users have a little bit more time between game resets, and they can also
+		 choose how many games to play (currently 'lives' has to be changed in the code).
+		-Now the game asks the user how many games the player wants to play. It also
+		 checks if the players are in a tie, if they are, then they can play one last
+		 round: SUDDEN DEATH. I also separated the functions to make it easier to
+		 navigate.
+		-The rest of the DocStrings.
+		-Some comments for better readability.
+		-The paddles may run faster if instead of 8 turtle objects for the body, you
+		 make only one object, and stretch it vertically. It also makes the logic
+		 MUCH more simpler.
 ===============================================================================
 23.-Twenty thirf day of the 100day challenge:
