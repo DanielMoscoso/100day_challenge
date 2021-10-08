@@ -421,4 +421,8 @@
 		-Pong module separated into functions.
 		-The users have a little bit more time between game resets, and they can also
 		 choose how many games to play (currently 'lives' has to be changed in the code).
+		-Now the game asks the user how many games the player wants to play. It also
+		 checks if the players are in a tie, if they are, then they can play one last
+		 round: SUDDEN DEATH. I also separated the functions to make it easier to
+		 navigate.
 ===============================================================================

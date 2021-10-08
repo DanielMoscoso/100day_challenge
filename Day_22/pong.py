@@ -12,6 +12,7 @@ from modules import ball, middle_line, scoreboard, paddle
 import time
 
 
+# --------------------------------- Functions ---------------------------------
 def new_game():
     pong_ball.reset_pos()
     paddle_one.reset_paddle()
@@ -58,7 +59,10 @@ def play(repeat=True, lives=5):
         pass
 
     return repeat
+# --------------------------------- Functions ---------------------------------
 
+
+games = int(input("How many games do you want to play?: "))
 
 screen = Screen()
 screen.setup(width=800, height=600)
@@ -82,7 +86,7 @@ screen.onkey(paddle_two.down, "l")
 
 pong_ball = ball.Ball()
 
-while play():
+while play(lives=games) or player_one.score == player_two.score:
     screen.update()
     time.sleep(0.1)
 
