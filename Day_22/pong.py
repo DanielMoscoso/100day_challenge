@@ -14,6 +14,10 @@ import time
 
 # --------------------------------- Functions ---------------------------------
 def new_game():
+    """
+    This is not a hard reset, it is just for clearing out the screen, and
+    re-aranging the ball and paddles.
+    """
     pong_ball.reset_pos()
     paddle_one.reset_paddle()
     paddle_two.reset_paddle()
@@ -21,6 +25,10 @@ def new_game():
 
 
 def paddle_bounce(paddle):
+    """
+    Here is where the ball knows how to bounce off of the paddles, and where
+    direction to take.
+    """
     if paddle.player == "one":
         for segment in paddle.segments:
             if pong_ball.ball.distance(segment) < 21:
@@ -32,6 +40,10 @@ def paddle_bounce(paddle):
 
 
 def wall_bouncing():
+    """
+    Here is where the ball knows which wall to bounce off of, and where direction
+    to take.
+    """
     if pong_ball.y_cor() > 270:  # Upper wall
         pong_ball.bounce("down")
     elif pong_ball.y_cor() < -270:  # Lower wall
@@ -41,6 +53,10 @@ def wall_bouncing():
 
 
 def play(repeat=True, lives=5):
+    """
+    This function starts as 'True' and stays 'True' until on of the player hits
+    the total number of games they decided to play. At that point it returns 'False'.
+    """
     if pong_ball.x_cor() > 340:
         player_one.increase_score()
         new_game()
