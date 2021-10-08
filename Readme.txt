@@ -382,7 +382,6 @@
 		-If the snake eats itself, then it is game over.
 		-Faster gameplay, and better written 'for loop' when eating itself.
 22.-Twenty second day of the 100day challenge:
-===============================================================================
 	-Pong game:
 		-Everything ready to go.
 		-A ball is created and placed in the middle of the screen.
@@ -430,5 +429,6 @@
 		-The paddles may run faster if instead of 8 turtle objects for the body, you
 		 make only one object, and stretch it vertically. It also makes the logic
 		 MUCH more simpler.
-===============================================================================
 23.-Twenty thirf day of the 100day challenge:
+===============================================================================
+===============================================================================
