@@ -419,4 +419,6 @@
 		-The paddles and the ball are now reset once a player loses a game.
 		-Fully functional game. I just have to do some housekeeping.
 		-Pong module separated into functions.
+		-The users have a little bit more time between game resets, and they can also
+		 choose how many games to play (currently 'lives' has to be changed in the code).
 ===============================================================================

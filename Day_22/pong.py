@@ -39,21 +39,21 @@ def wall_bouncing():
         pass
 
 
-def play(repeat=True):
+def play(repeat=True, lives=5):
     if pong_ball.x_cor() > 340:
         player_one.increase_score()
         new_game()
-        if player_one.score == 2:
+        if player_one.score == lives:
             player_two.game_over()
             repeat = False
-        time.sleep(0.5)
+        time.sleep(0.6)
     elif pong_ball.x_cor() < -340:
         player_two.increase_score()
         new_game()
-        if player_two.score == 2:
+        if player_two.score == lives:
             player_one.game_over()
             repeat = False
-        time.sleep(0.5)
+        time.sleep(0.6)
     else:
         pass
 
