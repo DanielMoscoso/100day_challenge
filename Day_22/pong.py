@@ -12,6 +12,13 @@ from modules import ball, middle_line, scoreboard, paddle
 import time
 
 
+def new_game():
+    pong_ball.reset_pos()
+    paddle_one.reset_paddle()
+    paddle_two.reset_paddle()
+    screen.update()
+
+
 screen = Screen()
 screen.setup(width=800, height=600)
 screen.bgcolor("black")
@@ -63,18 +70,24 @@ while repeat:
 
     if pong_ball.x_cor() > 340:
         player_one.increase_score()
-        pong_ball.reset_pos()
-        paddle_one.reset_paddle()
-        paddle_two.reset_paddle()
-        screen.update()
-        repeat = False
+        new_game()
+        if player_one.score == 2:
+            player_two.game_over()
+            repeat = False
+        elif player_two.score == 2:
+            player_one.game_over()
+            repeat = False
+        time.sleep(0.5)
     elif pong_ball.x_cor() < -340:
         player_two.increase_score()
-        pong_ball.reset_pos()
-        paddle_one.reset_paddle()
-        paddle_two.reset_paddle()
-        screen.update()
-        repeat = False
+        new_game()
+        if player_one.score == 2:
+            player_two.game_over()
+            repeat = False
+        elif player_two.score == 2:
+            player_one.game_over()
+            repeat = False
+        time.sleep(0.5)
     else:
         pass
 

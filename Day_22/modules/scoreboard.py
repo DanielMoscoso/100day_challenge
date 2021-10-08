@@ -19,10 +19,8 @@ class Scoreboard(Turtle):
     def score_position(self):
         if self.player == "one":
             self.goto(-200, 275)
-        elif self.player == "two":
-            self.goto(200, 275)
         else:
-            self.game_over()
+            self.goto(200, 275)
 
     def write_score(self):
         self.write(f"Score {self.score}", align=ALIGNMENT, font=FONT)

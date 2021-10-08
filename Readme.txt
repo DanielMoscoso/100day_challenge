@@ -417,4 +417,5 @@
 		-Updated 'To Do' list.
 		-The scores are now being kept.
 		-The paddles and the ball are now reset once a player loses a game.
+		-Fully functional game. I just have to do some housekeeping.
 ===============================================================================
