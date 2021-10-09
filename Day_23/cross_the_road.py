@@ -1,10 +1,11 @@
 # TODO: 1.-Create a 600x600 screen to hold the game.
 # TODO: 2.-Create individual Turtle that moves up and down.
 # TODO: 3.-Create car module for individual cars crossing the road.
-# TODO: 4.-Make the cars randomly appear on the screen.
-# TODO: 5.-Each car should have a different color when they appear.
-# TODO: 6.-The cars speed up as the levels increase.
-# TODO: 7.-If the turtle hits a car, then it is Game Over.
+# TODO: 3.1.-Make the cars randomly appear on the screen.
+# TODO: 3.2.-Each car should have a different color when they appear.
+# TODO: 3.3.-Each car should cover a diffent amount of distance when they appear.
+# TODO: 3.4.-The cars speed up as the levels increase.
+# TODO: 4.-If the turtle hits a car, then it is Game Over.
 
 from modules import car, scoreboard
 from turtle import Turtle, Screen
@@ -20,7 +21,7 @@ def move_down():
     timmy.backward(20)
 
 
-def make_car():
+def make_car():  # COMBAK: Implement
     new_car = car.Car()
     car_list.append(new_car)
 # --------------------------------- Functions ---------------------------------
@@ -39,7 +40,6 @@ timmy.color("blue")
 timmy.speed(0)
 timmy.penup()
 timmy.setheading(90)
-# timmy.goto(0, 200)  # DEBUG
 timmy.goto(0, -280)
 
 score = scoreboard.Scoreboard()
