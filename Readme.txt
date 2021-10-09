@@ -437,4 +437,5 @@
 		 up or down with the 'w' or 's' key respectively. Scoreboard is also implemented,
 		 and is taken and adapted from the pong module.
 		-A scoreboard is created. It is also an adaptation from the 'pong' game.
+		-The module car is created, and implemented in the game.
 ===============================================================================
