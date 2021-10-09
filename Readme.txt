@@ -442,4 +442,6 @@
 		 turtle either at the beginning, or at the safe zone all the way at the end.
 		 It can cover a random distance between 5 and 10 pixels at a time. The function
 		 for creating multiple cars is also codded, but not implemented yet.
+		-The 'Y' coordinates for the car object were wrong before. The cars can have
+		 different colors when they are instantiated.
 ===============================================================================
