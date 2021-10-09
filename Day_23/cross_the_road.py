@@ -18,6 +18,11 @@ def move_up():
 
 def move_down():
     timmy.backward(20)
+
+
+def make_car():
+    new_car = car.Car()
+    car_list.append(new_car)
 # --------------------------------- Functions ---------------------------------
 
 
@@ -27,12 +32,14 @@ screen.setup(width=600, height=600)
 screen.bgcolor("white")
 screen.title("Cross the road")
 screen.tracer(0)
+car_list = []
 
 timmy = Turtle("turtle")
 timmy.color("blue")
 timmy.speed(0)
 timmy.penup()
 timmy.setheading(90)
+# timmy.goto(0, 200)  # DEBUG
 timmy.goto(0, -280)
 
 score = scoreboard.Scoreboard()
@@ -46,7 +53,9 @@ while True:
     screen.update()
     time.sleep(0.1)
 
-    if timmy.ycor() > 280:
+    vehicle.move_forward()
+
+    if timmy.ycor() > 260:
         score.increase_score()
         score.clear()
         score.write_score()

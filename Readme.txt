@@ -438,4 +438,8 @@
 		 and is taken and adapted from the pong module.
 		-A scoreboard is created. It is also an adaptation from the 'pong' game.
 		-The module car is created, and implemented in the game.
+		-The car object now can appear in a random location that does not touch the
+		 turtle either at the beginning, or at the safe zone all the way at the end.
+		 It can cover a random distance between 5 and 10 pixels at a time. The function
+		 for creating multiple cars is also codded, but not implemented yet.
 ===============================================================================
