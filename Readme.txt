@@ -458,4 +458,5 @@
 		-The distance between Timmy the turtle and the cars is a little bit smaller,
 		 making the hit-box smaller. And after the player beats a level, the cars get
 		 faster by a small amount.
+		-Timmy module and class have been created.
 ===============================================================================
