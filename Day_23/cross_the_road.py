@@ -43,7 +43,8 @@ timmy.setheading(90)
 timmy.goto(0, -280)
 
 score = scoreboard.Scoreboard()
-vehicle = car.Car()
+for _ in range(10):
+    make_car()
 
 screen.listen()
 screen.onkey(move_up, "w")
@@ -54,10 +55,11 @@ while True:
     # time.sleep(0.1)
     time.sleep(0.001)
 
-    vehicle.move_forward()
+    for car in car_list:
+        car.move_forward()
 
-    if vehicle.xcor() < -290:
-        vehicle.new_location()
+        if car.xcor() < -290:
+            car.new_location()
 
     if timmy.ycor() > 260:
         score.increase_score()

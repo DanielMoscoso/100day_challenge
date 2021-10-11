@@ -448,4 +448,7 @@
 		-The car objects go back to the initial 'X' axis location, but with a random
 		 'Y' location and color thanks to the 'new_location()' in the car module.
 		 Timmy the turtle also goes back to its origin after reaching the upper wall.
+		-10 cars are created with random different colors, distance coverage, and location.
+		 and the 'car' module was also modified so it would take the random locations,
+		 and distance coverage correctly.
 ===============================================================================

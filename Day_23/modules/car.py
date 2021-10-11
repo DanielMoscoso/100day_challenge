@@ -5,8 +5,7 @@ turtle.colormode(255)
 
 WIDTH = 1
 LENGTH = 2
-DISTANCE = random.randint(5, 10)
-LOCATION = (270, random.randint(-240, 250))
+
 COLOR_LIST = [(222, 152, 103), (128, 172, 199),
               (221, 130, 149), (221, 73, 90), (243, 208, 99), (17, 121, 157),
               (118, 176, 147), (34, 120, 82), (18, 165, 204), (230, 74, 70),
@@ -18,16 +17,18 @@ COLOR_LIST = [(222, 152, 103), (128, 172, 199),
 class Car(turtle.Turtle):
     def __init__(self):
         super().__init__()
+        self.location = (270, random.randint(-240, 250))
+        self.distance = random.randint(5, 10)
         self.speed(0)
         self.color(random.choice(COLOR_LIST))
         self.shape("square")
         self.shapesize(WIDTH, LENGTH)
         self.penup()
-        self.goto(LOCATION)
+        self.goto(self.location)
         self.setheading(180)
 
     def move_forward(self):
-        self.forward(DISTANCE)
+        self.forward(self.distance)
 
     def new_location(self):
         new_location = (270, random.randint(-240, 250))
