@@ -51,24 +51,27 @@ screen.onkey(move_up, "w")
 screen.onkey(move_down, "s")
 
 repeat = True
+sleep_time = 0.1
 while repeat:
     screen.update()
-    # time.sleep(0.1)
-    time.sleep(0.001)
+    time.sleep(sleep_time)
+    print(sleep_time)
 
     for car in car_list:
         car.move_forward()
         if car.xcor() < -290:
             car.new_location()
 
-        if timmy.distance(car) < 25:
+        if timmy.distance(car) < 20:
             score.game_over()
             repeat = False
 
     if timmy.ycor() > 260:
+        sleep_time *= 0.8
         score.increase_score()
         score.clear()
         score.write_score()
         timmy.goto(0, -280)  # Go back to the origin.
+
 
 screen.exitonclick()

@@ -455,4 +455,7 @@
 		 coverage once they reset. Now they also get a new distance coverage, making
 		 the game completely random in all aspects.
 		-The player loses, and the game stops if Timmy gets hit by a car.
+		-The distance between Timmy the turtle and the cars is a little bit smaller,
+		 making the hit-box smaller. And after the player beats a level, the cars get
+		 faster by a small amount.
 ===============================================================================
