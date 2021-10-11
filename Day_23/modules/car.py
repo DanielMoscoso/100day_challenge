@@ -34,3 +34,4 @@ class Car(turtle.Turtle):
         new_location = (270, random.randint(-240, 250))
         self.color(random.choice(COLOR_LIST))
         self.goto(new_location)
+        self.distance = random.randint(5, 10)

@@ -57,7 +57,6 @@ while True:
 
     for car in car_list:
         car.move_forward()
-
         if car.xcor() < -290:
             car.new_location()
 

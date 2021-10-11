@@ -451,4 +451,7 @@
 		-10 cars are created with random different colors, distance coverage, and location.
 		 and the 'car' module was also modified so it would take the random locations,
 		 and distance coverage correctly.
+		-The cars would pick a random location and color, but would keep the same distance
+		 coverage once they reset. Now they also get a new distance coverage, making
+		 the game completely random in all aspects.
 ===============================================================================
