@@ -51,13 +51,18 @@ screen.onkey(move_down, "s")
 
 while True:
     screen.update()
-    time.sleep(0.1)
+    # time.sleep(0.1)
+    time.sleep(0.001)
 
     vehicle.move_forward()
+
+    if vehicle.xcor() < -290:
+        vehicle.new_location()
 
     if timmy.ycor() > 260:
         score.increase_score()
         score.clear()
         score.write_score()
+        timmy.goto(0, -280)  # Go back to the origin.
 
 screen.exitonclick()

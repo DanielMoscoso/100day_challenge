@@ -28,3 +28,8 @@ class Car(turtle.Turtle):
 
     def move_forward(self):
         self.forward(DISTANCE)
+
+    def new_location(self):
+        new_location = (270, random.randint(-240, 250))
+        self.color(random.choice(COLOR_LIST))
+        self.goto(new_location)
