@@ -11,12 +11,10 @@ class Timmy(Turtle):
         self.setheading(90)
         self.goto(0, -280)
 
+    def move_up(self):
+        self.setheading(90)
+        self.forward(20)
 
-def move_up():
-    self.heading(90)
-    self.forward(20)
-
-
-def move_down():
-    self.heading(270)
-    self.backward(20)
+    def move_down(self):
+        self.setheading(270)
+        self.forward(20)

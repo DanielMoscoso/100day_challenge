@@ -7,7 +7,7 @@
 # TODO: 3.4.-The cars speed up as the levels increase.
 # TODO: 4.-If the turtle hits a car, then it is Game Over.
 
-from modules import car, scoreboard
+from modules import car, scoreboard, timmy
 from turtle import Turtle, Screen
 import time
 
@@ -35,20 +35,15 @@ screen.title("Cross the road")
 screen.tracer(0)
 car_list = []
 
-timmy = Turtle("turtle")
-timmy.color("blue")
-timmy.speed(0)
-timmy.penup()
-timmy.setheading(90)
-timmy.goto(0, -280)
+timmy_the_turtle = timmy.Timmy()
 
 score = scoreboard.Scoreboard()
 for _ in range(10):
     make_car()
 
 screen.listen()
-screen.onkey(move_up, "w")
-screen.onkey(move_down, "s")
+screen.onkey(timmy_the_turtle.move_up, "w")
+screen.onkey(timmy_the_turtle.move_down, "s")
 
 repeat = True
 sleep_time = 0.1
@@ -62,16 +57,16 @@ while repeat:
         if car.xcor() < -290:
             car.new_location()
 
-        if timmy.distance(car) < 20:
+        if timmy_the_turtle.distance(car) < 23:
             score.game_over()
             repeat = False
 
-    if timmy.ycor() > 260:
+    if timmy_the_turtle.ycor() > 260:
         sleep_time *= 0.8
         score.increase_score()
         score.clear()
         score.write_score()
-        timmy.goto(0, -280)  # Go back to the origin.
+        timmy_the_turtle.goto(0, -280)  # Go back to the origin.
 
 
 screen.exitonclick()

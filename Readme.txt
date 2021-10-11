@@ -459,4 +459,6 @@
 		 making the hit-box smaller. And after the player beats a level, the cars get
 		 faster by a small amount.
 		-Timmy module and class have been created.
+		-The class Timmy has been updated for correct logic execution, and also
+		 implemented in the 'cross_the_road' game.
 ===============================================================================
