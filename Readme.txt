@@ -454,4 +454,5 @@
 		-The cars would pick a random location and color, but would keep the same distance
 		 coverage once they reset. Now they also get a new distance coverage, making
 		 the game completely random in all aspects.
+		-The player loses, and the game stops if Timmy gets hit by a car.
 ===============================================================================

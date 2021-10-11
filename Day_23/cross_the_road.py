@@ -50,7 +50,8 @@ screen.listen()
 screen.onkey(move_up, "w")
 screen.onkey(move_down, "s")
 
-while True:
+repeat = True
+while repeat:
     screen.update()
     # time.sleep(0.1)
     time.sleep(0.001)
@@ -59,6 +60,10 @@ while True:
         car.move_forward()
         if car.xcor() < -290:
             car.new_location()
+
+        if timmy.distance(car) < 25:
+            score.game_over()
+            repeat = False
 
     if timmy.ycor() > 260:
         score.increase_score()
