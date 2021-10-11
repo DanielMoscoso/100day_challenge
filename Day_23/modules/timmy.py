@@ -12,9 +12,15 @@ class Timmy(Turtle):
         self.goto(0, -280)
 
     def move_up(self):
+        """
+        This makes the turtle face up and then move.
+        """
         self.setheading(90)
         self.forward(20)
 
     def move_down(self):
+        """
+        This makes the turtle face down and then move.
+        """
         self.setheading(270)
         self.forward(20)

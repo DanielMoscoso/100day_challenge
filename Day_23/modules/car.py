@@ -28,9 +28,16 @@ class Car(turtle.Turtle):
         self.setheading(180)
 
     def move_forward(self):
+        """
+        This makes the car move forward.
+        """
         self.forward(self.distance)
 
     def new_location(self):
+        """
+        This places the car in a random new location (off the turtle limits),
+        assigns it a new color, and a new distance coverage.
+        """
         new_location = (270, random.randint(-240, 250))
         self.color(random.choice(COLOR_LIST))
         self.goto(new_location)

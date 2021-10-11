@@ -14,6 +14,9 @@ import time
 
 # --------------------------------- Functions ---------------------------------
 def make_car():
+    """
+    This creates a new car and adds it to the car list.
+    """
     new_car = car.Car()
     car_list.append(new_car)
 # --------------------------------- Functions ---------------------------------
