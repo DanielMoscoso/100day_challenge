@@ -461,4 +461,5 @@
 		-Timmy module and class have been created.
 		-The class Timmy has been updated for correct logic execution, and also
 		 implemented in the 'cross_the_road' game.
+		-Final touches before making the DocStrings.
 ===============================================================================

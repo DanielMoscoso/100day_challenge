@@ -13,15 +13,7 @@ import time
 
 
 # --------------------------------- Functions ---------------------------------
-def move_up():
-    timmy.forward(20)
-
-
-def move_down():
-    timmy.backward(20)
-
-
-def make_car():  # COMBAK: Implement
+def make_car():
     new_car = car.Car()
     car_list.append(new_car)
 # --------------------------------- Functions ---------------------------------
@@ -36,8 +28,8 @@ screen.tracer(0)
 car_list = []
 
 timmy_the_turtle = timmy.Timmy()
-
 score = scoreboard.Scoreboard()
+
 for _ in range(10):
     make_car()
 
@@ -45,24 +37,24 @@ screen.listen()
 screen.onkey(timmy_the_turtle.move_up, "w")
 screen.onkey(timmy_the_turtle.move_down, "s")
 
+# Game:
 repeat = True
 sleep_time = 0.1
 while repeat:
     screen.update()
     time.sleep(sleep_time)
-    print(sleep_time)
 
     for car in car_list:
         car.move_forward()
-        if car.xcor() < -290:
+        if car.xcor() < -290:  # Car hitting the left wall.
             car.new_location()
 
-        if timmy_the_turtle.distance(car) < 23:
-            score.game_over()
+        if timmy_the_turtle.distance(car) < 23:  # Hitting a car.
             repeat = False
+            score.game_over()
 
-    if timmy_the_turtle.ycor() > 260:
-        sleep_time *= 0.8
+    if timmy_the_turtle.ycor() > 260:  # Finish line
+        sleep_time *= 0.8  # Increase the speed of the cars.
         score.increase_score()
         score.clear()
         score.write_score()
