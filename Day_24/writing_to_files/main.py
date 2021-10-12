@@ -8,6 +8,16 @@ with open("my_file.txt") as file:
     contents = file.read()
     print(contents)
 
+# Absolute path:
+with open("C:\\Users\\Daniel\\Documents\\Python\\100days\\Day_24\\data.txt") as file:
+    contents = file.read()
+    print(contents)
+
+# Relative path:
+with open("../data.txt") as file:
+    contents = file.read()
+    print(contents)
+
 # Writing a file:
 with open("my_new_file.txt", "a") as file:
     file.write("\nNew text.")

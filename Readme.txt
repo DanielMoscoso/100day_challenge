@@ -487,4 +487,8 @@
 		-The snake's links are now shipped elsewhere on the screen, so the game can
 		 start from a clean screen every time. (This might not be the best way to tackle
 		 it since the turtle objects will be pilling up every time the game restarts)"
+		-The score is now being kept by saving it into a '.txt' file. So, even if the
+		 game is closed, it will always have the highest score. The file that contains
+		 the 'reading files' code has been modified to show the difference between
+		 'absolute path' and 'relative path'.
 ===============================================================================
