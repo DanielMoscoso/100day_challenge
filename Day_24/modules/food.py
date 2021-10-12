@@ -13,6 +13,9 @@ class Food(Turtle):
         self.refresh()
 
     def refresh(self):
+        """
+        This takes the blue dot on the screen (the food) and randomly place it on the screen.
+        """
         random_x = random.randint(-280, 280)
         random_y = random.randint(-280, 280)
         self.goto(random_x, random_y)
