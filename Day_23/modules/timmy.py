@@ -27,4 +27,7 @@ class Timmy(Turtle):
         self.forward(20)
 
     def back_to_start(self):
+        """
+        It returns Timmy the turtle to the starting position.
+        """
         self.goto(0, -280)

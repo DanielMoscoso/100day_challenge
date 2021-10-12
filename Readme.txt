@@ -467,4 +467,5 @@
 		 to be added in order to make it a decent game.
 		-'back_to_start()' method has been added to make a cleaner and less repetitive
 		 code.
+		-Final DocString.
 ===============================================================================
