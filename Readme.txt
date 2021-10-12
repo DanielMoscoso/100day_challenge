@@ -463,4 +463,6 @@
 		 implemented in the 'cross_the_road' game.
 		-Final touches before making the DocStrings.
 		-DocStrings ready.
+		-The cars needed to be generated off the screen. Therefore, more cars needed
+		 to be added in order to make it a decent game.
 ===============================================================================

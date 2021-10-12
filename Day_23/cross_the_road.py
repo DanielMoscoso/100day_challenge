@@ -33,7 +33,7 @@ car_list = []
 timmy_the_turtle = timmy.Timmy()
 score = scoreboard.Scoreboard()
 
-for _ in range(10):
+for _ in range(20):
     make_car()
 
 screen.listen()
@@ -52,7 +52,7 @@ while repeat:
         if car.xcor() < -290:  # Car hitting the left wall.
             car.new_location()
 
-        if timmy_the_turtle.distance(car) < 23:  # Hitting a car.
+        if timmy_the_turtle.distance(car) < 22:  # Hitting a car.
             repeat = False
             score.game_over()
 

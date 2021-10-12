@@ -17,7 +17,7 @@ COLOR_LIST = [(222, 152, 103), (128, 172, 199),
 class Car(turtle.Turtle):
     def __init__(self):
         super().__init__()
-        self.location = (270, random.randint(-240, 250))
+        self.location = (310, random.randint(-240, 250))
         self.distance = random.randint(5, 10)
         self.speed(0)
         self.color(random.choice(COLOR_LIST))
@@ -38,7 +38,7 @@ class Car(turtle.Turtle):
         This places the car in a random new location (off the turtle limits),
         assigns it a new color, and a new distance coverage.
         """
-        new_location = (270, random.randint(-240, 250))
+        new_location = (310, random.randint(-240, 250))
         self.color(random.choice(COLOR_LIST))
         self.goto(new_location)
         self.distance = random.randint(5, 10)
