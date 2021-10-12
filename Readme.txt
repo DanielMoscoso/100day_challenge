@@ -491,4 +491,6 @@
 		 game is closed, it will always have the highest score. The file that contains
 		 the 'reading files' code has been modified to show the difference between
 		 'absolute path' and 'relative path'.
+	-Mail merge:
+		-All files ready.
 ===============================================================================
