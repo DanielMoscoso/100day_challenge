@@ -469,6 +469,8 @@
 		-Final DocString.
 24.-Twenty fourth day of the 100day challenge:
 ===============================================================================
+	-How to write to files:
+		-The initial files are created.
 	-Snake game 2.0:
 		-All the files are copied to today's directory.
 		-The Game Over method was deleted from the scoreboard module, and it was replaced
