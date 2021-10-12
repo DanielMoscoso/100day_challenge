@@ -496,4 +496,5 @@
 		-Getting all the names into a list.
 		-Creates all the letters with their respective person as the title of the
 		 letter, and also in the receivers name inside the letter.
+		-Professor's way of solving the challenge.
 ===============================================================================
