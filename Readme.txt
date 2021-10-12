@@ -465,4 +465,6 @@
 		-DocStrings ready.
 		-The cars needed to be generated off the screen. Therefore, more cars needed
 		 to be added in order to make it a decent game.
+		-'back_to_start()' method has been added to make a cleaner and less repetitive
+		 code.
 ===============================================================================

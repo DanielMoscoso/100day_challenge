@@ -10,6 +10,7 @@ class Timmy(Turtle):
         self.penup()
         self.setheading(90)
         self.goto(0, -280)
+        self.back_to_start()
 
     def move_up(self):
         """
@@ -24,3 +25,6 @@ class Timmy(Turtle):
         """
         self.setheading(270)
         self.forward(20)
+
+    def back_to_start(self):
+        self.goto(0, -280)

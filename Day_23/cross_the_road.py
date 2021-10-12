@@ -61,7 +61,7 @@ while repeat:
         score.increase_score()
         score.clear()
         score.write_score()
-        timmy_the_turtle.goto(0, -280)  # Go back to the origin.
+        timmy_the_turtle.back_to_start()  # Go back to the origin.
 
 
 screen.exitonclick()
