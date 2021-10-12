@@ -429,7 +429,7 @@
 		-The paddles may run faster if instead of 8 turtle objects for the body, you
 		 make only one object, and stretch it vertically. It also makes the logic
 		 MUCH more simpler.
-23.-Twenty thirf day of the 100day challenge:
+23.-Twenty third day of the 100day challenge:
 	-Cross the road:
 		-Starting files and To Do list.
 		-A blue turtle is created, placed at the bottom of the screen, and can move
@@ -469,5 +469,34 @@
 		-Final DocString.
 24.-Twenty fourth day of the 100day challenge:
 ===============================================================================
+	-How to write to files:
+		-The initial files are created.
+		-End of the intro to writing and reading files.
+	-Snake game 2.0:
+		-All the files are copied to today's directory.
+		-The Game Over method was deleted from the scoreboard module, and it was replaced
+		 with the reset method. It takes the score of the current game, and checks it if
+		 it is higher than the previous higher score. If it is, then updates the high
+		 score. (The snake module needs to be updated also, since it does not stop once
+		 it hits a wall).
+		-The reset method has been added to the snake class. It deletes all the
+		 segments previously obtained by the snake (deletes all the objects in the list),
+		 then creates a new snake from scratch and sets it up in the middle of the screen.
+		 (the snake reset is properly working, but I need to delete the turtle objects
+		 that are left over from the previous game)."
+		-The snake's links are now shipped elsewhere on the screen, so the game can
+		 start from a clean screen every time. (This might not be the best way to tackle
+		 it since the turtle objects will be pilling up every time the game restarts)"
+		-The score is now being kept by saving it into a '.txt' file. So, even if the
+		 game is closed, it will always have the highest score. The file that contains
+		 the 'reading files' code has been modified to show the difference between
+		 'absolute path' and 'relative path'.
+	-Mail merge:
+		-All files ready.
+		-Getting all the names into a list.
+		-Creates all the letters with their respective person as the title of the
+		 letter, and also in the receivers name inside the letter.
+		-Professor's way of solving the challenge.
+		-Final DocStrings for the Snake 2.0 game.
 ===============================================================================
 25.-Twenty fifth day of the 100day challenge:
