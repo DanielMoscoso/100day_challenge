@@ -471,4 +471,9 @@
 ===============================================================================
 	-Snake game 2.0:
 		-All the files are copied to today's directory.
+		-The Game Over method was deleted from the scoreboard module, and it was replaced
+		 with the reset method. It takes the score of the current game, and checks it if
+		 it is higher than the previous higher score. If it is, then updates the high
+		 score. (The snake module needs to be updated also, since it does not stop once
+		 it hits a wall).
 ===============================================================================

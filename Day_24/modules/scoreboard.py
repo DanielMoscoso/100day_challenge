@@ -13,16 +13,24 @@ class Scoreboard(Turtle):
         self.penup()
         self.goto(0, 275)
         self.speed(0)  # Fastest
+        self.highscore = 0
         self.write_score()
 
     def write_score(self):
-        self.write(f"Score {self.score}", align=ALIGNMENT, font=FONT)
+        self.clear()
+        self.write(f"Score: {self.score} | High Score: {self.highscore}", align=ALIGNMENT, font=FONT)
 
     def increase_score(self):
         self.score += 1
-        self.clear()
         self.write_score()
 
-    def game_over(self):
-        self.goto(0, 0)
-        self.write("GAME OVER", align=ALIGNMENT, font=("Courier", 30, "normal"))
+    def reset(self):
+        """
+        It takes the score of the current game, and checks it if it is higher
+        than the previous higher score. If it is, then updates the high score.
+        """
+        if self.score > self.highscore:
+            self.highscore = self.score
+        self.score = 0
+
+        self.write_score()
