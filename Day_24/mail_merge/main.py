@@ -11,7 +11,19 @@ import os
 os.getcwd()
 os.chdir("/Users/Daniel/Documents/Python/100days/Day_24/mail_merge")
 
+# Reading the files:
 with open("./Input/Names/invited_names.txt", "r") as file:
-    text = file.read()
+    names_raw = file.read()
 
-names = text.split("\n")
+with open("./Input/Letters/starting_letter.txt") as template:
+    template_raw = template.read()
+
+# Getting all the names:
+names = names_raw.split("\n")
+
+# Writing the file:
+for name in names:
+    with open(f"./Output/ReadyToSend/letter_for_{name}.txt", "w") as final_letter:
+        new_letter = template_raw.replace("[name]", name)
+
+        final_letter.write(new_letter)
