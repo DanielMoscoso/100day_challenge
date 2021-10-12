@@ -431,5 +431,42 @@
 		 MUCH more simpler.
 23.-Twenty thirf day of the 100day challenge:
 ===============================================================================
+	-Cross the road:
+		-Starting files and To Do list.
+		-A blue turtle is created, placed at the bottom of the screen, and can move
+		 up or down with the 'w' or 's' key respectively. Scoreboard is also implemented,
+		 and is taken and adapted from the pong module.
+		-A scoreboard is created. It is also an adaptation from the 'pong' game.
+		-The module car is created, and implemented in the game.
+		-The car object now can appear in a random location that does not touch the
+		 turtle either at the beginning, or at the safe zone all the way at the end.
+		 It can cover a random distance between 5 and 10 pixels at a time. The function
+		 for creating multiple cars is also codded, but not implemented yet.
+		-The 'Y' coordinates for the car object were wrong before. The cars can have
+		 different colors when they are instantiated.
+		-Updated 'ToDo' list.
+		-The car objects go back to the initial 'X' axis location, but with a random
+		 'Y' location and color thanks to the 'new_location()' in the car module.
+		 Timmy the turtle also goes back to its origin after reaching the upper wall.
+		-10 cars are created with random different colors, distance coverage, and location.
+		 and the 'car' module was also modified so it would take the random locations,
+		 and distance coverage correctly.
+		-The cars would pick a random location and color, but would keep the same distance
+		 coverage once they reset. Now they also get a new distance coverage, making
+		 the game completely random in all aspects.
+		-The player loses, and the game stops if Timmy gets hit by a car.
+		-The distance between Timmy the turtle and the cars is a little bit smaller,
+		 making the hit-box smaller. And after the player beats a level, the cars get
+		 faster by a small amount.
+		-Timmy module and class have been created.
+		-The class Timmy has been updated for correct logic execution, and also
+		 implemented in the 'cross_the_road' game.
+		-Final touches before making the DocStrings.
+		-DocStrings ready.
+		-The cars needed to be generated off the screen. Therefore, more cars needed
+		 to be added in order to make it a decent game.
+		-'back_to_start()' method has been added to make a cleaner and less repetitive
+		 code.
+		-Final DocString.
 ===============================================================================
 24.-Twenty fourth day of the 100day challenge:
