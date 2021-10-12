@@ -477,8 +477,11 @@
 		 score. (The snake module needs to be updated also, since it does not stop once
 		 it hits a wall).
 		-The reset method has been added to the snake class. It deletes all the
-		segments previously obtained by the snake (deletes all the objects in the list),
-		then creates a new snake from scratch and sets it up in the middle of the screen.
-		(the snake reset is properly working, but I need to delet the turtle objects
-		that are left over from the previous game)."
+		 segments previously obtained by the snake (deletes all the objects in the list),
+		 then creates a new snake from scratch and sets it up in the middle of the screen.
+		 (the snake reset is properly working, but I need to delete the turtle objects
+		 that are left over from the previous game)."
+		-The snake's links are now shipped elsewhere on the screen, so the game can
+		 start from a clean screen every time. (This might not be the best way to tackle
+		 it since the turtle objects will be pilling up every time the game restarts)"
 ===============================================================================

@@ -45,6 +45,8 @@ class Snake:
         all the objects in the list), then creates a new snake from scratch and
         sets it up in the middle of the screen.
         """
+        for seg in self.segments:
+            seg.goto(1000, 1000)
         self.segments.clear()
         self.create_snake()
         self.head = self.segments[0]
