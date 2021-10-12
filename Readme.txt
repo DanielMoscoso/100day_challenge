@@ -493,4 +493,5 @@
 		 'absolute path' and 'relative path'.
 	-Mail merge:
 		-All files ready.
+		-Getting all the names into a list.
 ===============================================================================
