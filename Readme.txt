@@ -469,4 +469,6 @@
 		-Final DocString.
 24.-Twenty fourth day of the 100day challenge:
 ===============================================================================
+	-Snake game 2.0:
+		-All the files are copied to today's directory.
 ===============================================================================
