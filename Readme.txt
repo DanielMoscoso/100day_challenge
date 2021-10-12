@@ -429,7 +429,7 @@
 		-The paddles may run faster if instead of 8 turtle objects for the body, you
 		 make only one object, and stretch it vertically. It also makes the logic
 		 MUCH more simpler.
-23.-Twenty thirf day of the 100day challenge:
+23.-Twenty third day of the 100day challenge:
 	-Cross the road:
 		-Starting files and To Do list.
 		-A blue turtle is created, placed at the bottom of the screen, and can move
