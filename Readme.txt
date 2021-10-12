@@ -476,4 +476,9 @@
 		 it is higher than the previous higher score. If it is, then updates the high
 		 score. (The snake module needs to be updated also, since it does not stop once
 		 it hits a wall).
+		-The reset method has been added to the snake class. It deletes all the
+		segments previously obtained by the snake (deletes all the objects in the list),
+		then creates a new snake from scratch and sets it up in the middle of the screen.
+		(the snake reset is properly working, but I need to delet the turtle objects
+		that are left over from the previous game)."
 ===============================================================================
