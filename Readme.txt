@@ -468,7 +468,6 @@
 		 code.
 		-Final DocString.
 24.-Twenty fourth day of the 100day challenge:
-===============================================================================
 	-How to write to files:
 		-The initial files are created.
 		-End of the intro to writing and reading files.
@@ -498,5 +497,6 @@
 		 letter, and also in the receivers name inside the letter.
 		-Professor's way of solving the challenge.
 		-Final DocStrings for the Snake 2.0 game.
-===============================================================================
 25.-Twenty fifth day of the 100day challenge:
+===============================================================================
+===============================================================================
