@@ -430,7 +430,6 @@
 		 make only one object, and stretch it vertically. It also makes the logic
 		 MUCH more simpler.
 23.-Twenty thirf day of the 100day challenge:
-===============================================================================
 	-Cross the road:
 		-Starting files and To Do list.
 		-A blue turtle is created, placed at the bottom of the screen, and can move
@@ -468,5 +467,6 @@
 		-'back_to_start()' method has been added to make a cleaner and less repetitive
 		 code.
 		-Final DocString.
-===============================================================================
 24.-Twenty fourth day of the 100day challenge:
+===============================================================================
+===============================================================================
