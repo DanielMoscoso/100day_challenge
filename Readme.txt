@@ -499,4 +499,6 @@
 		-Final DocStrings for the Snake 2.0 game.
 25.-Twenty fifth day of the 100day challenge:
 ===============================================================================
+	-Warm up:
+		-Pandas crash course.
 ===============================================================================
