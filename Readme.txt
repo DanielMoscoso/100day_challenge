@@ -506,4 +506,5 @@
 		-It is printing the correct information, but in the wrong way. I have to create
 		 two dictionaries of lists, not a single dictionary.
 		-Problem solved.
+		-I feel like it is a better implementation.
 ===============================================================================

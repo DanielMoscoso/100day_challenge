@@ -8,11 +8,10 @@ raw_data = pd.read_csv("2018_Central_Park_Squirrel_Census_-_Squirrel_Data.csv")
 raw_data
 len(raw_data)
 
-squirrels_count = []
-squirrels_color = []
+squirrels_dict = {"Fur Color": [], "Count": []}
 for color in raw_data["Primary Fur Color"].unique():
     if type(color) == str:
-        squirrels_color.append(color)
+        squirrels_dict["Fur Color"].append(color)
 
         truth_table = raw_data["Primary Fur Color"] == color
 
@@ -20,10 +19,7 @@ for color in raw_data["Primary Fur Color"].unique():
 
         detailed_color_squirrels = raw_data.loc[index]  # All the info of the specific color.
 
-        squirrels_count.append(len(detailed_color_squirrels))
-
-squirrels_dict = {"Fur Color": squirrels_color, "Count": squirrels_count}
-squirrels_dict
+        squirrels_dict["Count"].append(len(detailed_color_squirrels))
 
 data = pd.DataFrame(squirrels_dict)
 data
