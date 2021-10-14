@@ -55,8 +55,8 @@ print(farenheit)
 
 # How to create a dataframe from scratch:
 data_dict = {"students": ["Luis", "John", "Pedro"], "scores": [80, 70, 90]}
-
+data_dict
 data = pd.DataFrame(data_dict)
-
+data
 # Then you can save that dataframe as a csv:
 data.to_csv("new_data.csv")

@@ -503,4 +503,6 @@
 		-Pandas crash course.
 	-Squirrel census:
 		-All the files are in place.
+		-It is printing the correct information, but in the wrong way. I have to create
+		 two dictionaries of lists, not a single dictionary.
 ===============================================================================
