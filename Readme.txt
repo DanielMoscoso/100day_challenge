@@ -501,6 +501,7 @@
 ===============================================================================
 	-Warm up:
 		-Pandas crash course.
+		-The 'weather.py' file was in the wrong directory.
 	-Squirrel census:
 		-All the files are in place.
 		-It is printing the correct information, but in the wrong way. I have to create
