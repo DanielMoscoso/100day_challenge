@@ -512,4 +512,5 @@
 	-U.S States Game:
 		-Everything is set up.
 		-Setting up the screen.
+		-To do list.
 ===============================================================================
