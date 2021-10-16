@@ -511,4 +511,5 @@
 		-I was writing everything in a wrong file.
 	-U.S States Game:
 		-Everything is set up.
+		-Setting up the screen.
 ===============================================================================
