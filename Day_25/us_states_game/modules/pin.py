@@ -1,7 +1,7 @@
 from turtle import Turtle
 
 ALIGNMENT = "left"
-FONT = ("Courier", 14, "normal")
+FONT = ("Courier", 8, "normal")
 
 
 class Pin(Turtle):
@@ -11,6 +11,6 @@ class Pin(Turtle):
         self.penup()
         self.speed(0)
 
-    def go_location(self, location, name):
+    def go_location(self, name, location):
         self.goto(location)
         self.write(f"{name}", align=ALIGNMENT, font=FONT)

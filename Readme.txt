@@ -515,4 +515,7 @@
 		-To do list.
 		-The module and class 'pin' have been added in order to place the pin
 		 location of the different states on the map.
+		-Everything works as intended. The only thing left is to check the actual
+		 game and see if there are any other rules I missed. Plus, do some
+		 housecleaning, and DocStrings.
 ===============================================================================
