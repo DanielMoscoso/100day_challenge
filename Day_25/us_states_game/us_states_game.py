@@ -6,6 +6,12 @@
 # TODO: 6.-Keep track of the score.
 
 import turtle
+import os
+import pandas as pd
+from modules import pin
+
+# os.getcwd()
+# os.chdir("./Day_25")
 
 screen = turtle.Screen()
 screen.title("U.S States Game")
@@ -13,7 +19,7 @@ screen.setup(750, 520)
 
 image = "blank_states_img.gif"
 screen.addshape(image)
-
+pin = pin.Pin()
 turtle.shape(image)
 
 
@@ -27,3 +33,10 @@ turtle.shape(image)
 # turtle.mainloop()
 
 answer_state = screen.textinput("Guess the state", "What is another state's name?").title()
+
+raw_data = pd.read_csv("50_states.csv")
+
+pin.go_location((100, 100), answer_state)
+
+
+screen.exitonclick()

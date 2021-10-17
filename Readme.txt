@@ -513,4 +513,6 @@
 		-Everything is set up.
 		-Setting up the screen.
 		-To do list.
+		-The module and class 'pin' have been added in order to place the pin
+		 location of the different states on the map.
 ===============================================================================
