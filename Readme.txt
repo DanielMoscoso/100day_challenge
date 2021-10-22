@@ -499,5 +499,31 @@
 		-Final DocStrings for the Snake 2.0 game.
 25.-Twenty fifth day of the 100day challenge:
 ===============================================================================
+	-Warm up:
+		-Pandas crash course.
+		-The 'weather.py' file was in the wrong directory.
+	-Squirrel census:
+		-All the files are in place.
+		-It is printing the correct information, but in the wrong way. I have to create
+		 two dictionaries of lists, not a single dictionary.
+		-Problem solved.
+		-I feel like it is a better implementation.
+		-I was writing everything in a wrong file.
+	-U.S States Game:
+		-Everything is set up.
+		-Setting up the screen.
+		-To do list.
+		-The module and class 'pin' have been added in order to place the pin
+		 location of the different states on the map.
+		-Everything works as intended. The only thing left is to check the actual
+		 game and see if there are any other rules I missed. Plus, do some
+		 housecleaning, and DocStrings.
+		-If the person answers the 50 states right, then the game ends. Also, there
+		 is a command that would end the game right away 'exit'.
+		-I re-arranged the code a bit and put the functions on top, that way it is
+		 easier to read. Now the game keeps track of the states that that person
+		 missed when the game ended, and writes it in a 'csv' file. The file only
+		 has the name of the states: no coordinates or anything else.
+		-Professor's way of solving the challenge.
 ===============================================================================
 26.-Twenty sixth day of the 100day challenge:
