@@ -520,4 +520,8 @@
 		 housecleaning, and DocStrings.
 		-If the person answers the 50 states right, then the game ends. Also, there
 		 is a command that would end the game right away 'exit'.
+		-I re-arranged the code a bit and put the functions on top, that way it is
+		 easier to read. Now the game keeps track of the states that that person
+		 missed when the game ended, and writes it in a 'csv' file. The file only
+		 has the name of the states: no coordinates or anything else.
 ===============================================================================

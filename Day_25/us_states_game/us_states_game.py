@@ -13,17 +13,6 @@ from modules import pin
 # os.getcwd()
 # os.chdir("./Day_25/us_states_game")
 
-raw_data = pd.read_csv("50_states.csv")
-
-screen = turtle.Screen()
-screen.title("U.S States Game")
-screen.setup(750, 520)
-
-image = "blank_states_img.gif"
-screen.addshape(image)
-pin = pin.Pin()
-turtle.shape(image)
-
 
 # # In case you need to see the 'X' and 'Y' coordinates:
 # def get_mouse_click_coor(x, y):
@@ -42,6 +31,18 @@ def coordinates(state):
 
     return (x, y)
 
+
+raw_data = pd.read_csv("50_states.csv")
+missed_states = pd.read_csv("50_states.csv")
+
+screen = turtle.Screen()
+screen.title("U.S States Game")
+screen.setup(750, 520)
+
+image = "blank_states_img.gif"
+screen.addshape(image)
+pin = pin.Pin()
+turtle.shape(image)
 
 answer_state = screen.textinput("Guess the state", "What is another state's name?").title()
 
@@ -62,5 +63,9 @@ while len(guessed_states) < 50 and counter > 0:
     # else:
     #     answer_state = screen.textinput(f"{counter}/50", "What is another state's name?").title()
 
+for state in guessed_states:
+    missed_states = missed_states.drop(raw_data[raw_data["state"] == state].index)
+
+missed_states.to_csv("missed_states.csv", columns=["state"], header=False, index=False)
 
 screen.exitonclick()
