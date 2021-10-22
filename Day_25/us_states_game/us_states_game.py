@@ -45,11 +45,15 @@ def coordinates(state):
 
 answer_state = screen.textinput("Guess the state", "What is another state's name?").title()
 
-counter = 2
-while counter > 1:
-    if answer_state not in raw_data["state"].to_list():
+guessed_states = set()
+counter = 50
+while len(guessed_states) < 50 and counter > 0:
+    if answer_state == "Exit":
+        break
+    elif answer_state not in raw_data["state"].to_list():
         counter -= 1
     else:
+        guessed_states.add(answer_state)
         pin.go_location(answer_state, coordinates(answer_state))
 
     answer_state = screen.textinput(f"{counter}/50", "What is another state's name?").title()

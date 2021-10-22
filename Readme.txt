@@ -518,4 +518,6 @@
 		-Everything works as intended. The only thing left is to check the actual
 		 game and see if there are any other rules I missed. Plus, do some
 		 housecleaning, and DocStrings.
+		-If the person answers the 50 states right, then the game ends. Also, there
+		 is a command that would end the game right away 'exit'.
 ===============================================================================
