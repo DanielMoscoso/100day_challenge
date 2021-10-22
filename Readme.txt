@@ -524,4 +524,5 @@
 		 easier to read. Now the game keeps track of the states that that person
 		 missed when the game ended, and writes it in a 'csv' file. The file only
 		 has the name of the states: no coordinates or anything else.
+		-Professor's way of solving the challenge.
 ===============================================================================
