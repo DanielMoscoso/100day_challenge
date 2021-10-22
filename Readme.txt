@@ -498,7 +498,6 @@
 		-Professor's way of solving the challenge.
 		-Final DocStrings for the Snake 2.0 game.
 25.-Twenty fifth day of the 100day challenge:
-===============================================================================
 	-Warm up:
 		-Pandas crash course.
 		-The 'weather.py' file was in the wrong directory.
@@ -525,5 +524,6 @@
 		 missed when the game ended, and writes it in a 'csv' file. The file only
 		 has the name of the states: no coordinates or anything else.
 		-Professor's way of solving the challenge.
-===============================================================================
 26.-Twenty sixth day of the 100day challenge:
+===============================================================================
+===============================================================================
