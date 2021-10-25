@@ -1,0 +1,66 @@
+import os
+
+numbers = [1, 2, 3]
+new_numbers = [item + 1 for item in numbers]
+
+print(new_numbers)
+# %%
+name = "Daniel"
+letters_list = [letter for letter in name]
+
+print(letters_list)
+# %%
+numbers = [number * 2 for number in range(1, 5)]
+
+print(numbers)
+# %%
+names = ["Jose", "Juan", "Pedro", "Maria", "Andres"]
+
+short_names = [name for name in names if len(name) <= 4]
+
+print(short_names)
+# %%
+names = ["Jose", "Juan", "Pedro", "Maria", "Andres"]
+
+upper = [name.upper() for name in names if len(name) > 4]
+
+print(upper)
+# %%
+numbers = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+
+squared_numbers = [number**2 for number in numbers]
+
+print(squared_numbers)
+# %%
+numbers = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+
+result = [number for number in numbers if number % 2 == 0]
+
+print(result)
+# %%
+import pandas as pd
+
+raw1 = pd.read_csv("file1.txt", header=None)
+file1 = raw1[0].tolist()
+
+raw2 = pd.read_csv("file2.txt", header=None)
+file2 = raw2[0].tolist()
+
+file1
+
+result = [file1[number] for number in range(len(file1)) if file1[number] in file2]
+# result = [number for number in file1 if number in file2]  # Same thing, but easier.
+
+print(result)
+
+# or
+
+with open("file1.txt") as file1:
+    data3 = file1.readlines()
+
+with open("file2.txt") as file2:
+    data4 = file2.readlines()
+
+result = [int(number) for number in data3 if number in data4]
+
+print(result)

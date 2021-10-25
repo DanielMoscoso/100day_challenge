@@ -526,4 +526,7 @@
 		-Professor's way of solving the challenge.
 26.-Twenty sixth day of the 100day challenge:
 ===============================================================================
+	-Warm up:
+		-Series of warmups.
+		-The last one is tricky and it was great to solve.
 ===============================================================================
