@@ -9,8 +9,8 @@ import os
 nato_alphabet = pd.read_csv("nato_phonetic_alphabet.csv")
 nato_dict = {row.letter: row.code for (index, row) in nato_alphabet.iterrows()}
 
-answer = input("Enter a word or a setence: ")
+answer = input("Enter a word: ").upper()
 
-answer.split()
+nato_answer = [nato_dict[letter] for letter in answer]
 
-nato_answer = {row.letter:}
+print(nato_answer)
