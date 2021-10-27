@@ -526,5 +526,17 @@
 		-Professor's way of solving the challenge.
 26.-Twenty sixth day of the 100day challenge:
 ===============================================================================
+	-Warm up:
+		-Series of warmups.
+		-The last one is tricky and it was great to solve.
+		-List comprehension for the 'states' game made by the professor. My version
+		 of the code does not use that kind of 'for loop' therefore, rendering unsuitable.
+		-Dictionary comprehension.
+		-Dictionary comprehension 2.
+		-Dictionary comprehension 3.
+		-Loop through a Pandas data frame.
+	-Nato alphabet:
+		-Starting logic.
+		-Final code.
 ===============================================================================
 26.-Twenty seventh day of the 100day challenge:
