@@ -64,3 +64,16 @@ with open("file2.txt") as file2:
 result = [int(number) for number in data3 if number in data4]
 
 print(result)
+# %%
+import random
+
+names = ["Jose", "Juan", "Pedro", "Maria", "Andres"]
+
+# {ney_key: new_value for item in list}
+student_scores = {student: random.randint(1, 100) for student in names}
+student_scores
+
+# {new_key: new_value for (key, value) in dictionary.items() if test}
+passed_students = {student: score for (student, score) in student_scores.items() if score >= 60}
+passed_students
+# %%

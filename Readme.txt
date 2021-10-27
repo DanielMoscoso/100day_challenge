@@ -531,4 +531,5 @@
 		-The last one is tricky and it was great to solve.
 		-List comprehension for the 'states' game made by the professor. My version
 		 of the code does not use that kind of 'for loop' therefore, rendering unsuitable.
+		-Dictionary comprehension.
 ===============================================================================
