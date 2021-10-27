@@ -534,5 +534,7 @@
 		-Dictionary comprehension.
 		-Dictionary comprehension 2.
 		-Dictionary comprehension 3.
-		-Loop through a Pandas data frame
+		-Loop through a Pandas data frame.
+	-Nato alphabet:
+		-Starting logic.
 ===============================================================================
