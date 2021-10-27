@@ -533,4 +533,5 @@
 		 of the code does not use that kind of 'for loop' therefore, rendering unsuitable.
 		-Dictionary comprehension.
 		-Dictionary comprehension 2.
+		-Dictionary comprehension 3.
 ===============================================================================
