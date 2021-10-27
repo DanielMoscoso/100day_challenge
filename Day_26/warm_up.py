@@ -77,3 +77,8 @@ student_scores
 passed_students = {student: score for (student, score) in student_scores.items() if score >= 60}
 passed_students
 # %%
+sentence = "What is the Airspeed Velocity of an Unladen Swallow?"
+
+result = {word: len(word) for word in sentence.split()}
+
+print(result)
