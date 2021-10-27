@@ -99,3 +99,22 @@ weather_f = {day: (temp_c * 9/5) + 32 for (day, temp_c) in weather_c.items()}
 
 print(weather_f)
 # %%
+import pandas as pd
+
+student_dict = {"student": ["Angela", "James", "Lily"],
+                "score": [56, 76, 98]}
+
+student_df = pd.DataFrame(student_dict)
+
+student_df
+
+# Loop through a Pandas data frame:
+for (index, row) in student_df.iterrows():
+    print(row)
+    print()
+    print(row.student)
+    print()
+    print(row.score)
+    print()
+    print()
+# %%
