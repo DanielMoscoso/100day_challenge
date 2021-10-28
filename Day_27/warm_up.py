@@ -16,10 +16,14 @@ my_label.config(text="New Text")
 # Buttons:
 def button_clicked():
     print("The label got changed.")
-    my_label.config(text="You clicked the button")
+    my_label.config(text=input.get())  # "input.get()" gets hold of the value in the input field.
 
 
 button = tkinter.Button(text="Click me", command=button_clicked)
 button.pack()
+
+# Entry: (It basically is an input)
+input = tkinter.Entry(width=10)  # This creates an input field.
+input.pack()
 
 window.mainloop()
