@@ -551,4 +551,5 @@
 		-Buttons.
 		-Event listeners for buttons.
 		-Entry: (It basically is an input field).
+		-All the different widgets.
 ===============================================================================
