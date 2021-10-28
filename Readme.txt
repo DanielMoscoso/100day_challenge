@@ -552,4 +552,5 @@
 		-Event listeners for buttons.
 		-Entry: (It basically is an input field).
 		-All the different widgets.
+		-Changing the layout and positioning of the widgets with 'place()'.
 ===============================================================================
