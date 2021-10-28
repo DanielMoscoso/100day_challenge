@@ -12,8 +12,14 @@ my_label.pack()  # This shows and places the label on the center of the screen.
 my_label["text"] = "New Text"
 my_label.config(text="New Text")
 
+
 # Buttons:
-button = tkinter.Button(text="Click me")
+def button_clicked():
+    print("The label got changed.")
+    my_label.config(text="You clicked the button")
+
+
+button = tkinter.Button(text="Click me", command=button_clicked)
 button.pack()
 
 window.mainloop()
