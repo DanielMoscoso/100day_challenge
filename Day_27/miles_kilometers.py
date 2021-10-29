@@ -2,8 +2,8 @@ import tkinter
 
 
 def calculate():
-    km = input.get() * 1.60934
-    result.config(text=km)
+    km = float(input.get()) * 1.60934
+    result.config(text=round(km, 1))
 
 
 window = tkinter.Tk()
