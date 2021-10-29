@@ -568,4 +568,5 @@
 		-If the input is an integer, then the calculation should end up being an
 		 integer. That is why I changed the input to float, so the calculation can
 		 be more precise.
+		-Better layout.
 ===============================================================================

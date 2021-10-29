@@ -8,8 +8,8 @@ def calculate():
 
 window = tkinter.Tk()
 window.title("Mile to Km Converter")
-window.minsize(width=300, height=200)
-window.config(padx=20, pady=20)
+# window.minsize(width=290, height=10)  # This layout looks odd.
+window.config(padx=50, pady=20)
 
 # User input:
 input = tkinter.Entry(width=10)
