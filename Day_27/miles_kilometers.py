@@ -18,4 +18,7 @@ input.grid(column=1, row=0)
 miles = tkinter.Label(text="Miles", font=("Arial", 10, "bold"))
 miles.grid(column=2, row=0)
 
+equality = tkinter.Label(text="is equal to", font=("Arial", 10, "bold"))
+equality.grid(column=0, row=1)
+
 window.mainloop()

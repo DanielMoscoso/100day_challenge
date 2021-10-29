@@ -560,4 +560,5 @@
 		-Initial code.
 		-User input.
 		-First label: Miles.
+		-Second label: is equal to.
 ===============================================================================
