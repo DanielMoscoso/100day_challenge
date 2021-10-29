@@ -563,4 +563,5 @@
 		-Second label: is equal to.
 		-Third label: result of calculation.
 		-Function for calculating miles to kilometers.
+		-Kilometers label.
 ===============================================================================

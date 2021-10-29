@@ -25,4 +25,8 @@ equality.grid(column=0, row=1)
 result = tkinter.Label(text="0", font=("Arial", 10, "bold"))
 result.grid(column=1, row=1)
 
+km = tkinter.Label(text="Km", font=("Arial", 10, "bold"))
+km.grid(column=2, row=1)
+
+
 window.mainloop()
