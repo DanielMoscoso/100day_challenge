@@ -17,7 +17,7 @@ my_label.grid(column=0, row=0)
 # This is how you would update the text in a label:
 my_label["text"] = "New Text"
 my_label.config(text="New Text")
-
+my_label.config(padx=200, pady=200)
 
 # Buttons:
 button = tkinter.Button(text="Click me", command=button_clicked)
