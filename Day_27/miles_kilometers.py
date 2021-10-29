@@ -2,7 +2,8 @@ import tkinter
 
 
 def calculate():
-    pass
+    km = input.get() * 1.60934
+    result.config(text=km)
 
 
 window = tkinter.Tk()
