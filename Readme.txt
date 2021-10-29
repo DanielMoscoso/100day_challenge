@@ -554,4 +554,5 @@
 		-All the different widgets.
 		-Changing the layout and positioning of the widgets with 'place()'.
 		-Changing the layout and positioning of the widgets with 'grid()'.
+		-Add padding. (A little wiggle room on the edges. Like a frame).
 ===============================================================================

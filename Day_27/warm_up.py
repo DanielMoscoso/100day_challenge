@@ -9,6 +9,7 @@ def button_clicked():
 window = tkinter.Tk()
 window.title("My first GUI program")
 window.minsize(width=500, height=300)
+window.config(padx=20, pady=20)
 
 # Label:
 my_label = tkinter.Label(text="I am a label", font=("Arial", 24, "bold"))
