@@ -539,5 +539,35 @@
 		-Final code.
 27.-Twenty sixth day of the 100day challenge:
 ===============================================================================
+	-Warm up:
+		-Creating our first GUI program.
+		-Labels.
+		-*args.
+		-Alternative way of solving it.
+		-**kwargs.
+		-class + **kwargs.
+		-Way around accessing keys that do not exist in a dictionary. (**kwargs)
+		-This is how you would update the text in a label.
+		-Buttons.
+		-Event listeners for buttons.
+		-Entry: (It basically is an input field).
+		-All the different widgets.
+		-Changing the layout and positioning of the widgets with 'place()'.
+		-Changing the layout and positioning of the widgets with 'grid()'.
+		-Add padding. (A little wiggle room on the edges. Like a frame).
+		-Or add padding to a specific widget.
+	-Miles to Kilometers:
+		-Initial code.
+		-User input.
+		-First label: Miles.
+		-Second label: is equal to.
+		-Third label: result of calculation.
+		-Function for calculating miles to kilometers.
+		-Kilometers label.
+		-Button.
+		-If the input is an integer, then the calculation should end up being an
+		 integer. That is why I changed the input to float, so the calculation can
+		 be more precise.
+		-Better layout.
 ===============================================================================
 28.-Twenty eigth day of the 100day challenge:
