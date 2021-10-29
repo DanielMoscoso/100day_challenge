@@ -14,5 +14,8 @@ window.config(padx=20, pady=20)
 input = tkinter.Entry(width=10)
 input.grid(column=1, row=0)
 
+# Labels:
+miles = tkinter.Label(text="Miles", font=("Arial", 10, "bold"))
+miles.grid(column=2, row=0)
 
 window.mainloop()
