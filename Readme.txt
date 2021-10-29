@@ -538,7 +538,6 @@
 		-Starting logic.
 		-Final code.
 27.-Twenty sixth day of the 100day challenge:
-===============================================================================
 	-Warm up:
 		-Creating our first GUI program.
 		-Labels.
@@ -569,5 +568,6 @@
 		 integer. That is why I changed the input to float, so the calculation can
 		 be more precise.
 		-Better layout.
-===============================================================================
 28.-Twenty eigth day of the 100day challenge:
+===============================================================================
+===============================================================================
