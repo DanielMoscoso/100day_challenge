@@ -561,4 +561,5 @@
 		-User input.
 		-First label: Miles.
 		-Second label: is equal to.
+		-Third label: result of calculation.
 ===============================================================================
