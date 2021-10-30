@@ -573,4 +573,6 @@
 	-Pomodoro clock:
 		-Starting files and code.
 		-Background color changed.
+		-Added the 'Timer' text on top of the tomato. And also put everything into
+		 a grid layout.
 ===============================================================================
