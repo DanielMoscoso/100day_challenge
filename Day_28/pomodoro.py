@@ -33,4 +33,11 @@ canvas.grid(column=2, row=2)
 label = tkinter.Label(text="Timer", bg=YELLOW, fg=GREEN, font=(FONT_NAME, 40, "bold"), highlightthickness=0)
 label.grid(column=2, row=1)
 
+# Button: Start
+button1 = tkinter.Button(text="Start")
+button1.grid(column=1, row=3)
+# Button: Reset
+button1 = tkinter.Button(text="Reset")
+button1.grid(column=3, row=3)
+
 window.mainloop()
