@@ -576,4 +576,5 @@
 		-Added the 'Timer' text on top of the tomato. And also put everything into
 		 a grid layout.
 		-Added the buttons 'Start' and 'Reset' to the GUI."
+		-Added the 'check mark' label.
 ===============================================================================
