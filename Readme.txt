@@ -584,4 +584,5 @@
 		-Timer Mechanism.
 		-Making a timer in minutes.
 		-Now it looks like an actual timer when the number is "00".
+		-How  to set a new timer after the old one expired.
 ===============================================================================

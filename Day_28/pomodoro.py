@@ -12,6 +12,7 @@ WORK_MIN = 25
 SHORT_BREAK_MIN = 5
 LONG_BREAK_MIN = 20
 CHECK_MARK = "✔"
+reps = 0
 # ------------------------------- CONSTANTS ---------------------------------- #
 
 # ------------------------------ TIMER RESET --------------------------------- #
@@ -19,7 +20,18 @@ CHECK_MARK = "✔"
 
 # ---------------------------- TIMER MECHANISM ------------------------------- #
 def start_timer():
-    count_down(5 * 60)
+    global reps
+
+    work_sec = WORK_MIN * 60
+    short_break_sec = SHORT_BREAK_MIN * 60
+    long_break_sec = LONG_BREAK_MIN * 60
+
+    # print(reps)
+    # reps += 1
+    # count_down(5 * 60)
+    count_down(2)
+    # print(reps)
+    window.after(3000, count_down, 3)
 
 
 # -------------------------- COUNTDOWN MECHANISM ----------------------------- #
