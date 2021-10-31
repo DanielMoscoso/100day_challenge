@@ -582,4 +582,5 @@
 		-Updating some variables.
 		-Countdown Mechanism.
 		-Timer Mechanism.
+		-Making a timer in minutes.
 ===============================================================================
