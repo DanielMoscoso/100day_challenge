@@ -583,4 +583,5 @@
 		-Countdown Mechanism.
 		-Timer Mechanism.
 		-Making a timer in minutes.
+		-Now it looks like an actual timer when the number is "00".
 ===============================================================================
