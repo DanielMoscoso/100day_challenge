@@ -26,17 +26,26 @@ def start_timer():
     short_break_sec = SHORT_BREAK_MIN * 60
     long_break_sec = LONG_BREAK_MIN * 60
 
-    # print(reps)
-    # reps += 1
     # count_down(5 * 60)
-    count_down(2)
-    # print(reps)
-    window.after(3000, count_down, 3)
+    timer = 0
+    for _ in range(8):
+        reps += 1
+        if reps == 1 or reps == 3 or reps == 5 or reps == 7:
+            window.after(timer, count_down, 3)
+            timer = 3000
+            print(3)
+        elif reps == 8:
+            window.after(timer, count_down, 1)
+            timer = 1000
+            print(1)
+        elif reps == 2 or reps == 4 or reps == 6:
+            window.after(timer, count_down, 2)
+            timer = 2000
+            print(2)
 
 
 # -------------------------- COUNTDOWN MECHANISM ----------------------------- #
 def count_down(count):
-
     count_min = math.floor(count / 60)
     count_sec = count % 60
 
