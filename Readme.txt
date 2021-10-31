@@ -580,4 +580,5 @@
 		-Actual layout (The positioning was incorrect).
 		-No edge around the buttons.
 		-Updating some variables.
+		-Countdown Mechanism.
 ===============================================================================
