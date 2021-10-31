@@ -15,7 +15,10 @@ CHECK_MARK = "✔"
 
 # ------------------------------ TIMER RESET --------------------------------- #
 
+
 # ---------------------------- TIMER MECHANISM ------------------------------- #
+def start_timer():
+    count_down(5)
 
 
 # -------------------------- COUNTDOWN MECHANISM ----------------------------- #
@@ -35,14 +38,13 @@ tomato_img = tkinter.PhotoImage(file="tomato.png")
 canvas.create_image(100, 112, image=tomato_img)
 timer_text = canvas.create_text(100, 145, text="00:00", fill="white", font=(FONT_NAME, 35, "bold"))
 canvas.grid(column=1, row=1)
-count_down(5)
 
 # Label: Timer
 timer = tkinter.Label(text="Timer", bg=YELLOW, fg=GREEN, font=(FONT_NAME, 40, "bold"), highlightthickness=0)
 timer.grid(column=1, row=0)
 
 # Button: Start
-button1 = tkinter.Button(text="Start", highlightthickness=0)
+button1 = tkinter.Button(text="Start", highlightthickness=0, command=start_timer)
 button1.grid(column=0, row=2)
 # Button: Reset
 button2 = tkinter.Button(text="Reset", highlightthickness=0)

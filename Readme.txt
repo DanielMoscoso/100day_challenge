@@ -581,4 +581,5 @@
 		-No edge around the buttons.
 		-Updating some variables.
 		-Countdown Mechanism.
+		-Timer Mechanism.
 ===============================================================================
