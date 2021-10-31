@@ -579,4 +579,5 @@
 		-Added the 'check mark' label.
 		-Actual layout (The positioning was incorrect).
 		-No edge around the buttons.
+		-Updating some variables.
 ===============================================================================

@@ -31,18 +31,18 @@ canvas.create_text(100, 145, text="00:00", fill="white", font=(FONT_NAME, 35, "b
 canvas.grid(column=1, row=1)
 
 # Label: Timer
-label = tkinter.Label(text="Timer", bg=YELLOW, fg=GREEN, font=(FONT_NAME, 40, "bold"), highlightthickness=0)
-label.grid(column=1, row=0)
+timer = tkinter.Label(text="Timer", bg=YELLOW, fg=GREEN, font=(FONT_NAME, 40, "bold"), highlightthickness=0)
+timer.grid(column=1, row=0)
 
 # Button: Start
 button1 = tkinter.Button(text="Start", highlightthickness=0)
 button1.grid(column=0, row=2)
 # Button: Reset
-button1 = tkinter.Button(text="Reset", highlightthickness=0)
-button1.grid(column=2, row=2)
+button2 = tkinter.Button(text="Reset", highlightthickness=0)
+button2.grid(column=2, row=2)
 
 # Label: Check mark
-label = tkinter.Label(text=CHECK_MARK, bg=YELLOW, fg=GREEN, font=(FONT_NAME, 15, "bold"), highlightthickness=0)
-label.grid(column=1, row=3)
+check_marks = tkinter.Label(text=CHECK_MARK, bg=YELLOW, fg=GREEN, font=(FONT_NAME, 15, "bold"), highlightthickness=0)
+check_marks.grid(column=1, row=3)
 
 window.mainloop()
