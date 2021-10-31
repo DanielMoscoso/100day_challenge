@@ -35,10 +35,10 @@ label = tkinter.Label(text="Timer", bg=YELLOW, fg=GREEN, font=(FONT_NAME, 40, "b
 label.grid(column=1, row=0)
 
 # Button: Start
-button1 = tkinter.Button(text="Start")
+button1 = tkinter.Button(text="Start", highlightthickness=0)
 button1.grid(column=0, row=2)
 # Button: Reset
-button1 = tkinter.Button(text="Reset")
+button1 = tkinter.Button(text="Reset", highlightthickness=0)
 button1.grid(column=2, row=2)
 
 # Label: Check mark

@@ -578,4 +578,5 @@
 		-Added the buttons 'Start' and 'Reset' to the GUI."
 		-Added the 'check mark' label.
 		-Actual layout (The positioning was incorrect).
+		-No edge around the buttons.
 ===============================================================================
