@@ -609,5 +609,7 @@
 		 variables, otherwise, later on it would be impossible to stop all of them.
 		 To solve this problem, a global dictionary 'TIMER_DICT' has been implemented,
 		 which holds all the '.after()' iterations, rendering possible to access and
-		 stop them one by one."
+		 stop them one by one.
+		-Now, when the user hits 'start' again, after resetting the timer, it
+		 correctly starts a brand new timer.
 ===============================================================================

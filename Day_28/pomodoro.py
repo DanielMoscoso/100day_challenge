@@ -20,6 +20,8 @@ TIMER_DICT = {}
 
 # ------------------------------ TIMER RESET --------------------------------- #
 def reset_timer():
+    global REPS
+
     window.after_cancel(TIMER_INIT)
     for value in TIMER_DICT.values():
         window.after_cancel(value)
@@ -27,6 +29,8 @@ def reset_timer():
     check_marks.config(text="")
     timer.config(text="Timer", fg=GREEN)
     canvas.itemconfig(timer_text, text="00:00")
+
+    REPS = 0
 
 
 # ---------------------------- TIMER MECHANISM ------------------------------- #
