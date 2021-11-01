@@ -636,4 +636,7 @@
 		-A pop-up window appears, and asks the user if the information entered is
 		 correct before actually saving it into the '.txt' file.
 		-If the person leaves any field empty, then a warning pops up saying so.
+		-Password generator function: It takes the source code from 'Day_5' and
+		 adapts it, so whenever the person hits the 'Generate password' button, it
+		 generates a strong random password.
 ===============================================================================

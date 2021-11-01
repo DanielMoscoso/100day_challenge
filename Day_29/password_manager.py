@@ -1,8 +1,41 @@
 import tkinter
 from tkinter import messagebox
+import random
 
 
 # -------------------------- PASSWORD GENERATOR ----------------------------- #
+def generate_password():
+    letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+    numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+    symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
+
+    number_of_letters = random.randint(8, 10)
+    number_of_symbols = random.randint(2, 4)
+    number_of_numbers = random.randint(2, 4)
+
+    password_list = []
+
+    # for char in range(number_of_letters):
+    #     password_list.append(random.choice(letters))
+    password_list += [random.choice(letters) for char in range(number_of_letters)]
+
+    # for char in range(number_of_symbols):
+    #     password_list.append(random.choice(symbols))
+    password_list += [random.choice(symbols) for char in range(number_of_symbols)]
+
+    # for char in range(number_of_numbers):
+    #     password_list.append(random.choice(numbers))
+    password_list += [random.choice(numbers) for char in range(number_of_numbers)]
+
+    random.shuffle(password_list)
+
+    password = ""
+    for char in password_list:
+        password += char
+
+    password_text.delete(0, "end")
+    password_text.insert("end", string=password)
+
 
 # ----------------------------- SAVE PASSWORD -------------------------------- #
 def save():
@@ -66,7 +99,7 @@ website_text.focus()
 email_username_text.insert("end", string="@gmail.com")  # Somehow 'index 0' does not work.
 
 # Buttons:
-generate_password = tkinter.Button(text="Generate password")
+generate_password = tkinter.Button(text="Generate password", command=generate_password)
 add = tkinter.Button(text="add", width=43, command=save)
 
 generate_password.grid(row=3, column=2, sticky='w')
