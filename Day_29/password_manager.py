@@ -24,10 +24,10 @@ website.grid(row=1, column=0, sticky="e")  # sticky="e" > aligned to the right.
 email_username.grid(row=2, column=0, sticky="e")
 password.grid(row=3, column=0, sticky="e")
 
-# Text boxes:
-website_text = tkinter.Text(height=1, width=38)
-email_username_text = tkinter.Text(height=1, width=38)
-password_text = tkinter.Text(height=1, width=24)
+# Entry boxes:
+website_text = tkinter.Entry(width=38)
+email_username_text = tkinter.Entry(width=38)
+password_text = tkinter.Entry(width=24)
 
 website_text.grid(row=1, column=1, columnspan=2, sticky='w')  # sticky="w" > aligned to the left.
 email_username_text.grid(row=2, column=1, columnspan=2, sticky='w')

@@ -626,4 +626,5 @@
 		-Autoinitialize the email text box with '@gmail.com'.
 		-Places the cursor to the website text box as soon as the program runs, and
 		 initialize the email text box with '@gmail.com'."
+		-The text boxes are actually 'entry' boxes.
 ===============================================================================
