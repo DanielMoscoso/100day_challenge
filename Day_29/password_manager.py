@@ -9,19 +9,27 @@ def save():
     website_entered = website_text.get()
     mail_user_entered = email_username_text.get()
     password_entered = password_text.get()
+    its_ok = False
+    try_again = "no"
 
-    its_ok = messagebox.askokcancel(title=website_entered, message=f"These are the details entered:"
-                                                                   f"\nEmail: {mail_user_entered}"
-                                                                   f"\nPassword: {password_entered}"
-                                                                   f"\nIs it ok to save?")
+    # If any of the fields is empty:
+    if len(website_entered) == 0 or len(mail_user_entered) < 13 or len(password_entered) == 0:
+        try_again = messagebox.showwarning(title="Oops!", message="Don't leave any field empty!")
+    else:
+        its_ok = messagebox.askokcancel(title=website_entered, message=f"These are the details entered:\n"
+                                                                       f"\nEmail: {mail_user_entered}"
+                                                                       f"\nPassword: {password_entered}\n"
+                                                                       f"\nIs it ok to save?")
 
-    with open("password_manager.txt", "a") as document:
-        if its_ok:
+    # If no field is left empty, and the user is satisfied with the information entered:
+    if try_again != "ok" and its_ok:
+        with open("password_manager.txt", "a") as document:
             document.write(f"Website: {website_entered} | E-mail: {mail_user_entered} | Password: {password_entered}\n")
             website_text.delete(0, "end")
             email_username_text.delete(0, "end")
             password_text.delete(0, "end")
 
+            website_text.focus()
             email_username_text.insert("end", string="@gmail.com")
 
 

@@ -635,4 +635,5 @@
 		-Then challenge states that the function should be called 'save'.
 		-A pop-up window appears, and asks the user if the information entered is
 		 correct before actually saving it into the '.txt' file.
+		-If the person leaves any field empty, then a warning pops up saying so.
 ===============================================================================
