@@ -628,4 +628,7 @@
 		 initialize the email text box with '@gmail.com'."
 		-The text boxes are actually 'entry' boxes.
 		-The entry boxes' layout also changed. They needed to be wider.
+		-If the user hits the 'add' button, then the code saves all the typed
+		 information in a new line to a '.txt' file. If the file does not exist, it
+		 creates it.
 ===============================================================================
