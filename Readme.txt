@@ -591,4 +591,12 @@
 		-Working implementation. Needs refinement.
 		-REPS was a global variable, and it was created as 'rep'.
 		-The check marks are now updating, but in odd intervals.
+		-A token variable is created and initialized to '0' to keep track of how
+		 many times the person studied for 25mins straight. That token is passed
+		 down as an argument to the 'count_down()' function, so it knows when to
+		 print the check marks. The check marks label starts off empty. Then it
+		 follows this formula 'reps-token' where 'reps' is the total number of
+		 repetitions the 'for loop' did; which is stored in REPS, and it is also
+		 passed down as an argument, hence 'reps'. When the last iteration comes,
+		 it simply prints 4 check marks, and lets the person take a break for 20mins.
 ===============================================================================

@@ -22,9 +22,9 @@ REPS = 0
 def start_timer():
     global REPS
 
-    work_sec = 1
-    short_break_sec = 2
-    long_break_sec = 3
+    work_sec = 3
+    short_break_sec = 1
+    long_break_sec = 4
     # work_sec = WORK_MIN * 60
     # short_break_sec = SHORT_BREAK_MIN * 60
     # long_break_sec = LONG_BREAK_MIN * 60
@@ -37,24 +37,26 @@ def start_timer():
     # window.after(7000, count_down, 3)
 
     cool_down = 0
+    token = 0
     for _ in range(8):
         REPS += 1
         if REPS == 1 or REPS == 3 or REPS == 5 or REPS == 7:
-            window.after(cool_down, count_down, work_sec, REPS)
+            window.after(cool_down, count_down, work_sec, REPS, token)
             cool_down += (work_sec + 1) * 1000
-            print(f"Work for {WORK_MIN}mins")
+            token += 1
+            # print(f"Work for {WORK_MIN}mins")  # For Debugging
         elif REPS == 8:
-            window.after(cool_down, count_down, long_break_sec)
+            window.after(cool_down, count_down, long_break_sec, REPS, token)
             cool_down += (long_break_sec + 1) * 1000
-            print(f"Long break: {LONG_BREAK_MIN}mins")
+            # print(f"Long break: {LONG_BREAK_MIN}mins")  # For Debugging
         elif REPS == 2 or REPS == 4 or REPS == 6:
             window.after(cool_down, count_down, short_break_sec)
             cool_down += (short_break_sec + 1) * 1000
-            print(f"Short break: {SHORT_BREAK_MIN}mins")
+            # print(f"Short break: {SHORT_BREAK_MIN}mins")  # For Debugging
 
 
 # -------------------------- COUNTDOWN MECHANISM ----------------------------- #
-def count_down(count, reps=0):
+def count_down(count, reps=0, token=0):
     count_min = math.floor(count / 60)
     count_sec = count % 60
 
@@ -68,7 +70,11 @@ def count_down(count, reps=0):
     print(reps)
     check_marks_text = ""
     if reps == 1 or reps == 3 or reps == 5 or reps == 7:
-        check_marks_text += CHECK_MARK * (reps - 1)  # DEBUG
+        check_marks_text += CHECK_MARK * (reps - token)
+        print(check_marks_text)
+        check_marks.config(text=check_marks_text)
+    elif reps == 8:
+        check_marks_text += CHECK_MARK * (reps // 2)
         print(check_marks_text)
         check_marks.config(text=check_marks_text)
 
@@ -96,7 +102,7 @@ button2 = tkinter.Button(text="Reset", highlightthickness=0)
 button2.grid(column=2, row=2)
 
 # Label: Check mark
-check_marks = tkinter.Label(text=CHECK_MARK, bg=YELLOW, fg=GREEN, font=(FONT_NAME, 15, "bold"), highlightthickness=0)
+check_marks = tkinter.Label(text="", bg=YELLOW, fg=GREEN, font=(FONT_NAME, 15, "bold"), highlightthickness=0)
 check_marks.grid(column=1, row=3)
 
 window.mainloop()
