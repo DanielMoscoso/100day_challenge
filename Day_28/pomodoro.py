@@ -1,7 +1,7 @@
 import tkinter
 import os
 import math
-#os.chdir("./Day_28")
+# os.chdir("./Day_28")
 # ------------------------------- CONSTANTS ---------------------------------- #
 PINK = "#e2979c"
 RED = "#e7305b"
@@ -12,7 +12,7 @@ WORK_MIN = 25
 SHORT_BREAK_MIN = 5
 LONG_BREAK_MIN = 20
 CHECK_MARK = "✔"
-reps = 0
+REPS = 0
 # ------------------------------- CONSTANTS ---------------------------------- #
 
 # ------------------------------ TIMER RESET --------------------------------- #
@@ -20,7 +20,7 @@ reps = 0
 
 # ---------------------------- TIMER MECHANISM ------------------------------- #
 def start_timer():
-    global reps
+    global REPS
 
     work_sec = WORK_MIN * 60
     short_break_sec = SHORT_BREAK_MIN * 60
@@ -35,16 +35,16 @@ def start_timer():
 
     cool_down = 0
     for _ in range(8):
-        reps += 1
-        if reps == 1 or reps == 3 or reps == 5 or reps == 7:
+        REPS += 1
+        if REPS == 1 or REPS == 3 or REPS == 5 or REPS == 7:
             window.after(cool_down, count_down, work_sec)
             cool_down += (work_sec + 1) * 1000
             print(f"Work for {WORK_MIN}mins")
-        elif reps == 8:
+        elif REPS == 8:
             window.after(cool_down, count_down, long_break_sec)
             cool_down += (long_break_sec + 1) * 1000
             print(f"Long break: {LONG_BREAK_MIN}mins")
-        elif reps == 2 or reps == 4 or reps == 6:
+        elif REPS == 2 or REPS == 4 or REPS == 6:
             window.after(cool_down, count_down, short_break_sec)
             cool_down += (short_break_sec + 1) * 1000
             print(f"Short break: {SHORT_BREAK_MIN}mins")
