@@ -619,4 +619,5 @@
 		-Lock image.
 		-Labels.
 		-Text boxes.
+		-Buttons added and alignment of all the widgets.
 ===============================================================================
