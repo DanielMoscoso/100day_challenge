@@ -617,4 +617,5 @@
 	-Password Manager:
 		-Starting files and code.
 		-Lock image.
+		-Labels.
 ===============================================================================
