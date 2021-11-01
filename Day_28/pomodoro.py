@@ -22,12 +22,13 @@ REPS = 0
 def start_timer():
     global REPS
 
-    work_sec = 3
-    short_break_sec = 1
-    long_break_sec = 4
-    # work_sec = WORK_MIN * 60
-    # short_break_sec = SHORT_BREAK_MIN * 60
-    # long_break_sec = LONG_BREAK_MIN * 60
+    # work_sec = 3
+    # short_break_sec = 1
+    # long_break_sec = 4
+
+    work_sec = WORK_MIN * 60
+    short_break_sec = SHORT_BREAK_MIN * 60
+    long_break_sec = LONG_BREAK_MIN * 60
 
     # # This is how the wait time should be. The window is not waiting for a process
     # # to end, but instead, a sprecific amount of time to run a command. It does
@@ -67,15 +68,15 @@ def count_down(count, reps=0, token=0):
     if count > 0:
         window.after(1000, count_down, count - 1)
 
-    print(reps)
+    # print(reps)  # For Debugging
     check_marks_text = ""
     if reps == 1 or reps == 3 or reps == 5 or reps == 7:
         check_marks_text += CHECK_MARK * (reps - token)
-        print(check_marks_text)
+        # print(check_marks_text)  # For Debugging
         check_marks.config(text=check_marks_text)
     elif reps == 8:
         check_marks_text += CHECK_MARK * (reps // 2)
-        print(check_marks_text)
+        # print(check_marks_text)  # For Debugging
         check_marks.config(text=check_marks_text)
 
 

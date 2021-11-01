@@ -599,4 +599,5 @@
 		 repetitions the 'for loop' did; which is stored in REPS, and it is also
 		 passed down as an argument, hence 'reps'. When the last iteration comes,
 		 it simply prints 4 check marks, and lets the person take a break for 20mins.
+		-The rest of the debugging code has been commented out.
 ===============================================================================
