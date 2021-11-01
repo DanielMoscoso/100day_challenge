@@ -14,7 +14,7 @@ LONG_BREAK_MIN = 20
 CHECK_MARK = "✔"
 REPS = 0
 TIMER_INIT = None
-TIMER_DICT = {}
+TIMER_DICT = {}  # You might want to see the alternative solution to this code, it is much simpler.
 # ------------------------------- CONSTANTS ---------------------------------- #
 
 
@@ -38,13 +38,13 @@ def start_timer():
     global REPS
     global TIMER_DICT
 
-    work_sec = 3  # For Debugging
-    short_break_sec = 1  # For Debugging
-    long_break_sec = 4  # For Debugging
+    # work_sec = 3  # For Debugging
+    # short_break_sec = 1  # For Debugging
+    # long_break_sec = 4  # For Debugging
 
-    # work_sec = WORK_MIN * 60
-    # short_break_sec = SHORT_BREAK_MIN * 60
-    # long_break_sec = LONG_BREAK_MIN * 60
+    work_sec = WORK_MIN * 60
+    short_break_sec = SHORT_BREAK_MIN * 60
+    long_break_sec = LONG_BREAK_MIN * 60
 
     # # This is how the wait time should be. The window is not waiting for a process
     # # to end, but instead, a sprecific amount of time to run a command. It does

@@ -612,4 +612,5 @@
 		 stop them one by one.
 		-Now, when the user hits 'start' again, after resetting the timer, it
 		 correctly starts a brand new timer.
+		-Back to the original timeframes: the program is finished.
 ===============================================================================
