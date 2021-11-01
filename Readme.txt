@@ -601,4 +601,5 @@
 		 it simply prints 4 check marks, and lets the person take a break for 20mins.
 		-The rest of the debugging code has been commented out.
 		-I was missing the labels for the 'work', 'short break' and 'long break'.
+		-Labels now change color accordingly to the pomodoro state they are at.
 ===============================================================================

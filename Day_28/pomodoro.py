@@ -22,9 +22,9 @@ REPS = 0
 def start_timer():
     global REPS
 
-    # work_sec = 3
-    # short_break_sec = 1
-    # long_break_sec = 4
+    # work_sec = 3  # For Debugging
+    # short_break_sec = 1  # For Debugging
+    # long_break_sec = 4  # For Debugging
 
     work_sec = WORK_MIN * 60
     short_break_sec = SHORT_BREAK_MIN * 60
@@ -74,15 +74,15 @@ def count_down(count, reps=0, token=0):
         check_marks_text += CHECK_MARK * (reps - token)
         # print(check_marks_text)  # For Debugging
         check_marks.config(text=check_marks_text)
-        timer.config(text="Work")
+        timer.config(text="Work", fg=GREEN)
     elif reps == 2 or reps == 4 or reps == 6:
         # print(reps)  # For Debugging
-        timer.config(text="Short break")
+        timer.config(text="Short break", fg=PINK)
     elif reps == 8:
         check_marks_text += CHECK_MARK * (reps // 2)
         # print(check_marks_text)  # For Debugging
         check_marks.config(text=check_marks_text)
-        timer.config(text="Long break")
+        timer.config(text="Long break", fg=RED)
 
 
 # ------------------------------- UI SETUP ---------------------------------- #
