@@ -602,4 +602,12 @@
 		-The rest of the debugging code has been commented out.
 		-I was missing the labels for the 'work', 'short break' and 'long break'.
 		-Labels now change color accordingly to the pomodoro state they are at.
+		-The 'reset' button now stops the timer and resets the screen. Due to the
+		 fact that the code is designed to create all the timers at once, making
+		 each one of them wait for their turn, a layer of complexity was added. At
+		 the moment the timers are created, they HAVE to be saved in SEPARATED
+		 variables, otherwise, later on it would be impossible to stop all of them.
+		 To solve this problem, a global dictionary 'TIMER_DICT' has been implemented,
+		 which holds all the '.after()' iterations, rendering possible to access and
+		 stop them one by one."
 ===============================================================================

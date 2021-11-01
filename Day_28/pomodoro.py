@@ -13,22 +13,34 @@ SHORT_BREAK_MIN = 5
 LONG_BREAK_MIN = 20
 CHECK_MARK = "✔"
 REPS = 0
+TIMER_INIT = None
+TIMER_DICT = {}
 # ------------------------------- CONSTANTS ---------------------------------- #
 
+
 # ------------------------------ TIMER RESET --------------------------------- #
+def reset_timer():
+    window.after_cancel(TIMER_INIT)
+    for value in TIMER_DICT.values():
+        window.after_cancel(value)
+
+    check_marks.config(text="")
+    timer.config(text="Timer", fg=GREEN)
+    canvas.itemconfig(timer_text, text="00:00")
 
 
 # ---------------------------- TIMER MECHANISM ------------------------------- #
 def start_timer():
     global REPS
+    global TIMER_DICT
 
-    # work_sec = 3  # For Debugging
-    # short_break_sec = 1  # For Debugging
-    # long_break_sec = 4  # For Debugging
+    work_sec = 3  # For Debugging
+    short_break_sec = 1  # For Debugging
+    long_break_sec = 4  # For Debugging
 
-    work_sec = WORK_MIN * 60
-    short_break_sec = SHORT_BREAK_MIN * 60
-    long_break_sec = LONG_BREAK_MIN * 60
+    # work_sec = WORK_MIN * 60
+    # short_break_sec = SHORT_BREAK_MIN * 60
+    # long_break_sec = LONG_BREAK_MIN * 60
 
     # # This is how the wait time should be. The window is not waiting for a process
     # # to end, but instead, a sprecific amount of time to run a command. It does
@@ -39,19 +51,19 @@ def start_timer():
 
     cool_down = 0
     token = 0
-    for _ in range(8):
+    for loop in range(8):
         REPS += 1
         if REPS == 1 or REPS == 3 or REPS == 5 or REPS == 7:
-            window.after(cool_down, count_down, work_sec, REPS, token)
+            TIMER_DICT[f"timer{loop}"] = window.after(cool_down, count_down, work_sec, REPS, token)
             cool_down += (work_sec + 1) * 1000
             token += 1
             # print(f"Work for {WORK_MIN}mins")  # For Debugging
         elif REPS == 8:
-            window.after(cool_down, count_down, long_break_sec, REPS, token)
+            TIMER_DICT[f"timer{loop}"] = window.after(cool_down, count_down, long_break_sec, REPS, token)
             cool_down += (long_break_sec + 1) * 1000
             # print(f"Long break: {LONG_BREAK_MIN}mins")  # For Debugging
         elif REPS == 2 or REPS == 4 or REPS == 6:
-            window.after(cool_down, count_down, short_break_sec, REPS)
+            TIMER_DICT[f"timer{loop}"] = window.after(cool_down, count_down, short_break_sec, REPS)
             cool_down += (short_break_sec + 1) * 1000
             # print(f"Short break: {SHORT_BREAK_MIN}mins")  # For Debugging
 
@@ -66,7 +78,8 @@ def count_down(count, reps=0, token=0):
 
     canvas.itemconfig(timer_text, text=f"{count_min}:{count_sec}")
     if count > 0:
-        window.after(1000, count_down, count - 1)
+        global TIMER_INIT
+        TIMER_INIT = window.after(1000, count_down, count - 1)
 
     # print(reps)  # For Debugging
     check_marks_text = ""
@@ -104,7 +117,7 @@ timer.grid(column=1, row=0)
 button1 = tkinter.Button(text="Start", highlightthickness=0, command=start_timer)
 button1.grid(column=0, row=2)
 # Button: Reset
-button2 = tkinter.Button(text="Reset", highlightthickness=0)
+button2 = tkinter.Button(text="Reset", highlightthickness=0, command=reset_timer)
 button2.grid(column=2, row=2)
 
 # Label: Check mark
