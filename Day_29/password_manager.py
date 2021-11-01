@@ -8,6 +8,12 @@ def write_info():
     with open("password_manager.txt", "a") as document:
         document.write(f"Website: {website_text.get()} | E-mail: {email_username_text.get()} | Password: {password_text.get()}\n")
 
+        website_text.delete(0, "end")
+        email_username_text.delete(0, "end")
+        password_text.delete(0, "end")
+
+        email_username_text.insert("end", string="@gmail.com")
+
 
 # ------------------------------- UI SETUP ---------------------------------- #
 window = tkinter.Tk()
@@ -39,7 +45,7 @@ email_username_text.grid(row=2, column=1, columnspan=2, sticky='w')
 password_text.grid(row=3, column=1, sticky='w')
 
 website_text.focus()
-email_username_text.insert("end", "@gmail.com")  # Somehow 'index 0' does not work.
+email_username_text.insert("end", string="@gmail.com")  # Somehow 'index 0' does not work.
 
 # Buttons:
 generate_password = tkinter.Button(text="Generate password")

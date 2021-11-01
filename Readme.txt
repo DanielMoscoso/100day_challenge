@@ -631,4 +631,5 @@
 		-If the user hits the 'add' button, then the code saves all the typed
 		 information in a new line to a '.txt' file. If the file does not exist, it
 		 creates it.
+		-Now it deletes credentials on screen, so new ones can be typed.
 ===============================================================================
