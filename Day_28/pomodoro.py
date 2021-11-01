@@ -51,7 +51,7 @@ def start_timer():
             cool_down += (long_break_sec + 1) * 1000
             # print(f"Long break: {LONG_BREAK_MIN}mins")  # For Debugging
         elif REPS == 2 or REPS == 4 or REPS == 6:
-            window.after(cool_down, count_down, short_break_sec)
+            window.after(cool_down, count_down, short_break_sec, REPS)
             cool_down += (short_break_sec + 1) * 1000
             # print(f"Short break: {SHORT_BREAK_MIN}mins")  # For Debugging
 
@@ -74,10 +74,15 @@ def count_down(count, reps=0, token=0):
         check_marks_text += CHECK_MARK * (reps - token)
         # print(check_marks_text)  # For Debugging
         check_marks.config(text=check_marks_text)
+        timer.config(text="Work")
+    elif reps == 2 or reps == 4 or reps == 6:
+        # print(reps)  # For Debugging
+        timer.config(text="Short break")
     elif reps == 8:
         check_marks_text += CHECK_MARK * (reps // 2)
         # print(check_marks_text)  # For Debugging
         check_marks.config(text=check_marks_text)
+        timer.config(text="Long break")
 
 
 # ------------------------------- UI SETUP ---------------------------------- #
