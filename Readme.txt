@@ -569,7 +569,6 @@
 		 be more precise.
 		-Better layout.
 28.-Twenty eigth day of the 100day challenge:
-===============================================================================
 	-Pomodoro clock:
 		-Starting files and code.
 		-Background color changed.
@@ -613,5 +612,6 @@
 		-Now, when the user hits 'start' again, after resetting the timer, it
 		 correctly starts a brand new timer.
 		-Back to the original timeframes: the program is finished.
-===============================================================================
 29.-Twenty nineth day of the 100day challenge:
+===============================================================================
+===============================================================================
