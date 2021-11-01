@@ -640,4 +640,6 @@
 		 adapts it, so whenever the person hits the 'Generate password' button, it
 		 generates a strong random password.
 		-A more pythonic approach to creating the final password string.
+		-Amazingly clever way to copy the freshly generated password into the
+		 clipboard, so it can be used or pasted anywhere.
 ===============================================================================
