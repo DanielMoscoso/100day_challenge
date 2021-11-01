@@ -4,7 +4,7 @@ import tkinter
 # -------------------------- PASSWORD GENERATOR ----------------------------- #
 
 # ----------------------------- SAVE PASSWORD -------------------------------- #
-def write_info():
+def save():
     with open("password_manager.txt", "a") as document:
         document.write(f"Website: {website_text.get()} | E-mail: {email_username_text.get()} | Password: {password_text.get()}\n")
 
@@ -49,7 +49,7 @@ email_username_text.insert("end", string="@gmail.com")  # Somehow 'index 0' does
 
 # Buttons:
 generate_password = tkinter.Button(text="Generate password")
-add = tkinter.Button(text="add", width=43, command=write_info)
+add = tkinter.Button(text="add", width=43, command=save)
 
 generate_password.grid(row=3, column=2, sticky='w')
 add.grid(row=4, column=1, columnspan=2, sticky='w')

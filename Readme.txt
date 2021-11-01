@@ -632,4 +632,5 @@
 		 information in a new line to a '.txt' file. If the file does not exist, it
 		 creates it.
 		-Now it deletes credentials on screen, so new ones can be typed.
+		-Then challenge states that the function should be called 'save'.
 ===============================================================================
