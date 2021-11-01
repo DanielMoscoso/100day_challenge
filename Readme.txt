@@ -590,4 +590,5 @@
 		-Now with variables (closer to how it should look like at the end).
 		-Working implementation. Needs refinement.
 		-REPS was a global variable, and it was created as 'rep'.
+		-The check marks are now updating, but in odd intervals.
 ===============================================================================

@@ -22,9 +22,12 @@ REPS = 0
 def start_timer():
     global REPS
 
-    work_sec = WORK_MIN * 60
-    short_break_sec = SHORT_BREAK_MIN * 60
-    long_break_sec = LONG_BREAK_MIN * 60
+    work_sec = 1
+    short_break_sec = 2
+    long_break_sec = 3
+    # work_sec = WORK_MIN * 60
+    # short_break_sec = SHORT_BREAK_MIN * 60
+    # long_break_sec = LONG_BREAK_MIN * 60
 
     # # This is how the wait time should be. The window is not waiting for a process
     # # to end, but instead, a sprecific amount of time to run a command. It does
@@ -37,7 +40,7 @@ def start_timer():
     for _ in range(8):
         REPS += 1
         if REPS == 1 or REPS == 3 or REPS == 5 or REPS == 7:
-            window.after(cool_down, count_down, work_sec)
+            window.after(cool_down, count_down, work_sec, REPS)
             cool_down += (work_sec + 1) * 1000
             print(f"Work for {WORK_MIN}mins")
         elif REPS == 8:
@@ -51,7 +54,7 @@ def start_timer():
 
 
 # -------------------------- COUNTDOWN MECHANISM ----------------------------- #
-def count_down(count):
+def count_down(count, reps=0):
     count_min = math.floor(count / 60)
     count_sec = count % 60
 
@@ -61,6 +64,13 @@ def count_down(count):
     canvas.itemconfig(timer_text, text=f"{count_min}:{count_sec}")
     if count > 0:
         window.after(1000, count_down, count - 1)
+
+    print(reps)
+    check_marks_text = ""
+    if reps == 1 or reps == 3 or reps == 5 or reps == 7:
+        check_marks_text += CHECK_MARK * (reps - 1)  # DEBUG
+        print(check_marks_text)
+        check_marks.config(text=check_marks_text)
 
 
 # ------------------------------- UI SETUP ---------------------------------- #
