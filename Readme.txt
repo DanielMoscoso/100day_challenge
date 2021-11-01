@@ -623,4 +623,7 @@
 		-I just switched the way the '**kwargs' are passed. It resembles 'Pandas'
 		 dataframes.
 		-A little more wiggle room for aesthetics.
+		-Autoinitialize the email text box with '@gmail.com'.
+		-Places the cursor to the website text box as soon as the program runs, and
+		 initialize the email text box with '@gmail.com'."
 ===============================================================================

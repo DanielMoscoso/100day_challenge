@@ -33,6 +33,9 @@ website_text.grid(row=1, column=1, columnspan=2, sticky='w')  # sticky="w" > ali
 email_username_text.grid(row=2, column=1, columnspan=2, sticky='w')
 password_text.grid(row=3, column=1, sticky='w')
 
+website_text.focus()
+email_username_text.insert("end", "@gmail.com")  # Somehow 'index 0' does not work.
+
 # Buttons:
 generate_password = tkinter.Button(text="Generate password")
 add = tkinter.Button(text="add", width=43)
