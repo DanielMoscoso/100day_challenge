@@ -620,4 +620,6 @@
 		-Labels.
 		-Text boxes.
 		-Buttons added and alignment of all the widgets.
+		-I just switched the way the '**kwargs' are passed. It resembles 'Pandas'
+		 dataframes.
 ===============================================================================
