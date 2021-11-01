@@ -26,21 +26,27 @@ def start_timer():
     short_break_sec = SHORT_BREAK_MIN * 60
     long_break_sec = LONG_BREAK_MIN * 60
 
-    # count_down(5 * 60)
+    # # This is how the wait time should be. The window is not waiting for a process
+    # # to end, but instead, a sprecific amount of time to run a command. It does
+    # # not matter if it is one on top of the other. It looks like multithreating.
+    # count_down(2)
+    # window.after(3000, count_down, 3)
+    # window.after(7000, count_down, 3)
+
     timer = 0
     for _ in range(8):
         reps += 1
         if reps == 1 or reps == 3 or reps == 5 or reps == 7:
             window.after(timer, count_down, 3)
-            timer = 3000
+            timer += 4000
             print(3)
         elif reps == 8:
             window.after(timer, count_down, 1)
-            timer = 1000
-            print(1)
+            timer += 2000
+            print("End")
         elif reps == 2 or reps == 4 or reps == 6:
             window.after(timer, count_down, 2)
-            timer = 2000
+            timer += 3000
             print(2)
 
 
