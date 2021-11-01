@@ -588,4 +588,5 @@
 		-Just a little more and the logic is finished.
 		-Working idea. Needs final implementation.
 		-Now with variables (closer to how it should look like at the end).
+		-Working implementation. Needs refinement.
 ===============================================================================

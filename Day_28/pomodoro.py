@@ -34,23 +34,20 @@ def start_timer():
     # window.after(7000, count_down, 3)
 
     cool_down = 0
-    three = 3
-    two = 2
-    one = 1
     for _ in range(8):
         reps += 1
         if reps == 1 or reps == 3 or reps == 5 or reps == 7:
-            window.after(cool_down, count_down, three)
-            cool_down += (three + 1) * 1000
-            print(3)
+            window.after(cool_down, count_down, work_sec)
+            cool_down += (work_sec + 1) * 1000
+            print(f"Work for {WORK_MIN}mins")
         elif reps == 8:
-            window.after(cool_down, count_down, one)
-            cool_down += (one + 1) * 1000
-            print("End")
+            window.after(cool_down, count_down, long_break_sec)
+            cool_down += (long_break_sec + 1) * 1000
+            print(f"Long break: {LONG_BREAK_MIN}mins")
         elif reps == 2 or reps == 4 or reps == 6:
-            window.after(cool_down, count_down, two)
-            cool_down += (two + 1) * 1000
-            print(2)
+            window.after(cool_down, count_down, short_break_sec)
+            cool_down += (short_break_sec + 1) * 1000
+            print(f"Short break: {SHORT_BREAK_MIN}mins")
 
 
 # -------------------------- COUNTDOWN MECHANISM ----------------------------- #
