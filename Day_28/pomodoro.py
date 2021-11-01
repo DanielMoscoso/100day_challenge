@@ -33,20 +33,23 @@ def start_timer():
     # window.after(3000, count_down, 3)
     # window.after(7000, count_down, 3)
 
-    timer = 0
+    cool_down = 0
+    three = 3
+    two = 2
+    one = 1
     for _ in range(8):
         reps += 1
         if reps == 1 or reps == 3 or reps == 5 or reps == 7:
-            window.after(timer, count_down, 3)
-            timer += 4000
+            window.after(cool_down, count_down, three)
+            cool_down += (three + 1) * 1000
             print(3)
         elif reps == 8:
-            window.after(timer, count_down, 1)
-            timer += 2000
+            window.after(cool_down, count_down, one)
+            cool_down += (one + 1) * 1000
             print("End")
         elif reps == 2 or reps == 4 or reps == 6:
-            window.after(timer, count_down, 2)
-            timer += 3000
+            window.after(cool_down, count_down, two)
+            cool_down += (two + 1) * 1000
             print(2)
 
 
