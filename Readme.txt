@@ -633,4 +633,6 @@
 		 creates it.
 		-Now it deletes credentials on screen, so new ones can be typed.
 		-Then challenge states that the function should be called 'save'.
+		-A pop-up window appears, and asks the user if the information entered is
+		 correct before actually saving it into the '.txt' file.
 ===============================================================================

@@ -1,18 +1,28 @@
 import tkinter
+from tkinter import messagebox
 
 
 # -------------------------- PASSWORD GENERATOR ----------------------------- #
 
 # ----------------------------- SAVE PASSWORD -------------------------------- #
 def save():
+    website_entered = website_text.get()
+    mail_user_entered = email_username_text.get()
+    password_entered = password_text.get()
+
+    its_ok = messagebox.askokcancel(title=website_entered, message=f"These are the details entered:"
+                                                                   f"\nEmail: {mail_user_entered}"
+                                                                   f"\nPassword: {password_entered}"
+                                                                   f"\nIs it ok to save?")
+
     with open("password_manager.txt", "a") as document:
-        document.write(f"Website: {website_text.get()} | E-mail: {email_username_text.get()} | Password: {password_text.get()}\n")
+        if its_ok:
+            document.write(f"Website: {website_entered} | E-mail: {mail_user_entered} | Password: {password_entered}\n")
+            website_text.delete(0, "end")
+            email_username_text.delete(0, "end")
+            password_text.delete(0, "end")
 
-        website_text.delete(0, "end")
-        email_username_text.delete(0, "end")
-        password_text.delete(0, "end")
-
-        email_username_text.insert("end", string="@gmail.com")
+            email_username_text.insert("end", string="@gmail.com")
 
 
 # ------------------------------- UI SETUP ---------------------------------- #
