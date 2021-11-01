@@ -639,4 +639,5 @@
 		-Password generator function: It takes the source code from 'Day_5' and
 		 adapts it, so whenever the person hits the 'Generate password' button, it
 		 generates a strong random password.
+		-A more pythonic approach to creating the final password string.
 ===============================================================================
