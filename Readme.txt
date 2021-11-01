@@ -570,5 +570,48 @@
 		-Better layout.
 28.-Twenty eigth day of the 100day challenge:
 ===============================================================================
+	-Pomodoro clock:
+		-Starting files and code.
+		-Background color changed.
+		-Added the 'Timer' text on top of the tomato. And also put everything into
+		 a grid layout.
+		-Added the buttons 'Start' and 'Reset' to the GUI."
+		-Added the 'check mark' label.
+		-Actual layout (The positioning was incorrect).
+		-No edge around the buttons.
+		-Updating some variables.
+		-Countdown Mechanism.
+		-Timer Mechanism.
+		-Making a timer in minutes.
+		-Now it looks like an actual timer when the number is "00".
+		-How  to set a new timer after the old one expired.
+		-Just a little more and the logic is finished.
+		-Working idea. Needs final implementation.
+		-Now with variables (closer to how it should look like at the end).
+		-Working implementation. Needs refinement.
+		-REPS was a global variable, and it was created as 'rep'.
+		-The check marks are now updating, but in odd intervals.
+		-A token variable is created and initialized to '0' to keep track of how
+		 many times the person studied for 25mins straight. That token is passed
+		 down as an argument to the 'count_down()' function, so it knows when to
+		 print the check marks. The check marks label starts off empty. Then it
+		 follows this formula 'reps-token' where 'reps' is the total number of
+		 repetitions the 'for loop' did; which is stored in REPS, and it is also
+		 passed down as an argument, hence 'reps'. When the last iteration comes,
+		 it simply prints 4 check marks, and lets the person take a break for 20mins.
+		-The rest of the debugging code has been commented out.
+		-I was missing the labels for the 'work', 'short break' and 'long break'.
+		-Labels now change color accordingly to the pomodoro state they are at.
+		-The 'reset' button now stops the timer and resets the screen. Due to the
+		 fact that the code is designed to create all the timers at once, making
+		 each one of them wait for their turn, a layer of complexity was added. At
+		 the moment the timers are created, they HAVE to be saved in SEPARATED
+		 variables, otherwise, later on it would be impossible to stop all of them.
+		 To solve this problem, a global dictionary 'TIMER_DICT' has been implemented,
+		 which holds all the '.after()' iterations, rendering possible to access and
+		 stop them one by one.
+		-Now, when the user hits 'start' again, after resetting the timer, it
+		 correctly starts a brand new timer.
+		-Back to the original timeframes: the program is finished.
 ===============================================================================
 29.-Twenty nineth day of the 100day challenge:
