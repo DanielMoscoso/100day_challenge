@@ -653,4 +653,5 @@
 		-This is how you would raise your own exceptions.
 		-Exercise 1.
 		-Exercise 2.
+		-Excersise 3.
 ===============================================================================
