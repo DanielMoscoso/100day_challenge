@@ -25,4 +25,6 @@
 try:
     file = open("a_file.txt")
 except FileNotFoundError:  # You can leave it without the actual exception, just plain 'except' and it will still work.
-    print("there was an error!")
+    file = open("a_file.txt", "w")
+    file.write("Something")
+    file.close()
