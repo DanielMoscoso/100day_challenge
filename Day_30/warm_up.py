@@ -34,4 +34,6 @@ except KeyError as error_message:
 else:  # In case all the 'try' succeed.
     content = file.read()
     print(content)
+finally:  # This will excecute no matter what.
     file.close()
+    print("File was closed.")

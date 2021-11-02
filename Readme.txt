@@ -649,4 +649,5 @@
 		-And this is how you would most likely solve problem #2.
 		-You can also be more specific and get a hold to that error and print it.
 		-In case all the 'try' succeed.
+		-This will excecute no matter what.
 ===============================================================================
