@@ -21,10 +21,14 @@
 # text = "abc"
 # print(text + 9)
 # %%
-# NOTE: 1
+# NOTE: 1 + 2
 try:
     file = open("a_file.txt")
+    a_dictionary = {"key": "value"}
+    value = a_dictionary["hello"]
 except FileNotFoundError:  # You can leave it without the actual exception, just plain 'except' and it will still work.
     file = open("a_file.txt", "w")
     file.write("Something")
     file.close()
+except KeyError:
+    print("The key does not exist!")

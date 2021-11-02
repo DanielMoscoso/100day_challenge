@@ -646,4 +646,5 @@
 	-Warm up:
 		-Error handling: FileNotFoundError.
 		-This is how you would most likely solve problem #1.
+		-And this is how you would most likely solve problem #2.
 ===============================================================================
