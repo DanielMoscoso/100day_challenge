@@ -643,4 +643,6 @@
 		 clipboard, so it can be used or pasted anywhere.
 30.-Thirtieth day of the 100day challenge:
 ===============================================================================
+	-Warm up:
+		-Error handling: FileNotFoundError.
 ===============================================================================
