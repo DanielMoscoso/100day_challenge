@@ -47,3 +47,20 @@ if height > 3:
 
 bmi = weight / height**2
 print(bmi)
+
+# %%
+fruits = ["Apple", "Pear", "Orange"]
+
+
+# Excersise 1:
+def make_pie(index):
+    try:
+        fruit = fruits[index]
+    except IndexError:
+        print("Fruit pie")
+    else:
+        print(fruit + " pie")
+
+
+# TODO: Catch the exception and make sure the code runs without crashing.
+make_pie(4)
