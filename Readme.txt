@@ -613,7 +613,6 @@
 		 correctly starts a brand new timer.
 		-Back to the original timeframes: the program is finished.
 29.-Twenty nineth day of the 100day challenge:
-===============================================================================
 	-Password Manager:
 		-Starting files and code.
 		-Lock image.
@@ -642,5 +641,6 @@
 		-A more pythonic approach to creating the final password string.
 		-Amazingly clever way to copy the freshly generated password into the
 		 clipboard, so it can be used or pasted anywhere.
-===============================================================================
 30.-Thirtieth day of the 100day challenge:
+===============================================================================
+===============================================================================
