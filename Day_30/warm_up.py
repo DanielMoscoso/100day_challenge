@@ -29,6 +29,9 @@ try:
 except FileNotFoundError:  # You can leave it without the actual exception, just plain 'except' and it will still work.
     file = open("a_file.txt", "w")
     file.write("Something")
-    file.close()
 except KeyError as error_message:
     print(f"The key {error_message} does not exist!")
+else:  # In case all the 'try' succeed.
+    content = file.read()
+    print(content)
+    file.close()
