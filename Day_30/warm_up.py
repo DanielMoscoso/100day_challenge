@@ -30,5 +30,5 @@ except FileNotFoundError:  # You can leave it without the actual exception, just
     file = open("a_file.txt", "w")
     file.write("Something")
     file.close()
-except KeyError:
-    print("The key does not exist!")
+except KeyError as error_message:
+    print(f"The key {error_message} does not exist!")
