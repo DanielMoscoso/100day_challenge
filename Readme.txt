@@ -614,5 +614,33 @@
 		-Back to the original timeframes: the program is finished.
 29.-Twenty nineth day of the 100day challenge:
 ===============================================================================
+	-Password Manager:
+		-Starting files and code.
+		-Lock image.
+		-Labels.
+		-Text boxes.
+		-Buttons added and alignment of all the widgets.
+		-I just switched the way the '**kwargs' are passed. It resembles 'Pandas'
+		 dataframes.
+		-A little more wiggle room for aesthetics.
+		-Autoinitialize the email text box with '@gmail.com'.
+		-Places the cursor to the website text box as soon as the program runs, and
+		 initialize the email text box with '@gmail.com'."
+		-The text boxes are actually 'entry' boxes.
+		-The entry boxes' layout also changed. They needed to be wider.
+		-If the user hits the 'add' button, then the code saves all the typed
+		 information in a new line to a '.txt' file. If the file does not exist, it
+		 creates it.
+		-Now it deletes credentials on screen, so new ones can be typed.
+		-Then challenge states that the function should be called 'save'.
+		-A pop-up window appears, and asks the user if the information entered is
+		 correct before actually saving it into the '.txt' file.
+		-If the person leaves any field empty, then a warning pops up saying so.
+		-Password generator function: It takes the source code from 'Day_5' and
+		 adapts it, so whenever the person hits the 'Generate password' button, it
+		 generates a strong random password.
+		-A more pythonic approach to creating the final password string.
+		-Amazingly clever way to copy the freshly generated password into the
+		 clipboard, so it can be used or pasted anywhere.
 ===============================================================================
 30.-Thirtieth day of the 100day challenge:
