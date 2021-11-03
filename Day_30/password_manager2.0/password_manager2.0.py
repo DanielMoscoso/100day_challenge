@@ -5,6 +5,18 @@ import pyperclip
 import json
 
 
+# ---------------------------------- SEARCH ---------------------------------- #
+def find_password():
+    try:
+        with open("password_manager.json") as data_file:
+            data = json.load(data_file)
+    except FileNotFoundError:
+        print("No data file found")
+    else:
+        website_entered = website_text.get()
+        print(f"E-mail: {data[website_entered]['email']}\nPassword: {data[website_entered]['password']}")
+
+
 # -------------------------- PASSWORD GENERATOR ----------------------------- #
 def generate_password():
     letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
@@ -121,7 +133,7 @@ email_username_text.insert("end", string="@gmail.com")  # Somehow 'index 0' does
 # Buttons:
 generate_password = tkinter.Button(text="Generate password", command=generate_password)
 add = tkinter.Button(text="Add", width=43, command=save)
-search = tkinter.Button(text="Search", width=14, command=save)
+search = tkinter.Button(text="Search", width=14, command=find_password)
 
 generate_password.grid(row=3, column=2, sticky='w')
 add.grid(row=4, column=1, columnspan=2, sticky='w')
