@@ -653,5 +653,6 @@
 		-This is how you would raise your own exceptions.
 		-Exercise 1.
 		-Exercise 2.
-		-Excersise 3.
+		-Exercise 3.
+		-Starting files for today's challenge.
 ===============================================================================
