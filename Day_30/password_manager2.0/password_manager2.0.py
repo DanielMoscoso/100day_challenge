@@ -16,7 +16,7 @@ def find_password():
             password_from_field = data[website_entered]['password']
 
     except FileNotFoundError:
-        print("No data file found")
+        messagebox.showerror(title="Missing '.json' file", message="No data file found")
     except KeyError as mistake:
         messagebox.showerror(title="Website not in database", message="No details for the website exist")
     else:

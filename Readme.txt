@@ -660,5 +660,7 @@
 		-Search button, plus layout update.
 		-'find_password()' implemented and added to de button 'Search'.
 		-Pop up window + 'try ... except ... else' to catch 'FileNotFoundError'
-		 and 'KeyError'
+		 and 'KeyError'.
+		-I forgot to put the warning when there is no '.json' file inside a pop up
+		 window. It just printed the message to the command line.
 ===============================================================================
