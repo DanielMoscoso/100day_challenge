@@ -657,4 +657,5 @@
 		-Starting files for today's challenge.
 		-How to save everything as a '.json' file.
 		-This is how it actually should look like at the end. (better written code).
+		-Searcn button, plus layout update.
 ===============================================================================

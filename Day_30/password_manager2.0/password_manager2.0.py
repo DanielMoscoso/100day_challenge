@@ -107,11 +107,11 @@ email_username.grid(row=2, column=0, sticky="e")
 password.grid(row=3, column=0, sticky="e")
 
 # Entry boxes:
-website_text = tkinter.Entry(width=51)
+website_text = tkinter.Entry(width=32)
 email_username_text = tkinter.Entry(width=51)
 password_text = tkinter.Entry(width=32)
 
-website_text.grid(row=1, column=1, columnspan=2, sticky='w')  # sticky="w" > aligned to the left.
+website_text.grid(row=1, column=1, sticky='w')  # sticky="w" > aligned to the left.
 email_username_text.grid(row=2, column=1, columnspan=2, sticky='w')
 password_text.grid(row=3, column=1, sticky='w')
 
@@ -120,10 +120,12 @@ email_username_text.insert("end", string="@gmail.com")  # Somehow 'index 0' does
 
 # Buttons:
 generate_password = tkinter.Button(text="Generate password", command=generate_password)
-add = tkinter.Button(text="add", width=43, command=save)
+add = tkinter.Button(text="Add", width=43, command=save)
+search = tkinter.Button(text="Search", width=14, command=save)
 
 generate_password.grid(row=3, column=2, sticky='w')
 add.grid(row=4, column=1, columnspan=2, sticky='w')
+search.grid(row=1, column=2, sticky='w')
 
 
 window.mainloop()
