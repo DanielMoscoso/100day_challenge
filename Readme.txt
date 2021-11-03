@@ -655,4 +655,5 @@
 		-Exercise 2.
 		-Exercise 3.
 		-Starting files for today's challenge.
+		-How to save everything as a '.json' file.
 ===============================================================================
