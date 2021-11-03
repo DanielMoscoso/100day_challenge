@@ -642,7 +642,6 @@
 		-Amazingly clever way to copy the freshly generated password into the
 		 clipboard, so it can be used or pasted anywhere.
 30.-Thirtieth day of the 100day challenge:
-===============================================================================
 	-Warm up:
 		-Error handling: FileNotFoundError.
 		-This is how you would most likely solve problem #1.
@@ -663,5 +662,6 @@
 		 and 'KeyError'.
 		-I forgot to put the warning when there is no '.json' file inside a pop up
 		 window. It just printed the message to the command line.
-===============================================================================
 31.-Thirty-first day of the 100day challenge:
+===============================================================================
+===============================================================================
