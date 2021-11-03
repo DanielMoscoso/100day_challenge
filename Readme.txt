@@ -643,5 +643,25 @@
 		 clipboard, so it can be used or pasted anywhere.
 30.-Thirtieth day of the 100day challenge:
 ===============================================================================
+	-Warm up:
+		-Error handling: FileNotFoundError.
+		-This is how you would most likely solve problem #1.
+		-And this is how you would most likely solve problem #2.
+		-You can also be more specific and get a hold to that error and print it.
+		-In case all the 'try' succeed.
+		-This will execute no matter what.
+		-This is how you would raise your own exceptions.
+		-Exercise 1.
+		-Exercise 2.
+		-Exercise 3.
+		-Starting files for today's challenge.
+		-How to save everything as a '.json' file.
+		-This is how it actually should look like at the end. (better written code).
+		-Search button, plus layout update.
+		-'find_password()' implemented and added to de button 'Search'.
+		-Pop up window + 'try ... except ... else' to catch 'FileNotFoundError'
+		 and 'KeyError'.
+		-I forgot to put the warning when there is no '.json' file inside a pop up
+		 window. It just printed the message to the command line.
 ===============================================================================
 31.-Thirty-first day of the 100day challenge:
