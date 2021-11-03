@@ -659,4 +659,6 @@
 		-This is how it actually should look like at the end. (better written code).
 		-Search button, plus layout update.
 		-'find_password()' implemented and added to de button 'Search'.
+		-Pop up window + 'try ... except ... else' to catch 'FileNotFoundError'
+		 and 'KeyError'
 ===============================================================================

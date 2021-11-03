@@ -10,11 +10,18 @@ def find_password():
     try:
         with open("password_manager.json") as data_file:
             data = json.load(data_file)
+            website_entered = website_text.get()
+
+            email_from_field = data[website_entered]['email']
+            password_from_field = data[website_entered]['password']
+
     except FileNotFoundError:
         print("No data file found")
+    except KeyError as mistake:
+        messagebox.showerror(title="Website not in database", message="No details for the website exist")
     else:
-        website_entered = website_text.get()
-        print(f"E-mail: {data[website_entered]['email']}\nPassword: {data[website_entered]['password']}")
+        messagebox.showinfo(title=website_entered, message=f"E-mail: {email_from_field}\n"
+                                                           f"Password: {password_from_field}")
 
 
 # -------------------------- PASSWORD GENERATOR ----------------------------- #
