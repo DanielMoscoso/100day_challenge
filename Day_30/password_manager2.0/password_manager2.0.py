@@ -67,23 +67,23 @@ def save():
             with open("password_manager.json", "r") as data_file:
                 # Reading old data:
                 data = json.load(data_file)
-                # Updating old data with new data:
-                data.update(new_data)
         except FileNotFoundError:
             with open("password_manager.json", "w") as data_file:
                 # Saving updated data:
                 json.dump(new_data, data_file, indent=4)
         else:
+            # Updating old data with new data:
+            data.update(new_data)
             with open("password_manager.json", "w") as data_file:
                 # Saving updated data:
                 json.dump(data, data_file, indent=4)
+        finally:
+            website_text.delete(0, "end")
+            email_username_text.delete(0, "end")
+            password_text.delete(0, "end")
 
-                website_text.delete(0, "end")
-                email_username_text.delete(0, "end")
-                password_text.delete(0, "end")
-
-                website_text.focus()
-                email_username_text.insert("end", string="@gmail.com")
+            website_text.focus()
+            email_username_text.insert("end", string="@gmail.com")
 
 
 # ------------------------------- UI SETUP ---------------------------------- #
