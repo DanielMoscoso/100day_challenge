@@ -11,11 +11,13 @@ DATA_DICT = RAW_DATA.to_dict(orient="records")
 # -------------------------------- Random word --------------------------------
 def new_random_word_correct():
     random_word = random.choice(DATA_DICT)["English"]
+    canvas.itemconfig(language, text=RAW_DATA.columns[0])
     canvas.itemconfig(word, text=random_word)
 
 
 def new_random_word_wrong():
     random_word = random.choice(DATA_DICT)["English"]
+    canvas.itemconfig(language, text=RAW_DATA.columns[0])
     canvas.itemconfig(word, text=random_word)
 
 
@@ -30,7 +32,7 @@ canvas = tkinter.Canvas(width=800, height=526, bg=BACKGROUND_COLOR, highlightthi
 # Front of flash card:
 card_front = tkinter.PhotoImage(file="./images/card_front.png")
 canvas.create_image(400, 263, image=card_front)
-language = canvas.create_text(400, 150, text=data.columns[0], font=("Arial", 40, "italic"))
+language = canvas.create_text(400, 150, text="Language", font=("Arial", 40, "italic"))
 word = canvas.create_text(400, 263, text="Word", font=("Arial", 60, "bold"))
 canvas.grid(row=0, column=0, columnspan=2)
 # # Back of flash card:
