@@ -670,4 +670,12 @@
 		-Title and word of the flashcard.
 		-It is better having the words as a constant list.
 		-The card's tittle is supposed to start off as 'language', then change.
+		-I added a new button to start the game. Otherwise, it would have started
+		 as soon as the program executed. Now the user has the choice when to start
+		 the game. Whenever any of the buttons is pressed, a 3sec counter starts,
+		 and after it is finished, the card flips and shows the translated word.
+		 Right now it just flips without giving the answer. It has to do with the
+		 way the random word is chosen from the list. (It is better to get hold of
+		 he actual dictionary, then access the original word, that way I can pass
+		 the dict to later access the translation).
 ===============================================================================
