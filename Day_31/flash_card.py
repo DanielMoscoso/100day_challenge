@@ -14,40 +14,40 @@ DATA_DICT = RAW_DATA.to_dict(orient="records")
 def new_random_word_correct():
     global TIMER
     window.after_cancel(TIMER)
-    random_word = random.choice(DATA_DICT)["English"]
+    random_word = random.choice(DATA_DICT)
     canvas.itemconfig(language, text=RAW_DATA.columns[0])
-    canvas.itemconfig(word, text=random_word)
+    canvas.itemconfig(word, text=random_word["English"])
     TIMER = window.after(1000, count_down, SECONDS, random_word)
 
 
 def new_random_word_wrong():
     global TIMER
     window.after_cancel(TIMER)
-    random_word = random.choice(DATA_DICT)["English"]
+    random_word = random.choice(DATA_DICT)
     canvas.itemconfig(language, text=RAW_DATA.columns[0])
-    canvas.itemconfig(word, text=random_word)
+    canvas.itemconfig(word, text=random_word["English"])
     TIMER = window.after(1000, count_down, SECONDS, random_word)
 
 
 def start():
     global TIMER
-    random_word = random.choice(DATA_DICT)["English"]
+    random_word = random.choice(DATA_DICT)
     canvas.itemconfig(language, text=RAW_DATA.columns[0])
-    canvas.itemconfig(word, text=random_word)
-    TIMER = window.after(1000, count_down, SECONDS)
+    canvas.itemconfig(word, text=random_word["English"])
+    TIMER = window.after(1000, count_down, SECONDS, random_word)
     start.destroy()
 
 
 # -------------------------- COUNTDOWN MECHANISM ----------------------------- #
-def count_down(count, random_word=""):
+def count_down(count, random_word):
     if count > 0:
         global TIMER
-        TIMER = window.after(1000, count_down, count - 1)
+        TIMER = window.after(1000, count_down, count - 1, random_word)
         print(count)
     else:
         canvas.itemconfig(canvas_image, image=card_back)
         canvas.itemconfig(language, fill="white", text=RAW_DATA.columns[1])
-        canvas.itemconfig(word, fill="white", text=random_word)
+        canvas.itemconfig(word, fill="white", text=random_word["Español"])
         canvas.itemconfig(word, fill="white")
 
 

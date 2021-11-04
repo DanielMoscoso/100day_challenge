@@ -678,4 +678,6 @@
 		 way the random word is chosen from the list. (It is better to get hold of
 		 he actual dictionary, then access the original word, that way I can pass
 		 the dict to later access the translation).
+		-Problem solved: get hold of the dictionary, then access the different words
+		 in their respective languages, in their respective timeframes.
 ===============================================================================
