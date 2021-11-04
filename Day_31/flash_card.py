@@ -4,21 +4,18 @@ import random
 
 BACKGROUND_COLOR = "#B1DDC6"
 
+RAW_DATA = pd.read_csv("./data/Eng-Spa_880_frequency_words.csv")
+DATA_DICT = RAW_DATA.to_dict(orient="records")
+
 
 # -------------------------------- Random word --------------------------------
 def new_random_word_correct():
-    data = pd.read_csv("./data/Eng-Spa_880_frequency_words.csv")
-    data_dict = data.to_dict(orient="records")
-
-    random_word = random.choice(data_dict)["English"]
+    random_word = random.choice(DATA_DICT)["English"]
     canvas.itemconfig(word, text=random_word)
 
 
 def new_random_word_wrong():
-    data = pd.read_csv("./data/Eng-Spa_880_frequency_words.csv")
-    data_dict = data.to_dict(orient="records")
-
-    random_word = random.choice(data_dict)["English"]
+    random_word = random.choice(DATA_DICT)["English"]
     canvas.itemconfig(word, text=random_word)
 
 

@@ -668,4 +668,5 @@
 		-Starting directories, files and code.
 		-Front and back images, and buttons.
 		-Title and word of the flashcard.
+		-It is better having the words as a constant list.
 ===============================================================================
