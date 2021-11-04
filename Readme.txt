@@ -667,4 +667,5 @@
 	-Flash card:
 		-Starting directories, files and code.
 		-Front and back images, and buttons.
+		-Title and word of the flashcard.
 ===============================================================================
