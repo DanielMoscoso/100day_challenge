@@ -664,4 +664,6 @@
 		 window. It just printed the message to the command line.
 31.-Thirty-first day of the 100day challenge:
 ===============================================================================
+	-Flash card:
+		-Starting directories, files and code.
 ===============================================================================
