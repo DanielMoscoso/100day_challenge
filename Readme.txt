@@ -682,5 +682,6 @@
 		 in their respective languages, in their respective timeframes.
 		-The card now changes color to green after flipping back to 'English'.
 		-There was as word that did not have the alternative meaning.
-		-the word cause was the shortened version of because.
+		-The word cause was the shortened version of because.
+		-The tilde was missing.
 ===============================================================================
