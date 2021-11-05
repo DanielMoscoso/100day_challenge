@@ -7,7 +7,7 @@ BACKGROUND_COLOR = "#B1DDC6"
 TIMER = None
 SECONDS = 1
 
-RAW_DATA = pd.read_csv("./data/Eng-Spa_880_frequency_words.csv")
+RAW_DATA = pd.read_csv("./data/Eng-Spa_860_frequency_words.csv")
 DATA_DICT = RAW_DATA.to_dict(orient="records")
 RANDOM_WORD = None
 KNOWN_WORDS = []
