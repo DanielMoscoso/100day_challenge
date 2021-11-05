@@ -47,11 +47,19 @@ def known_words():
     window2.config(padx=50, pady=50, bg=BACKGROUND_COLOR)
 
     canvas2 = tkinter.Canvas(window2, width=800, height=526, bg=BACKGROUND_COLOR, highlightthickness=0)
-
     card_front = tkinter.PhotoImage(file="./images/card_front.png")
-
     canvas2.create_image(400, 263, image=card_front)
+
+    text = tkinter.Text(window2, height=25, width=80)
+    # == Words into 1 string ==
+    all_known_words = ""
+    for item in KNOWN_WORDS:
+        all_known_words += f"{item['English']}: {item['Español']}\n"
+    # == Words into 1 string ==
+    text.insert("end", all_known_words)
+
     canvas2.grid(row=0, column=0)
+    text.grid(row=0, column=0)
 
     window2.mainloop()
 
