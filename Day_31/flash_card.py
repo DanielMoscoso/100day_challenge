@@ -4,7 +4,7 @@ import random
 
 BACKGROUND_COLOR = "#B1DDC6"
 TIMER = None
-SECONDS = 3
+SECONDS = 1
 
 RAW_DATA = pd.read_csv("./data/Eng-Spa_880_frequency_words.csv")
 DATA_DICT = RAW_DATA.to_dict(orient="records")
