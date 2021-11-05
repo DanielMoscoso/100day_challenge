@@ -11,6 +11,7 @@ RAW_DATA = pd.read_csv("./data/Eng-Spa_880_frequency_words.csv")
 DATA_DICT = RAW_DATA.to_dict(orient="records")
 RANDOM_WORD = None
 KNOWN_WORDS = []
+UNKNOWN_WORDS = []
 
 
 # -------------------------------- Random word --------------------------------
@@ -41,6 +42,10 @@ def new_random_word_wrong():
     except ValueError:
         messagebox.showerror(title="Click Start", message="You need to start the game before anything else.")
     else:
+        UNKNOWN_WORDS.append(RANDOM_WORD)
+        unknown_df = pd.DataFrame(UNKNOWN_WORDS)
+        unknown_df.to_csv("./data/unknown_words", index=False)
+
         RANDOM_WORD = random.choice(DATA_DICT)
         canvas.itemconfig(canvas_image, image=card_front)
         canvas.itemconfig(language, text=RAW_DATA.columns[0], fill=BACKGROUND_COLOR)
@@ -54,20 +59,26 @@ def known_words():
     window2.title("Known words")
     window2.config(padx=50, pady=50, bg=BACKGROUND_COLOR)
 
+    # Canvas:
     canvas2 = tkinter.Canvas(window2, width=800, height=526, bg=BACKGROUND_COLOR, highlightthickness=0)
     card_front = tkinter.PhotoImage(file="./images/card_front.png")
     canvas2.create_image(400, 263, image=card_front)
 
-    text = tkinter.Text(window2, height=25, width=80)
+    # Text box:
+    text_box = tkinter.Text(window2, height=25, width=80)
     # == Words into 1 string ==
     all_known_words = ""
     for item in KNOWN_WORDS:
         all_known_words += f"{item['English']}: {item['Español']}\n"
     # == Words into 1 string ==
-    text.insert("end", all_known_words)
+    text_box.insert("end", all_known_words)
 
-    canvas2.grid(row=0, column=0)
-    text.grid(row=0, column=0)
+    # Label:
+    counter = tkinter.Label(window2, text=f"{len(KNOWN_WORDS)}/860", fg="white", bg=BACKGROUND_COLOR, highlightthickness=0, font=("Arial", 20, "bold"))
+
+    counter.grid(row=0, column=0)
+    canvas2.grid(row=1, column=0)
+    text_box.grid(row=1, column=0)
 
     window2.mainloop()
 
