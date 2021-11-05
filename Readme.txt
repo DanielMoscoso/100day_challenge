@@ -663,7 +663,6 @@
 		-I forgot to put the warning when there is no '.json' file inside a pop up
 		 window. It just printed the message to the command line.
 31.-Thirty-first day of the 100day challenge:
-===============================================================================
 	-Flash card:
 		-Starting directories, files and code.
 		-Front and back images, and buttons.
@@ -709,5 +708,6 @@
 		 with an 'if statement', and there is also no error it can possibly produce.
 		-Bettere labeling for the pop up windows: They now state if the user is in
 		 'known' or 'unknown' pop up window.
-===============================================================================
 32.-Thirty-second day of the 100day challenge:
+===============================================================================
+===============================================================================
