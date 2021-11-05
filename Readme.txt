@@ -684,4 +684,5 @@
 		-There was as word that did not have the alternative meaning.
 		-The word cause was the shortened version of because.
 		-The tilde was missing.
+		-It did not have the alternative meaning.
 ===============================================================================
