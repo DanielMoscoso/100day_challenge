@@ -110,8 +110,8 @@ card_back = tkinter.PhotoImage(file="./images/card_back.png")
 
 canvas_image = canvas.create_image(400, 263, image=card_front)
 
-language = canvas.create_text(400, 150, text="Language", font=("Arial", 40, "italic"))
-word = canvas.create_text(400, 263, text="Word", font=("Arial", 60, "bold"))
+language = canvas.create_text(400, 150, text="Welcome to the game", font=("Arial", 40, "italic"))
+word = canvas.create_text(400, 263, text="Flashcards", font=("Arial", 60, "bold"))
 canvas.grid(row=1, column=0, columnspan=3)
 
 # Buttons:
