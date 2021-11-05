@@ -57,7 +57,7 @@ def next_card():
     canvas.itemconfig(language, text=RAW_DATA.columns[0], fill=BACKGROUND_COLOR)
     canvas.itemconfig(word, text=RANDOM_WORD["English"], fill=BACKGROUND_COLOR)
     TIMER = window.after(1000, count_down, SECONDS, RANDOM_WORD)
-    print(len(DATA_DICT))  # Debugging
+    # print(len(DATA_DICT))  # Debugging
 
 
 def known_words():
@@ -81,7 +81,7 @@ def known_words():
         text_box.insert("end", all_known_words)
 
         # Label:
-        counter = tkinter.Label(window2, text=f"{len(KNOWN_WORDS)}/860", fg="white", bg=BACKGROUND_COLOR, highlightthickness=0, font=("Arial", 20, "bold"))
+        counter = tkinter.Label(window2, text=f"Known words: {len(KNOWN_WORDS)}/860", fg="white", bg=BACKGROUND_COLOR, highlightthickness=0, font=("Arial", 20, "bold"))
 
         counter.grid(row=0, column=0)
         canvas2.grid(row=1, column=0)
@@ -117,7 +117,7 @@ def unknown_words():
         # == Words into 1 string ==
         text_box.insert("end", all_unknown_words)
         # Label:
-        counter = tkinter.Label(window3, text=f"{len(unknown_words_list)}/860", fg="white", bg=BACKGROUND_COLOR, highlightthickness=0, font=("Arial", 20, "bold"))
+        counter = tkinter.Label(window3, text=f"Words to review: {len(unknown_words_list)}/860", fg="white", bg=BACKGROUND_COLOR, highlightthickness=0, font=("Arial", 20, "bold"))
 
         counter.grid(row=0, column=0)
         canvas3.grid(row=1, column=0)

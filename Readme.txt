@@ -707,4 +707,6 @@
 		-Exception handling: FileNotFoundError.
 		-Simple exception handling: I chose to do it this way since it can be tackled
 		 with an 'if statement', and there is also no error it can possibly produce.
+		-Bettere labeling for the pop up windows: They now state if the user is in
+		 'known' or 'unknown' pop up window.
 ===============================================================================
