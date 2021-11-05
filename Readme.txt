@@ -705,4 +705,6 @@
 		-Re-arranging the functions for readability.
 		-There is now a new window that shows the words that need focus. (csv + GUI).
 		-Exception handling: FileNotFoundError.
+		-Simple exception handling: I chose to do it this way since it can be tackled
+		 with an 'if statement', and there is also no error it can possibly produce.
 ===============================================================================

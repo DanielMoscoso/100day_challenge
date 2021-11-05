@@ -61,32 +61,35 @@ def next_card():
 
 
 def known_words():
-    window2 = tkinter.Toplevel(window)
-    window2.title("Known words")
-    window2.config(padx=50, pady=50, bg=BACKGROUND_COLOR)
+    if len(KNOWN_WORDS) > 0:
+        window2 = tkinter.Toplevel(window)
+        window2.title("Known words")
+        window2.config(padx=50, pady=50, bg=BACKGROUND_COLOR)
 
-    # Canvas:
-    canvas2 = tkinter.Canvas(window2, width=800, height=526, bg=BACKGROUND_COLOR, highlightthickness=0)
-    card_front = tkinter.PhotoImage(file="./images/card_front.png")
-    canvas2.create_image(400, 263, image=card_front)
+        # Canvas:
+        canvas2 = tkinter.Canvas(window2, width=800, height=526, bg=BACKGROUND_COLOR, highlightthickness=0)
+        card_front = tkinter.PhotoImage(file="./images/card_front.png")
+        canvas2.create_image(400, 263, image=card_front)
 
-    # Text box:
-    text_box = tkinter.Text(window2, height=25, width=80)
-    # == Words into 1 string ==
-    all_known_words = ""
-    for item in KNOWN_WORDS:
-        all_known_words += f"{item['English']}: {item['Español']}\n"
-    # == Words into 1 string ==
-    text_box.insert("end", all_known_words)
+        # Text box:
+        text_box = tkinter.Text(window2, height=25, width=80)
+        # == Words into 1 string ==
+        all_known_words = ""
+        for item in KNOWN_WORDS:
+            all_known_words += f"{item['English']}: {item['Español']}\n"
+        # == Words into 1 string ==
+        text_box.insert("end", all_known_words)
 
-    # Label:
-    counter = tkinter.Label(window2, text=f"{len(KNOWN_WORDS)}/860", fg="white", bg=BACKGROUND_COLOR, highlightthickness=0, font=("Arial", 20, "bold"))
+        # Label:
+        counter = tkinter.Label(window2, text=f"{len(KNOWN_WORDS)}/860", fg="white", bg=BACKGROUND_COLOR, highlightthickness=0, font=("Arial", 20, "bold"))
 
-    counter.grid(row=0, column=0)
-    canvas2.grid(row=1, column=0)
-    text_box.grid(row=1, column=0)
+        counter.grid(row=0, column=0)
+        canvas2.grid(row=1, column=0)
+        text_box.grid(row=1, column=0)
 
-    window2.mainloop()
+        window2.mainloop()
+    else:
+        messagebox.showerror(title="Start game first", message="You need to start adding words to the known pile before anything else.")
 
 
 def unknown_words():
