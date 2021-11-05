@@ -681,4 +681,5 @@
 		-Problem solved: get hold of the dictionary, then access the different words
 		 in their respective languages, in their respective timeframes.
 		-The card now changes color to green after flipping back to 'English'.
+		-There was as word that did not have the alternative meaning.
 ===============================================================================
