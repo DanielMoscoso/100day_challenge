@@ -701,4 +701,5 @@
 		-Now the person gets a '.csv' file with all the words they need to focus on.
 		 And there is a new counter in the known words, showing the total words they
 		 know out of 860.
+		-Simplify the code by adding 'next_card()'.
 ===============================================================================
