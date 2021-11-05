@@ -703,5 +703,6 @@
 		 know out of 860.
 		-Simplify the code by adding 'next_card()'.
 		-Re-arranging the functions for readability.
-		-There is now a new window that shows the words that need focus. (csv + GUI)
+		-There is now a new window that shows the words that need focus. (csv + GUI).
+		-Exception handling: FileNotFoundError.
 ===============================================================================

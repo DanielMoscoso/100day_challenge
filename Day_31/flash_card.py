@@ -90,34 +90,37 @@ def known_words():
 
 
 def unknown_words():
-    window3 = tkinter.Toplevel(window)
-    window3.title("Unknown words")
-    window3.config(padx=50, pady=50, bg=BACKGROUND_COLOR)
+    try:
+        unknown_words_file = pd.read_csv("./data/unknown_words.csv")
+    except FileNotFoundError:
+        messagebox.showerror(title="File not found", message="You need to start adding words to the review pile before anything else.")
+    else:
+        window3 = tkinter.Toplevel(window)
+        window3.title("Unknown words")
+        window3.config(padx=50, pady=50, bg=BACKGROUND_COLOR)
 
-    # Canvas:
-    canvas3 = tkinter.Canvas(window3, width=800, height=526, bg=BACKGROUND_COLOR, highlightthickness=0)
-    card_front = tkinter.PhotoImage(file="./images/card_front.png")
-    canvas3.create_image(400, 263, image=card_front)
+        # Canvas:
+        canvas3 = tkinter.Canvas(window3, width=800, height=526, bg=BACKGROUND_COLOR, highlightthickness=0)
+        card_front = tkinter.PhotoImage(file="./images/card_front.png")
+        canvas3.create_image(400, 263, image=card_front)
 
-    # Text box:
-    text_box = tkinter.Text(window3, height=25, width=80)
-    # == Words into 1 string ==
-    unknown_words_file = pd.read_csv("./data/unknown_words.csv")
-    unknown_words_list = unknown_words_file.to_dict(orient="records")
-    all_unknown_words = ""
-    for item in unknown_words_list:
-        all_unknown_words += f"{item['English']}: {item['Español']}\n"
-    # == Words into 1 string ==
-    text_box.insert("end", all_unknown_words)
+        # Text box:
+        text_box = tkinter.Text(window3, height=25, width=80)
+        # == Words into 1 string ==
+        unknown_words_list = unknown_words_file.to_dict(orient="records")
+        all_unknown_words = ""
+        for item in unknown_words_list:
+            all_unknown_words += f"{item['English']}: {item['Español']}\n"
+        # == Words into 1 string ==
+        text_box.insert("end", all_unknown_words)
+        # Label:
+        counter = tkinter.Label(window3, text=f"{len(unknown_words_list)}/860", fg="white", bg=BACKGROUND_COLOR, highlightthickness=0, font=("Arial", 20, "bold"))
 
-    # Label:
-    counter = tkinter.Label(window3, text=f"{len(unknown_words_list)}/860", fg="white", bg=BACKGROUND_COLOR, highlightthickness=0, font=("Arial", 20, "bold"))
+        counter.grid(row=0, column=0)
+        canvas3.grid(row=1, column=0)
+        text_box.grid(row=1, column=0)
 
-    counter.grid(row=0, column=0)
-    canvas3.grid(row=1, column=0)
-    text_box.grid(row=1, column=0)
-
-    window3.mainloop()
+        window3.mainloop()
 
 
 # -------------------------- COUNTDOWN MECHANISM ----------------------------- #
