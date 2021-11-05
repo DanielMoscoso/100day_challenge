@@ -14,6 +14,17 @@ KNOWN_WORDS = []
 UNKNOWN_WORDS = []
 
 
+def start():
+    global TIMER
+    global RANDOM_WORD
+    RANDOM_WORD = random.choice(DATA_DICT)
+    canvas.itemconfig(language, text=RAW_DATA.columns[0], fill=BACKGROUND_COLOR)
+    canvas.itemconfig(word, text=RANDOM_WORD["English"], fill=BACKGROUND_COLOR)
+    TIMER = window.after(1000, count_down, SECONDS, RANDOM_WORD)
+    start.destroy()
+    # print(len(DATA_DICT))  # Debugging
+
+
 def new_random_word_correct():
     try:
         window.after_cancel(TIMER)
@@ -35,6 +46,18 @@ def new_random_word_wrong():
         unknown_df = pd.DataFrame(UNKNOWN_WORDS)
         unknown_df.to_csv("./data/unknown_words", index=False)
         next_card()
+
+
+def next_card():
+    global TIMER
+    global RANDOM_WORD
+
+    RANDOM_WORD = random.choice(DATA_DICT)
+    canvas.itemconfig(canvas_image, image=card_front)
+    canvas.itemconfig(language, text=RAW_DATA.columns[0], fill=BACKGROUND_COLOR)
+    canvas.itemconfig(word, text=RANDOM_WORD["English"], fill=BACKGROUND_COLOR)
+    TIMER = window.after(1000, count_down, SECONDS, RANDOM_WORD)
+    print(len(DATA_DICT))  # Debugging
 
 
 def known_words():
@@ -64,29 +87,6 @@ def known_words():
     text_box.grid(row=1, column=0)
 
     window2.mainloop()
-
-
-def next_card():
-    global TIMER
-    global RANDOM_WORD
-
-    RANDOM_WORD = random.choice(DATA_DICT)
-    canvas.itemconfig(canvas_image, image=card_front)
-    canvas.itemconfig(language, text=RAW_DATA.columns[0], fill=BACKGROUND_COLOR)
-    canvas.itemconfig(word, text=RANDOM_WORD["English"], fill=BACKGROUND_COLOR)
-    TIMER = window.after(1000, count_down, SECONDS, RANDOM_WORD)
-    print(len(DATA_DICT))  # Debugging
-
-
-def start():
-    global TIMER
-    global RANDOM_WORD
-    RANDOM_WORD = random.choice(DATA_DICT)
-    canvas.itemconfig(language, text=RAW_DATA.columns[0], fill=BACKGROUND_COLOR)
-    canvas.itemconfig(word, text=RANDOM_WORD["English"], fill=BACKGROUND_COLOR)
-    TIMER = window.after(1000, count_down, SECONDS, RANDOM_WORD)
-    start.destroy()
-    print(len(DATA_DICT))  # Debugging
 
 
 # -------------------------- COUNTDOWN MECHANISM ----------------------------- #

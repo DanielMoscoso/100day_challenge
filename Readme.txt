@@ -702,4 +702,5 @@
 		 And there is a new counter in the known words, showing the total words they
 		 know out of 860.
 		-Simplify the code by adding 'next_card()'.
+		-Re-arranging the functions for readability.
 ===============================================================================
