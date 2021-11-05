@@ -695,4 +695,6 @@
 		 corner. The button exists, and creates a pop up window, but right now, the
 		 window it is empty.
 		-The user can now see all the words they know in a dedicated screen.
+		-Everything is now in a 'try..except..else' to prevent the user from starting
+		 the selection process before starting the game."
 ===============================================================================

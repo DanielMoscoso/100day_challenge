@@ -1,4 +1,5 @@
 import tkinter
+from tkinter import messagebox
 import pandas as pd
 import random
 
@@ -16,29 +17,36 @@ KNOWN_WORDS = []
 def new_random_word_correct():
     global TIMER
     global RANDOM_WORD
-    window.after_cancel(TIMER)
+    try:
+        window.after_cancel(TIMER)
+    except ValueError:
+        messagebox.showerror(title="Click Start", message="You need to start the game before anything else.")
+    else:
+        word_index = DATA_DICT.index(RANDOM_WORD)
+        KNOWN_WORDS.append(DATA_DICT.pop(word_index))
 
-    word_index = DATA_DICT.index(RANDOM_WORD)
-    KNOWN_WORDS.append(DATA_DICT.pop(word_index))
-
-    RANDOM_WORD = random.choice(DATA_DICT)
-    canvas.itemconfig(canvas_image, image=card_front)
-    canvas.itemconfig(language, text=RAW_DATA.columns[0], fill=BACKGROUND_COLOR)
-    canvas.itemconfig(word, text=RANDOM_WORD["English"], fill=BACKGROUND_COLOR)
-    TIMER = window.after(1000, count_down, SECONDS, RANDOM_WORD)
-    print(len(DATA_DICT))  # Debugging
+        RANDOM_WORD = random.choice(DATA_DICT)
+        canvas.itemconfig(canvas_image, image=card_front)
+        canvas.itemconfig(language, text=RAW_DATA.columns[0], fill=BACKGROUND_COLOR)
+        canvas.itemconfig(word, text=RANDOM_WORD["English"], fill=BACKGROUND_COLOR)
+        TIMER = window.after(1000, count_down, SECONDS, RANDOM_WORD)
+        print(len(DATA_DICT))  # Debugging
 
 
 def new_random_word_wrong():
     global TIMER
     global RANDOM_WORD
-    window.after_cancel(TIMER)
-    RANDOM_WORD = random.choice(DATA_DICT)
-    canvas.itemconfig(canvas_image, image=card_front)
-    canvas.itemconfig(language, text=RAW_DATA.columns[0], fill=BACKGROUND_COLOR)
-    canvas.itemconfig(word, text=RANDOM_WORD["English"], fill=BACKGROUND_COLOR)
-    TIMER = window.after(1000, count_down, SECONDS, RANDOM_WORD)
-    print(len(DATA_DICT))  # Debugging
+    try:
+        window.after_cancel(TIMER)
+    except ValueError:
+        messagebox.showerror(title="Click Start", message="You need to start the game before anything else.")
+    else:
+        RANDOM_WORD = random.choice(DATA_DICT)
+        canvas.itemconfig(canvas_image, image=card_front)
+        canvas.itemconfig(language, text=RAW_DATA.columns[0], fill=BACKGROUND_COLOR)
+        canvas.itemconfig(word, text=RANDOM_WORD["English"], fill=BACKGROUND_COLOR)
+        TIMER = window.after(1000, count_down, SECONDS, RANDOM_WORD)
+        print(len(DATA_DICT))  # Debugging
 
 
 def known_words():
