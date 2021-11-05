@@ -44,7 +44,7 @@ def new_random_word_wrong():
     else:
         UNKNOWN_WORDS.append(RANDOM_WORD)
         unknown_df = pd.DataFrame(UNKNOWN_WORDS)
-        unknown_df.to_csv("./data/unknown_words", index=False)
+        unknown_df.to_csv("./data/unknown_words.csv", index=False)
         next_card()
 
 
@@ -89,6 +89,37 @@ def known_words():
     window2.mainloop()
 
 
+def unknown_words():
+    window3 = tkinter.Toplevel(window)
+    window3.title("Unknown words")
+    window3.config(padx=50, pady=50, bg=BACKGROUND_COLOR)
+
+    # Canvas:
+    canvas3 = tkinter.Canvas(window3, width=800, height=526, bg=BACKGROUND_COLOR, highlightthickness=0)
+    card_front = tkinter.PhotoImage(file="./images/card_front.png")
+    canvas3.create_image(400, 263, image=card_front)
+
+    # Text box:
+    text_box = tkinter.Text(window3, height=25, width=80)
+    # == Words into 1 string ==
+    unknown_words_file = pd.read_csv("./data/unknown_words.csv")
+    unknown_words_list = unknown_words_file.to_dict(orient="records")
+    all_unknown_words = ""
+    for item in unknown_words_list:
+        all_unknown_words += f"{item['English']}: {item['Español']}\n"
+    # == Words into 1 string ==
+    text_box.insert("end", all_unknown_words)
+
+    # Label:
+    counter = tkinter.Label(window3, text=f"{len(unknown_words_list)}/860", fg="white", bg=BACKGROUND_COLOR, highlightthickness=0, font=("Arial", 20, "bold"))
+
+    counter.grid(row=0, column=0)
+    canvas3.grid(row=1, column=0)
+    text_box.grid(row=1, column=0)
+
+    window3.mainloop()
+
+
 # -------------------------- COUNTDOWN MECHANISM ----------------------------- #
 def count_down(count, random_word):
     if count > 0:
@@ -127,10 +158,12 @@ right_button = tkinter.Button(image=image_right, highlightthickness=0, command=n
 wrong_button = tkinter.Button(image=image_wrong, highlightthickness=0, command=new_random_word_wrong)
 start = tkinter.Button(width=10, text="Start", highlightthickness=0, command=start)
 known = tkinter.Button(width=10, text="Known", highlightthickness=0, command=known_words)
+unknown = tkinter.Button(width=10, text="Unknown", highlightthickness=0, command=unknown_words)
 
 wrong_button.grid(row=2, column=0)
 right_button.grid(row=2, column=2)
 start.grid(row=2, column=1)
 known.grid(row=0, column=2)
+unknown.grid(row=0, column=0)
 
 window.mainloop()
