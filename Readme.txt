@@ -687,4 +687,5 @@
 		-It did not have the alternative meaning.
 		-It need context to have that meaning.
 		-It did not have the alternative meaning.
+		-It does not exist in spanish.
 ===============================================================================
