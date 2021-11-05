@@ -664,5 +664,50 @@
 		 window. It just printed the message to the command line.
 31.-Thirty-first day of the 100day challenge:
 ===============================================================================
+	-Flash card:
+		-Starting directories, files and code.
+		-Front and back images, and buttons.
+		-Title and word of the flashcard.
+		-It is better having the words as a constant list.
+		-The card's tittle is supposed to start off as 'language', then change.
+		-I added a new button to start the game. Otherwise, it would have started
+		 as soon as the program executed. Now the user has the choice when to start
+		 the game. Whenever any of the buttons is pressed, a 3sec counter starts,
+		 and after it is finished, the card flips and shows the translated word.
+		 Right now it just flips without giving the answer. It has to do with the
+		 way the random word is chosen from the list. (It is better to get hold of
+		 he actual dictionary, then access the original word, that way I can pass
+		 the dict to later access the translation).
+		-Problem solved: get hold of the dictionary, then access the different words
+		 in their respective languages, in their respective timeframes.
+		-The card now changes color to green after flipping back to 'English'.
+		-There was as word that did not have the alternative meaning.
+		-The word cause was the shortened version of because.
+		-The tilde was missing.
+		-It did not have the alternative meaning.
+		-It need context to have that meaning.
+		-It did not have the alternative meaning.
+		-It does not exist in spanish.
+		-The program now keeps track of all the words the person knows, and takes
+		 them out of the flash cards deck. You can access these known words by
+		 printing the 'KNOWN_WORDS' list. The intention is to show all the words as
+		 a panel in a new window, after clicking the 'Known' button on the top right
+		 corner. The button exists, and creates a pop up window, but right now, the
+		 window it is empty.
+		-The user can now see all the words they know in a dedicated screen.
+		-Everything is now in a 'try..except..else' to prevent the user from starting
+		 the selection process before starting the game."
+		-Greeting message instead of plain words.
+		-Now the person gets a '.csv' file with all the words they need to focus on.
+		 And there is a new counter in the known words, showing the total words they
+		 know out of 860.
+		-Simplify the code by adding 'next_card()'.
+		-Re-arranging the functions for readability.
+		-There is now a new window that shows the words that need focus. (csv + GUI).
+		-Exception handling: FileNotFoundError.
+		-Simple exception handling: I chose to do it this way since it can be tackled
+		 with an 'if statement', and there is also no error it can possibly produce.
+		-Bettere labeling for the pop up windows: They now state if the user is in
+		 'known' or 'unknown' pop up window.
 ===============================================================================
 32.-Thirty-second day of the 100day challenge:
