@@ -15,8 +15,9 @@ def new_random_word_correct():
     global TIMER
     window.after_cancel(TIMER)
     random_word = random.choice(DATA_DICT)
-    canvas.itemconfig(language, text=RAW_DATA.columns[0])
-    canvas.itemconfig(word, text=random_word["English"])
+    canvas.itemconfig(canvas_image, image=card_front)
+    canvas.itemconfig(language, text=RAW_DATA.columns[0], fill=BACKGROUND_COLOR)
+    canvas.itemconfig(word, text=random_word["English"], fill=BACKGROUND_COLOR)
     TIMER = window.after(1000, count_down, SECONDS, random_word)
 
 
@@ -24,8 +25,9 @@ def new_random_word_wrong():
     global TIMER
     window.after_cancel(TIMER)
     random_word = random.choice(DATA_DICT)
-    canvas.itemconfig(language, text=RAW_DATA.columns[0])
-    canvas.itemconfig(word, text=random_word["English"])
+    canvas.itemconfig(canvas_image, image=card_front)
+    canvas.itemconfig(language, text=RAW_DATA.columns[0], fill=BACKGROUND_COLOR)
+    canvas.itemconfig(word, text=random_word["English"], fill=BACKGROUND_COLOR)
     TIMER = window.after(1000, count_down, SECONDS, random_word)
 
 
