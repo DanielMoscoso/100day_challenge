@@ -688,4 +688,10 @@
 		-It need context to have that meaning.
 		-It did not have the alternative meaning.
 		-It does not exist in spanish.
+		-The program now keeps track of all the words the person knows, and takes
+		 them out of the flash cards deck. You can access these known words by
+		 printing the 'KNOWN_WORDS' list. The intention is to show all the words as
+		 a panel in a new window, after clicking the 'Known' button on the top right
+		 corner. The button exists, and creates a pop up window, but right now, the
+		 window it is empty.
 ===============================================================================
