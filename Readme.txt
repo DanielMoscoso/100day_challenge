@@ -720,4 +720,5 @@
 		-I don't like 'main.py'.
 		-Starting code.
 		-'birthdays.csv' updated.
+		-One birthday has to be today, otherwise it would be very hard to test the code.
 ===============================================================================

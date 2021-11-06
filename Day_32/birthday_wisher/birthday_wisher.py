@@ -11,6 +11,10 @@ import pandas as pd
 MY_EMAIL = "appbreweryinfo@gmail.com"
 MY_PASSWORD = "abcd1234()"
 
+birthday_file = pd.read_csv("./birthdays.csv")
+birthday_file
+
+# Send the e-mail:
 now = dt.datetime.now()
 weekday = now.weekday()
 if weekday == 1:
