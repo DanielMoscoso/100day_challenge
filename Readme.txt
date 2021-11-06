@@ -713,4 +713,5 @@
 	-Warm up:
 		-Starting files.
 		-Sending an e-mail.
+		-Motivational quote in email depending day of the week.
 ===============================================================================
