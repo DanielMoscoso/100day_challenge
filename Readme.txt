@@ -709,7 +709,6 @@
 		-Bettere labeling for the pop up windows: They now state if the user is in
 		 'known' or 'unknown' pop up window.
 32.-Thirty-second day of the 100day challenge:
-===============================================================================
 	-Warm up:
 		-Starting files.
 		-Sending an e-mail.
@@ -724,5 +723,6 @@
 		-I know I should have kept everything logged, as I have been doing. But I was
 		 in a hurry and needed to finish fast. It will not happen again.
 		-Alternative way of solving the challenge.
-===============================================================================
 33.-Thirty-third day of the 100day challenge:
+===============================================================================
+===============================================================================
