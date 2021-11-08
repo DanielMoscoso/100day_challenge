@@ -723,4 +723,5 @@
 		-One birthday has to be today, otherwise it would be very hard to test the code.
 		-I know I should have kept everything logged, as I have been doing. But I was
 		 in a hurry and needed to finish fast. It will not happen again.
+		-Alternative way of solving the challenge.
 ===============================================================================
