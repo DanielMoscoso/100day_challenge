@@ -710,5 +710,19 @@
 		 'known' or 'unknown' pop up window.
 32.-Thirty-second day of the 100day challenge:
 ===============================================================================
+	-Warm up:
+		-Starting files.
+		-Sending an e-mail.
+		-Motivational quote in email depending day of the week.
+		-Change the name.
+	-Birthday wisher:
+		-Starting files.
+		-I don't like 'main.py'.
+		-Starting code.
+		-'birthdays.csv' updated.
+		-One birthday has to be today, otherwise it would be very hard to test the code.
+		-I know I should have kept everything logged, as I have been doing. But I was
+		 in a hurry and needed to finish fast. It will not happen again.
+		-Alternative way of solving the challenge.
 ===============================================================================
 33.-Thirty-third day of the 100day challenge:
