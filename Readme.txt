@@ -728,4 +728,5 @@
 	-Warm up:
 		-Initial code: API request.
 		-API response meaning.
+		-JSON file from API.
 ===============================================================================
