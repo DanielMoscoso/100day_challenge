@@ -725,4 +725,6 @@
 		-Alternative way of solving the challenge.
 33.-Thirty-third day of the 100day challenge:
 ===============================================================================
+	-Warm up:
+		-Initial code: API request.
 ===============================================================================
