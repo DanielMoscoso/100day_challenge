@@ -729,4 +729,5 @@
 		-Initial code: API request.
 		-API response meaning.
 		-JSON file from API.
+		-Latitude and Longitude as a tuple.
 ===============================================================================
