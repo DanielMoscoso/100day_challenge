@@ -730,5 +730,7 @@
 		-API response meaning.
 		-JSON file from API.
 		-Latitude and Longitude as a tuple.
+	-Kanye API:
 		-Kanye API initial files and code.
+		-End code. (it was not that complicated).
 ===============================================================================
