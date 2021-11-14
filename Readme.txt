@@ -739,5 +739,6 @@
 		-Starting file.
 		-Final version.
 		-The comparison can also be written like this. Very handy.
-		-should be 'or' not 'and'.
+		-Should be 'or' not 'and'.
+		-Alternative solution to the challenge.
 ===============================================================================
