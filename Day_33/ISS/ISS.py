@@ -47,7 +47,7 @@ while is_overhead():
 
     time_now = datetime.now()
 
-    if time_now.hour >= sunset and time_now.hour <= sunrise:
+    if time_now.hour >= sunset or time_now.hour <= sunrise:
         with smtplib.SMTP("smtp.gmail.com") as connection:
             connection.starttls()  # This is what makes the mail secure (encrypted).
             connection.login(user=my_email, password=password)
