@@ -738,4 +738,5 @@
 	-ISS Overhead notifier:
 		-Starting file.
 		-Final version.
+		-The comparison can also be written like this. Very handy.
 ===============================================================================

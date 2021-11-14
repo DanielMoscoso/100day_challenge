@@ -20,7 +20,7 @@ def is_overhead():
     iss_latitude = float(data["iss_position"]["latitude"])
     iss_longitude = float(data["iss_position"]["longitude"])
 
-    if iss_latitude >= (MY_LAT - 5) and iss_latitude <= (MY_LAT + 5) and iss_longitude >= (MY_LONG - 5) and iss_longitude <= (MY_LONG + 5):
+    if (MY_LAT - 5) <= iss_latitude <= (MY_LAT + 5) and (MY_LONG - 5) <= iss_longitude <= (MY_LONG + 5):
         # print("It is above.")  # Debugging
         # print(f"ISS latitude: {iss_latitude}, longitude: {iss_longitude}")  # Debugging
         return True
