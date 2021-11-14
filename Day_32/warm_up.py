@@ -9,7 +9,6 @@ with smtplib.SMTP("smtp.gmail.com") as connection:
     connection.sendmail(from_addr=my_email,
                         to_addrs="",
                         msg="Subject:Hello\n\nAnd this is the body of the email.")
-    connection.close()
 # %%
 import datetime as dt
 

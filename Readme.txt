@@ -725,5 +725,21 @@
 		-Alternative way of solving the challenge.
 33.-Thirty-third day of the 100day challenge:
 ===============================================================================
+	-Warm up:
+		-Initial code: API request.
+		-API response meaning.
+		-JSON file from API.
+		-Latitude and Longitude as a tuple.
+	-Kanye API:
+		-Kanye API initial files and code.
+		-End code. (it was not that complicated).
+	-Sunset and sunrise API:
+		-Initial code.
+	-ISS Overhead notifier:
+		-Starting file.
+		-Final version.
+		-The comparison can also be written like this. Very handy.
+		-Should be 'or' not 'and'.
+		-Alternative solution to the challenge.
 ===============================================================================
 34.-Thirty-fourth day of the 100day challenge:
