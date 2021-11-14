@@ -724,7 +724,6 @@
 		 in a hurry and needed to finish fast. It will not happen again.
 		-Alternative way of solving the challenge.
 33.-Thirty-third day of the 100day challenge:
-===============================================================================
 	-Warm up:
 		-Initial code: API request.
 		-API response meaning.
@@ -741,5 +740,6 @@
 		-The comparison can also be written like this. Very handy.
 		-Should be 'or' not 'and'.
 		-Alternative solution to the challenge.
-===============================================================================
 34.-Thirty-fourth day of the 100day challenge:
+===============================================================================
+===============================================================================
